@@ -106,7 +106,8 @@ nav.navbar.navbar-light.bg-faded {
         margin: 0px;
 }
 .tt p{
-        margin: 20px auto;
+        margin: 10px auto;
+            margin-bottom: 25px;
 }
 li.nav-item.active {
     padding: 5px 10px;
@@ -144,5 +145,8 @@ a.navbar-brand {
     display: block;
     text-align: center;
     width: 100%;
+}
+h2.tieudecap2.text-sm-left.text-xs-center{
+    margin-top: 15px;
 }
 }
