@@ -1,0 +1,208 @@
+*{
+    margin: 0;padding:0;
+}
+
+.menuphai .fa.fa-close.tat {right: 0;position: absolute;border: 1px solid white;padding: 0 14px;border-radius: 15px;}
+
+.menudoc a {
+    color: white;
+    padding: 10px 20px;
+    display: block;
+    border-bottom: 1px solid gray;
+    font-size: 15px;
+}
+
+ul.menudoc {
+    list-style: none;
+}
+
+.menuphai {
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: black;
+    height: 900px;
+    width: 300px;
+    z-index: 3;
+    color: white;
+    transition: all 0.4s;
+    right: -300px;
+}
+
+.nutmenu a.fa.fa-bars {
+    color: white;
+    font-size: 40px;
+}
+
+.nutmenu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 10px 15px;
+    background: #0000008a;
+    border-radius: 10px;
+    padding-right: 2px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&subset=cyrillic,cyrillic-ext,vietnamese');
+
+.iconto {
+    padding-top: 20px;
+}
+
+.fa.fa-phone {
+    margin-right: 3px;
+}
+
+.fa.fa-envelope-o {
+    margin-right: 3px;
+}
+
+.fa {
+    margin-right: 13px;
+}
+
+.footer .em {
+    padding: 5px;
+}
+
+.footer {
+    padding: 15px 0;
+}
+
+a.btn.btn-default.viewmoreitem {
+    margin-bottom: 20px;
+}
+
+a.nut1.btn.btn-default {
+    background: white;
+}
+
+.xanh a.nut1.btn.btn-default {
+    background: white;
+    color: black;
+}
+
+a.nut2.btn.btn-default,a.nut1.btn.btn-default {
+    border-radius: 0;
+    color: white;
+    background: black;
+    border: none;
+    margin-left: 30px;
+}
+
+.top6.xanh {
+    background: #337ab7;
+    padding: 20px 0;
+    color: white;
+}
+
+a.btn.btn-default.viewmoreitem {
+    border-radius: 0;
+    background: gray;
+    color: white;
+}
+
+.top5 img.img-responsive:hover {
+    opacity: 0.5;
+    transition: 1s ease-out;
+}
+
+.top5 img.img-responsive {
+    margin-bottom: 22px;
+}
+
+.top4 {
+    background: url('../img/callout.jpg');
+    background-size: cover;
+    padding: 60px;
+    height: 200px;
+}
+
+.top4 h2 {
+    font-size: 35px;
+    color: white;
+}
+
+hr.vienduoi {
+    width: 11%;
+    margin: auto;
+    padding: 10px;
+}
+
+.top2 {
+    padding: 25px 0;
+}
+
+.top3 a.btn.btn-default.nuttrang {
+    border-radius: 0;
+}
+.top3{
+    background-color: #337ab7;
+    padding: 40px 0;
+}
+.top3 h3 {
+    font-size: 23px;
+}
+
+.iconto .fa {
+    background: white;
+    width: 90px;
+    color: #337ab7;
+    height: 80px;
+    line-height: 80px;
+    font-size: 50px;
+    border-radius: 50%;
+}
+
+.top3 h2 {
+    font-size: 30px;
+    font-weight: 500;
+    padding-top: 30px;
+}
+
+.tieudetop2 h2 {}
+
+.top2 p {
+    font-size: 15px;
+}
+
+.top2 h2 {
+    font-size: 32px;
+}
+
+.top1 a.btn.btn-default {
+    border: none;
+    border-radius: 0;
+    background: gray;
+    color: white;
+    font-size: 12px;
+}
+
+.top1 p {
+    font-size: 13px;
+}
+
+.top1 h1 {
+    font-size: 40px;
+    padding-top: 30%;
+}
+
+.top1 {
+    height: 900px;
+    width: 100%;
+    display: block;
+    background: url('../img/bg.jpg');
+    background-size: cover;
+}
+body{
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.top3 p {
+    font-size: 12px;
+}
+.ra{
+    right: 0px;
+}
