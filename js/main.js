@@ -73,16 +73,26 @@ document.addEventListener("DOMContentLoaded",ct,false);
      window.addEventListener('scroll',function(){
       for (var i = 0; i < ct.length; i++) {
       }
-      if(window.pageYOffset > 1000){
+      if(window.pageYOffset > 800){
         ct[0].classList.add('cttopadd');
         ct[1].classList.add('cttopadd');
         ct[2].classList.add('cttopadd');
         ct[3].classList.add('cttopadd');
         ct[4].classList.add('cttopadd');
-        ct[5].classList.add('cttopadd');
-        ct[6].classList.add('cttopadd');
-        ct[7].classList.add('cttopadd');
       }
     })
 }
 
+document.addEventListener("DOMContentLoaded",cz,false);
+  function cz(){
+    var cz = document.querySelectorAll('.cz-bottom');
+     window.addEventListener('scroll',function(){
+      for (var i = 0; i < cz.length; i++) {
+      }
+      if(window.pageYOffset > 5500){
+        cz[0].classList.add('czbottom');
+        cz[1].classList.add('czbottom');
+        cz[2].classList.add('czbottom');
+      }
+    })
+}
