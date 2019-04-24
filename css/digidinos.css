@@ -4,6 +4,71 @@
     box-sizing: border-box;
 }
 
+.newcard{
+    visibility: hidden;
+     bottom:-200px;
+}
+.card-bottom{
+    visibility: visible;
+    bottom: 0;
+    transition: 1s all linear;
+}
+
+.ct-top{
+    visibility: hidden;
+    bottom: -200px;
+    overflow: hidden;
+}
+.cttopadd{
+    transition: 1s all ease-out;
+    visibility: visible;
+    bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+.contact i.fa:hover {
+    box-shadow: 2px 2px 20px red;
+}
+
+
+.services-left{
+    visibility: hidden;
+/*    transition: 1s all ease-out;*/
+    left: -300px;
+}
+.toleft{
+    visibility: visible;
+    left: 0;
+    transition: 1s all ease-out;
+}
+.services-right{
+    visibility: hidden;
+    right: -300px;
+}
+.toright{
+    visibility: visible;
+    right: 0;
+    transition: 1s all ease-out;
+}
+.about-zoom{
+    visibility: hidden;
+    transform: scale(0.1);
+}
+.zoomabout{
+    visibility: visible;
+    transform: scale(1);
+    margin-right: 20px;
+    transition: 1s all ease-out;
+}
+
 
 .bg-light {
     background-color: #f7fbffc9!important;
@@ -33,7 +98,7 @@ p.bt-cardtech {
 }
 
 strong .tech-card{
-	color: red;
+    color: red;
 }
 p.pt-5 {
     color: white!important;
@@ -60,7 +125,7 @@ p.pt-5 {
     border: 0;
 }
 .card{
-	padding: 0;
+    padding: 0;
     margin: 15px auto;
 }
 
@@ -74,7 +139,7 @@ input[type="email"] {
 }
 
 .row{
-	margin:0 auto;
+    margin:0 auto;
 }
 
 input[type="text"] {
@@ -91,7 +156,11 @@ form {
 
 button.btn.btn-lg.btn-primary {
     width: 100%;
+    background: red;
+    border: 1px solid red;
 }
+
+button.btn.btn-lg.btn-primary:hover {color: #22aee1;background: white;}
 
 .about p {
     color: white;
@@ -192,11 +261,11 @@ body{
     font-family: sans-serif;
 }
 .about h2 {
-	padding-top: 40px;
+    padding-top: 40px;
 
 }
 .about{
-	background: url('../img/about-bg_.jpg');
-	background-size: cover;
+    background: url('../img/about-bg_.jpg');
+    background-size: cover;
 }
 
