@@ -19,6 +19,8 @@ function scrollFunction() {
   } else {
     document.getElementById("navbar").style.padding = "40px 10px";
     document.getElementById("logo").style.fontSize = "35px";
+
   }
 }
+
 
