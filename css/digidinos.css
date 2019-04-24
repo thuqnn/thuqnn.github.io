@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.bg-light {
+    background-color: #f7fbffc9!important;
+}
+.portfolio p {
+    color: #9a9a9ad4;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.portfolio p.content-card {
+    margin-bottom: 100px;
+    font-size: 20px;
+    text-align: initial;
+}
+
+p.bt-cardtech {
+    position: absolute;
+    bottom: 3px;
+}
+
+
+.portfolio strong.tech-card {
+    color: red;
+    font-size: 17px;
+}
+
+strong .tech-card{
+	color: red;
+}
+p.pt-5 {
+    color: white!important;
+}
+
+header#top {
+    height: 900px;
+    width: 100%;
+    background: url('../img/bg.jpg');
+    background-size: cover;
+}
+
+.box-card:hover {
+    box-shadow: 1px 0px 15px #847a7aeb;
+    opacity: 1;
+}
+
+.portfolio a {
+    text-decoration: none;
+}
+
+.box-card {
+    box-shadow: 1px 0px 15px lightgrey;
+    opacity: 0.8;
+    transition: 0.5s all ease-out;
+    height: 100%;
+}
+
+.container.card {
+    border: 0;
+}
+.card{
+	padding: 0;
+    margin: 15px auto;
+}
+
+.card-img-top {
+    height: 200px;
+    border-bottom: 1px solid #00a1df;
+}
+
+input[type="email"] {
+    width: 100%;
+}
+
+.row{
+	margin:0 auto;
+}
+
+input[type="text"] {
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+}
+
+form {
+    width: 100%;
+}
+
+button.btn.btn-lg.btn-primary {
+    width: 100%;
+}
+
+.about p {
+    color: white;
+}
+
+.about .col-md-4 {
+    background: #808080ba;
+    margin: 60px 0;
+}
+
+hr.rule {
+    width: 103px;
+    border: 2px solid #ff6700;
+    margin-top: 12px 0;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.contact span {
+    display: block;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 1.4em;
+    margin-bottom: 40px;
+}
+
+.contact .col-md-4 {
+    text-align: center;
+}
+
+.contact i.fa {
+    font-size: 50px;
+    color: white;
+    background: red;
+    display: block;
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+    line-height: 90px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: black;
+    padding: 71px 0;
+}
+
+footer span {
+    color: white;
+    font-size: 19px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.services .row.text-center {
+    padding: 35px 10px;
+}
+
+.services i.fa {
+    font-size: 70px;
+    color: red;
+}
+
+.services h3 {
+    color: #00a1df;
+}
+
+.services h1.services-child,.portfolio h1,.keepintouch h1, .about h2 {
+    color: #0fa5e0;
+    padding-top: 40px;
+}
+
+section#services {
+    background: #f2f2f2;
+}
+
+.services p,.keepintouch p,.about p {
+    color: #9a9a9ad4;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.services h1.services-child {
+    padding-top: 30px;
+}
+
+
+.navbar-light .navbar-nav a.nav-link {
+    color: #19abe0;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding-right: 30px;
+}
+}
+body{
+    font-family: sans-serif;
+}
+.about h2 {
+	padding-top: 40px;
+
+}
+.about{
+	background: url('../img/about-bg_.jpg');
+	background-size: cover;
+}
+
