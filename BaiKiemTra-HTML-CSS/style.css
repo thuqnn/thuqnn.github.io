@@ -60,7 +60,15 @@ body {
 
 .animal-full ul li {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto auto auto;
     grid-gap: 10px;
     margin: 20px 0;
+}
+
+.fa,
+.far,
+.fas {
+    font-family: "Font Awesome 5 Free";
+    padding-top: 13px;
+    color: red;
 }
