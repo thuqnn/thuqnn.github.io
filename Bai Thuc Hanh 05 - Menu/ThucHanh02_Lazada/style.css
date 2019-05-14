@@ -123,6 +123,11 @@ button.fa.fa-shopping-cart {
     width: 215px;
 }
 
+.menu-left li:hover a::after {
+    font-family: "Font Awesome 5 Free";
+    content: '\f061';
+}
+
 .menu-left a {
     text-decoration: none;
     color: grey;

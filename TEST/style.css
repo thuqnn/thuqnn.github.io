@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+.animal {
+    width: 1280px;
+    margin: 50px auto;
+}
+
+img {
+    width: 300px;
+    height: 300px;
+}
+
+.animal-item {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+}
+
+.animal-item a {
+    text-decoration: none;
+    text-align: center;
+}
+
+.animal-item a img:hover {
+    transform: scale(1.5);
+    transition: all 0.4s ease-out;
+}
+
+.animal-full {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.animal-full img {
+    width: 400px;
+    height: 400px;
+}
