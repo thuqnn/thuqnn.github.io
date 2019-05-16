@@ -8,44 +8,68 @@ body {
     font-size: 18px;
 }
 
-.animal {
-    width: 1000px;
-    margin: 150px auto;
+#content {
+    display: grid;
+    grid-template-columns: auto auto auto;
 }
 
-.animal-item img {
-    width: 200px;
-    height: 200px;
+.grid-content {
+    height: 300px;
+    width: 400px;
+    transition: 0.5s;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.grid-content img {
+    max-height: 400px;
+    max-width: 350px;
+    padding: 10px;
+    font-size: 30px;
+    align-items: center;
+    display: block;
+    margin: 0 auto;
     transition: all 0.4s ease-out;
     border-radius: 5px;
     box-shadow: 0 0 10px gray;
     opacity: 0.7;
 }
 
-.animal-item {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-gap: 20px;
-}
-
-.animal-item a {
+.grid-content a {
+    color: gray;
     text-decoration: none;
-    text-align: center;
 }
 
-.animal-item a img:hover {
-    transform: scale(1.5);
+.grid-content h1 {
+    padding: 10px;
+}
+
+.grid-content img:hover {
+    transform: scale(1.3);
     opacity: 1;
 }
 
-.animal-full {
-    width: 1000px;
-    margin: 0 auto;
+header h1 {
+    padding-left: 0;
+    animation: move 3s infinite;
+    width: 100%;
+    margin: 20px;
 }
 
-.animal-full img {
-    width: 400px;
-    height: 400px;
+@keyframes move {
+    0% {
+        padding-left: 0%;
+        color: red;
+    }
+    50% {
+        padding-left: 40%;
+        color: green;
+    }
+    100% {
+        padding-left: 100%;
+        color: blue;
+    }
+    ;
 }
 
 .back {
@@ -56,13 +80,6 @@ body {
 
 .backtoindex i.fas {
     font-size: 30px;
-}
-
-.animal-full ul li {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-gap: 10px;
-    margin: 20px 0;
 }
 
 .fa,
