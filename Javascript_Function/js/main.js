@@ -28,16 +28,15 @@ document.write("<br> " + vietHoa("THU PHAM") + "<br>");
 
 //Bài 5: Viết 1 function lấy ra 1 số nhỏ nhất trong 1 mảng các số.
 
-function soNN(arrNumber) {
-    var arrNumber = arrNumber.sort();
+function numberMin(arrNumber) {
+    var arrNumber = arrNumber.sort(function(a, b) { return a - b });
     return arrNumber[0];
 }
-document.write("<br> " + soNN([1, 5, 6, 7, 9, 2, -2, 0]) + "<br>");
+document.write("<br> " + numberMin([5, 7, 6, 9, 12]) + "<br>");
 
 //Bài 6: Cho 1 mảng gồm tên của 5 học viên. Hãy viết function sắp xếp lại thứ tự các học viên theo bảng chữ cái và in ra màn hình danh sách học viên.
 
 function getUser(student) {
-    var student = student.sort();
-    return student.join("<br>");
+    return student.sort().join("<br>");
 }
-document.write("<br> " + getUser(["Nam", "Sơn", "An", "Tây", "Bắc"]));
+document.write("<br> " + getUser(["Sơn", "Tây", "Hà", "Giang", "An"]));
