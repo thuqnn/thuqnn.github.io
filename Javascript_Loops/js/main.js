@@ -48,6 +48,12 @@ function getUser(student) {
     return student;
 }
 getUser(["Sơn", "Tây", "Hà", "Giang", "An"]);
+
+// function numberMin(numbers){
+//     return Math.min.apply(null, numbers);
+//   }
+//   document.write("<br> " + numberMin([5,7,6,9,12]) + "<br>");
+
 //Bài 5. Cho 1 mảng các số. Viết function tạo ra 1 mảng mới với các số là số dư tương ứng khi chia các số trong mảng cũ cho 2. Gợi ý: Để lấy số dư của 1 số cho 2 ta dùng toán tử %. Ví dụ: 5 % 2 = 1 (5 chia 2 dư 1).
 function arrNum(num) {
     for (var i = 0; i < num.length; i++) {
