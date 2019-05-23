@@ -1,0 +1,20 @@
+body{
+	margin: 0;
+}
+.wrapper > div{
+	float: left;
+	width: calc(100% / 3 - 10px);
+	height: 500px;
+}
+
+.red{
+	background: red;
+
+}
+.blue{
+	background: blue;
+}
+.green{
+	background: green;
+
+}
