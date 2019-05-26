@@ -1,20 +1,38 @@
-body{
-	margin: 0;
-}
-.wrapper > div{
-	float: left;
-	width: calc(100% / 3 - 10px);
-	height: 500px;
+* {
+    box-sizing: border-box;
 }
 
-.red{
-	background: red;
-
+body {
+    margin: 0;
 }
-.blue{
-	background: blue;
-}
-.green{
-	background: green;
 
+.left {
+    width: 60%;
+    padding-right: 10px;
+}
+
+.right {
+    width: 40%;
+}
+
+div {
+    float: left;
+}
+
+.red {
+    background: red;
+    height: 200px;
+    width: 100%;
+}
+
+.green {
+    background: green;
+    height: 100px;
+    width: 100%;
+}
+
+.blue {
+    background: blue;
+    height: 100px;
+    width: 100%;
 }
