@@ -51,3 +51,20 @@ h1,
 .txtForm {
     color: white;
 }
+
+.info {
+    width: 700px;
+    margin: 0 auto;
+    border: 1px double white;
+    padding: 10px;
+}
+
+p {
+    font-size: 20px;
+    text-align: left;
+}
+
+.loginsuccess {
+    text-align: center;
+    padding: 50px;
+}
