@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+.register {
+    background-image: linear-gradient(to right, #00b09b, #24b98b, #4bc075, #70c65b, #96c93d);
+    font-family: 'B612 Mono', monospace;
+}
+
+.wrap {
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+.txtsubmit {
+    width: 35%;
+    height: 30px;
+    margin-top: 30px;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.register {
+    width: 400px;
+    height: 400px;
+    margin: 50px auto;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.txtForm {
+    width: 90%;
+    height: 30px;
+    line-height: 30px;
+    margin: 5px 0;
+    background-color: transparent;
+    border: 1px solid white;
+    padding-left: 10px;
+}
+
+::placeholder,
+label,
+h1,
+.txtsubmit,
+.txtForm {
+    color: white;
+}

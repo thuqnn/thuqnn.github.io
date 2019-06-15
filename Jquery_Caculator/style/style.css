@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 60, 121, 0.5634628851540616) 35%, rgba(0, 212, 255, 1) 100%);
+}
+
+.main {
+    border: 60px solid black;
+    border-right-width: 15px;
+    border-left-width: 15px;
+    border-radius: 20px;
+    width: 360px;
+    height: 550px;
+    margin: 5px auto;
+}
+
+button {
+    width: 75px;
+    height: 70px;
+    font-size: 25px;
+    margin: 2px;
+    border-radius: 50%;
+    border: none;
+}
+
+#textview {
+    width: 305px;
+    margin: 18px 0px;
+    font-size: 30px;
+    padding: 11px;
+    border: none;
+    background-color: transparent;
+    color: white;
+    text-align: right;
+}
+
+.wrap {
+    text-align: center;
+    background-color: #424242;
+    height: 100%;
+    width: 100%;
+}
+
+.equals {
+    width: 158px;
+    border-radius: 50px;
+}
+
+.number {
+    font-weight: bold;
+    background-color: #f1f1f1;
+    transition: 0.2s all ease-out;
+}
+
+.number:hover {
+    background-color: #9e9e9e;
+}
+
+.caculator {
+    transition: 0.2s all ease-out;
+}
+
+.caculator:hover {
+    background-color: #78909c;
+    color: white;
+}
+
+.symbol {
+    background-color: orange;
+    color: white;
+    transition: 0.2s all ease-out;
+}
+
+.symbol:hover {
+    background-color: #3e96d1;
+}
+
+.toggle {
+    width: 15%;
+    height: 10%;
+    margin: 2px 150px;
+}
+
+.main.clicked {
+    border-color: orange;
+}
+
+.wrap.clicked {
+    background: rgb(63, 94, 251);
+    background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+}
+
+body.clicked {
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+}
