@@ -57,8 +57,7 @@ $(document).ready(function() {
 })
 
 function myFunction() {
-    let x = document.URL;
-    let uri = x.toString();
+    let uri = document.URL;
     let uri_dec = decodeURIComponent(uri);
     let content = uri_dec.replace(/[&?]/g, '<br/>').replace(/[+=]/g, ' ');
     $("#username").html(content);
