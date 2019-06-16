@@ -37,9 +37,22 @@ $(document).ready(function() {
         } else {
             $("#linkFB").next('small').text('');
         }
+
+        let gender = $('.gender').val();
+        if ($(".gender:checked").length > 1 || $(".gender:checked").length == 0) {
+            $('#error').html('<span id="error"> Please choose a gender !</span>');
+            idValid = false;
+        } else {
+            $('#error').html('');
+        }
+
+        if ($("#date").val().trim() == '') {
+            $("#date").next('small').text('Select Date of Birth !');
+            idValid = false;
+        } else {
+            $("#date").next('small').text('');
+        }
         return idValid;
-
-
     });
 })
 
@@ -48,5 +61,5 @@ function myFunction() {
     let uri = x.toString();
     let uri_dec = decodeURIComponent(uri);
     let content = uri_dec.replace(/[&?]/g, '<br/>').replace(/[+=]/g, ' ');
-    document.getElementById("username").innerHTML = content;
+    $("#username").html(content);
 }
