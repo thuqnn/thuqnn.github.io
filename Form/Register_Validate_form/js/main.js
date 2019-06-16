@@ -40,7 +40,7 @@ $(document).ready(function() {
 
         let gender = $('.gender').val();
         if ($(".gender:checked").length > 1 || $(".gender:checked").length == 0) {
-            $('#error').html('<span id="error"> Please choose a gender !</span>');
+            $('#error').html('<br/><span id="error"> Please choose a gender !</span>');
             idValid = false;
         } else {
             $('#error').html('');
