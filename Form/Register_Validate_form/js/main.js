@@ -2,65 +2,67 @@ $(document).ready(function() {
     $("#register-form").on("submit", function() {
         var idValid = true;
         if ($("#name").val().trim() == '') {
-            $("#name").attr("placeholder", "Please Enter Your Name !");
+            $('#name').next('small').text('Please Enter Your Name !');
             idValid = false;
         } else {
-            $("#name").attr("placeholder", "");;
+            $('#name').next('small').text('');
         }
         if ($("#pass").val().match(/^.{4,8}$/) == null) {
-            $("#pass").attr("placeholder", "Please Enter Your Password !");
+            $("#pass").next('small').text("Please Enter Your Password !");
             idValid = false;
         } else {
-            $("#pass").attr("placeholder", "");;
+            $("#pass").next('small').text('');
         }
         if ($("#email").val().match(/^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/) == null) {
-            $("#email").attr("placeholder", "Please Enter Your Email !");
+            $("#email").next('small').text("Please Enter Your Email !");
             idValid = false;
         } else {
-            $("#email").attr("placeholder", "");;
+            $("#email").next('small').text('');
         }
         if ($("#address").val().trim() == '') {
-            $("#address").attr("placeholder", "Please Enter Your Address !");
+            $("#address").next('small').text("Please Enter Your Address !");
             idValid = false;
         } else {
-            $("#address").attr("placeholder", "");;
+            $("#address").next('small').text('');
         }
         if ($("#phone").val().match(/^([\(]{1}[0-9]{3}[\)]{1}[\.| |\-]{0,1}|^[0-9]{3}[\.|\-| ]?)?[0-9]{3}(\.|\-| )?[0-9]{4}$/) == null) {
-            $("#phone").attr("placeholder", "Please Enter Your Phone Number !");
+            $("#phone").next('small').text("Please Enter Your Phone Number !");
             idValid = false;
         } else {
-            $("#phone").attr("placeholder", "");;
+            $("#phone").next('small').text('');
         }
         if ($("#linkFB").val().match(/(?<http>(http:[/][/]|www.)([a-z]|[A-Z]|[0-9]|[/.]|[~])*)/) == null) {
-            $("#linkFB").attr("placeholder", "Please Enter Your Link Facebook !");
+            $("#linkFB").next('small').text("Please Enter Your Link Facebook !");
             idValid = false;
         } else {
-            $("#linkFB").attr("placeholder", "");;
+            $("#linkFB").next('small').text('');
         }
 
         let gender = $('.gender').val();
         if ($(".gender:checked").length > 1 || $(".gender:checked").length == 0) {
-            $('.genderinfo').css("border-color", "red");
+            $('#error').html("*");
             idValid = false;
         } else {
-            $('.genderinfo').css("border-color", "black");
+            $('#error').html("");
         }
 
         if ($("#date").val().trim() == '') {
-            $("#date").css("border-color", "red");
+            $("#date").next('small').text("Please Enter Your Date & Birth !");
             idValid = false;
         } else {
-            $("#date").css("border-color", "black");
+            $("#date").next('small').text('');
         }
+
         return idValid;
     });
-})
-
-function myFunction() {
     let uri = document.URL;
-    let urinew = document.URL.split('?')[0];
+    let urinew = uri.split('?')[0];
     let uri_dec = decodeURIComponent(uri);
-    let content = uri_dec.replace(/[&?]/g, '<br/>').replace(/[+]/g, ' ').replace(/[=]/g, ': ').replace('signup: Sign Up', '');
-    let total = content.replace(urinew, '').replace(/date/g, 'Date').replace(/gender/g, 'Gender').replace(/address/g, 'Address').replace(/phone/g, 'Phone').replace(/facebook/g, 'Facebook');
-    $("#username").html(total);
-}
+    let content = uri_dec.replace(/[&?]/g, '<br/>').replace(/[+]/g, ' ').replace(/[=]/g, ': ').replace('signup: Sign Up', '').replace(urinew, '');
+    let splitStr = content.split('<br/>');
+    let totalStr = "";
+    for (let i = 0; i < splitStr.length; i++) {
+        totalStr += "<br/>" + splitStr[i].charAt(0).toUpperCase() + splitStr[i].slice(1).toLowerCase();
+    }
+    $("#username").html(totalStr);
+})
