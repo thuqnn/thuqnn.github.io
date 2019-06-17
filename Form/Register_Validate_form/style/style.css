@@ -3,9 +3,8 @@
     padding: 0;
 }
 
-body,
-.register {
-    background-image: linear-gradient(to right, #00b09b, #24b98b, #4bc075, #70c65b, #96c93d);
+body {
+    background: linear-gradient(to top right, #08aeea 0%, #b721ff 100%);
     font-family: 'B612 Mono', monospace;
 }
 
@@ -19,28 +18,29 @@ h1 {
 }
 
 .txtsubmit {
-    width: 35%;
-    height: 30px;
-    margin-top: 25px;
-    border-radius: 5px;
-    background-color: transparent;
+    margin-top: 30px;
+    background-color: #ff4b5a;
+    padding: 10px 50px;
+    font-weight: bold;
 }
 
 .register {
     width: 400px;
-    height: 550px;
+    height: 400px;
     margin: 20px auto;
     padding: 40px;
     border-radius: 10px;
+    background: #DEF4FE;
 }
 
-.txtForm {
+.txtForm,
+.genderinfo {
     width: 90%;
     height: 30px;
     line-height: 30px;
     margin: 5px 0;
     background-color: transparent;
-    border: 1px solid white;
+    border: 1px solid black;
     padding-left: 10px;
 }
 
@@ -49,7 +49,11 @@ label,
 h1,
 .txtsubmit,
 .txtForm {
-    color: white;
+    color: black;
+}
+
+.genderinfo {
+    margin: auto;
 }
 
 .info {
@@ -70,5 +74,9 @@ p {
 
 small,
 span {
-    color: yellow;
+    color: orange;
+}
+
+label {
+    padding-left: 4px;
 }
