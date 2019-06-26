@@ -69,7 +69,7 @@ function addTpLink() {
     let count = 1;
     tbody.innerHTML = "";
     for (let i = 0; i < tpLink.length; i++) {
-        tbody.innerHTML += "<tr><td>" + (count++) + "</td><td>" + "<img src = " + tpLink[i].image + "></td><td>" + tpLink[i].name + "</td><td>" + tpLink[i].price + "</td><td>" + tpLink[i].model + "</td><td>" + tpLink[i].total + "</td></tr>";
+        tbody.innerHTML += "<tr><td>" + (count++) + "</td><td><img src = " + tpLink[i].image + "></td><td>" + tpLink[i].name + "</td><td>" + tpLink[i].price + "</td><td>" + tpLink[i].model + "</td><td>" + tpLink[i].total + "</td></tr>";
     }
 }
 addTpLink()
