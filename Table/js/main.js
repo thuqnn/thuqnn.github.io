@@ -64,3 +64,4 @@ function myFunction() {
 myFunction();
 
 //Cách 2
+function
