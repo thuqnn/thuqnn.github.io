@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>About Me</title>
+</head>
+
+<body>
+    <h1><br/>About Me</h1>
+
+    <ul>
+        <li>Nickname: <span id="nickname"></span>
+            <li>Favorites: <span id="favorites"></span>
+                <li>Hometown: <span id="hometown"></span>
+    </ul>
+    <script>
+        function addFont() {
+            document.body.style.fontFamily = "Arial, sans-serif";
+        }
+
+        function addAbout() {
+            let addInfo = document.querySelectorAll("ul>li>span");
+            addInfo[0].innerText = "Pham Thi Thu";
+            addInfo[1].innerText = "Xem Phim, Nghe Nhac";
+            addInfo[2].innerText = "Van Don Quang Ninh";
+        }
+
+        function addColor() {
+            let getClss = document.querySelectorAll("ul>li");
+            for (let i = 0; i < getClss.length; i++) {
+                getClss[i].className = "listitem";
+                let getColor = document.getElementsByClassName("listitem");
+                getColor[i].style.color = "red";
+            }
+        }
+
+        function addAvatar() {
+            let creatElm = document.createElement("img");
+            creatElm.setAttribute("src", "https://freeiconshop.com/wp-content/uploads/edd/person-girl-flat.png");
+            var addImg = document.getElementsByTagName("h1");
+            addImg[0].prepend(creatElm);
+        }
+    </script>
+</body>
+
+</html>
