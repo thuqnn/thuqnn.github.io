@@ -42,26 +42,34 @@ let tpLink = [{
     }
 ];
 //Cách 1
-function myFunction() {
-    let table = document.getElementById("myTable");
-    count = 1;
-    for (let i = 0; i < tpLink.length; i++) {
-        let row = table.insertRow(-1);
-        let cell1 = row.insertCell(0);
-        let cell2 = row.insertCell(1);
-        let cell3 = row.insertCell(2);
-        let cell4 = row.insertCell(3);
-        let cell5 = row.insertCell(4);
-        let cell6 = row.insertCell(5);
-        cell1.innerHTML = count++;
-        cell2.innerHTML = "<img src = " + tpLink[i].image + ">";
-        cell3.innerHTML = tpLink[i].name;
-        cell4.innerHTML = tpLink[i].price;
-        cell5.innerHTML = tpLink[i].model;
-        cell6.innerHTML = tpLink[i].total;
-    }
-}
-myFunction();
+// function myFunction() {
+//     let table = document.getElementById("myTable");
+//     count = 1;
+//     for (let i = 0; i < tpLink.length; i++) {
+//         let row = table.insertRow(-1);
+//         let cell1 = row.insertCell(0);
+//         let cell2 = row.insertCell(1);
+//         let cell3 = row.insertCell(2);
+//         let cell4 = row.insertCell(3);
+//         let cell5 = row.insertCell(4);
+//         let cell6 = row.insertCell(5);
+//         cell1.innerHTML = count++;
+//         cell2.innerHTML = "<img src = " + tpLink[i].image + ">";
+//         cell3.innerHTML = tpLink[i].name;
+//         cell4.innerHTML = tpLink[i].price;
+//         cell5.innerHTML = tpLink[i].model;
+//         cell6.innerHTML = tpLink[i].total;
+//     }
+// }
+// myFunction();
 
 //Cách 2
-function
+function addTpLink() {
+    let tbody = document.getElementsByTagName("tbody")[0];
+    let count = 1;
+    tbody.innerHTML = "";
+    for (let i = 0; i < tpLink.length; i++) {
+        tbody.innerHTML += "<tr><td>" + (count++) + "</td><td>" + "<img src = " + tpLink[i].image + "></td><td>" + tpLink[i].name + "</td><td>" + tpLink[i].price + "</td><td>" + tpLink[i].model + "</td><td>" + tpLink[i].total + "</td></tr>";
+    }
+}
+addTpLink()
