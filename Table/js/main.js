@@ -1,4 +1,4 @@
-let tpLink = [{
+﻿let tpLink = [{
         image: "https://images-na.ssl-images-amazon.com/images/I/41l4REP3iCL._SL500_AC_SS350_.jpg",
         name: "TP-Link AC1200 Smart WiFi Router",
         price: "$44",
@@ -65,11 +65,14 @@ let tpLink = [{
 
 //Cách 2
 function addTpLink() {
-    let tbody = document.getElementsByTagName("tbody")[0];
+    let table = document.getElementById("myTbody");
     let count = 1;
-    tbody.innerHTML = "";
+    myTbody.innerHTML = "";
     for (let i = 0; i < tpLink.length; i++) {
-        tbody.innerHTML += "<tr><td>" + (count++) + "</td><td><img src = " + tpLink[i].image + "></td><td>" + tpLink[i].name + "</td><td>" + tpLink[i].price + "</td><td>" + tpLink[i].model + "</td><td>" + tpLink[i].total + "</td></tr>";
+        myTbody.innerHTML += `<tr><td>  ${(count++)}  </td><td><img src = 
+         ${tpLink[i].image}  ></td><td>  ${tpLink[i].name}  </td><td>       
+	     ${tpLink[i].price}  </td><td>  ${tpLink[i].model}  </td><td>
+	     ${tpLink[i].total}  </td></tr>`;
     }
 }
 addTpLink()
