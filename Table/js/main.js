@@ -67,9 +67,9 @@
 function addTpLink() {
     let table = document.getElementById("myTbody");
     let count = 1;
-    myTbody.innerHTML = "";
+    table.innerHTML = "";
     for (let i = 0; i < tpLink.length; i++) {
-        myTbody.innerHTML += `<tr><td>  ${(count++)}  </td><td><img src = 
+        table.innerHTML += `<tr><td>  ${(count++)}  </td><td><img src = 
          ${tpLink[i].image}  ></td><td>  ${tpLink[i].name}  </td><td>       
 	     ${tpLink[i].price}  </td><td>  ${tpLink[i].model}  </td><td>
 	     ${tpLink[i].total}  </td></tr>`;
