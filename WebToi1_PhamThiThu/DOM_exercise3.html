@@ -24,6 +24,7 @@
 
 <body>
     <h1>My Books List</h1>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
         let arr = [{
             title: 'The Testaments: A Novel',
@@ -66,30 +67,18 @@
             thumbnail: 'https://images-na.ssl-images-amazon.com/images/I/51uMnADcfUL.jpg',
             alreadyRead: false
         }];
+        $(document).ready(function() {
+            let bodyChange = $("body").append($("<div></div>"));
 
-        function listBook() {
-            let bodyChange = document.getElementsByTagName("BODY")[0];
             for (let i = 0; i < arr.length; i++) {
-                let element = document.createElement("div");
-                let pBook = document.createElement("p");
-                pBook.innerHTML = arr[i].title;
-                pBook.innerHTML = arr[i].author;
-                let nameThumbnail = document.createElement("img");
-                nameThumbnail.src = arr[i].thumbnail;
-                bodyChange.appendChild(element);
-                element.appendChild(nameThumbnail);
-                element.appendChild(pBook);
-                if (arr[i].alreadyRead == true) {
-                    element.style.color = "#18FFFF";
-                    element.style.backgroundColor = "red";
-                } else {
-                    element.style.color = "white";
-                    element.style.backgroundColor = "black";
-                }
+                let p1Change = $("div").append($("<p></p>"));
+                let p2Change = $("div").append($("<p></p>"));
+                let imgChange = $("div").append($("<img/>"));
+                p1Change = $("p").text(arr[i].title);
+                p2Change = $("p").text(arr[i].author);
+                imgChange = $("img").html(arr[i].thumbnail);
             }
-        }
-        listBook()
-            //Cách 2 jquery
+        })
     </script>
 </body>
 

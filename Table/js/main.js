@@ -1,42 +1,42 @@
 ﻿let tpLink = [{
         image: "https://images-na.ssl-images-amazon.com/images/I/41l4REP3iCL._SL500_AC_SS350_.jpg",
         name: "TP-Link AC1200 Smart WiFi Router",
-        price: "$44",
+        price: "44",
         model: "AC1200",
         total: 76
     },
     {
         image: "https://images-na.ssl-images-amazon.com/images/I/31kr4aepPUL._SL500_AC_SS350_.jpg",
         name: "NETGEAR Nighthawk X6S AC4000 Tri-band WiFi ",
-        price: "$219",
+        price: "219",
         model: "AC4000",
         total: 716
     },
     {
         image: "https://images-na.ssl-images-amazon.com/images/I/41IEOGEqKyL._SL500_AC_SS350_.jpg",
         name: "Wifi Router AC 5GHz Wireless Router Dual Band ",
-        price: "$29",
+        price: "29",
         model: "AC 5GHz",
         total: 442
     },
     {
         image: "https://images-na.ssl-images-amazon.com/images/I/31K78FVYxIL._SL500_AC_SS350_.jpg",
         name: "Cudy AC1200 Dual Band Smart WiFi Router",
-        price: "$44",
+        price: "44",
         model: "Cudy AC1200",
         total: 116
     },
     {
         image: "https://images-na.ssl-images-amazon.com/images/I/31w0k1Y-IqL._SL500_AC_SS350_.jpg",
         name: "NETGEAR R6700 Nighthawk AC1750 Dual Band",
-        price: "$135",
+        price: "135",
         model: "R6700",
         total: 942
     },
     {
         image: "https://images-na.ssl-images-amazon.com/images/I/41UhtKBCsWL._SL500_AC_SS350_.jpg",
         name: "NETGEAR Nighthawk Pro Gaming XR500 ",
-        price: "$259",
+        price: "259",
         model: "XR500",
         total: 332
     }
@@ -65,14 +65,40 @@
 
 //Cách 2
 function addTpLink() {
-    let table = document.getElementById("myTbody");
+    let content = "";
     let count = 1;
-    table.innerHTML = "";
     for (let i = 0; i < tpLink.length; i++) {
-        table.innerHTML += `<tr><td>  ${(count++)}  </td><td><img src = 
-         ${tpLink[i].image}  ></td><td>  ${tpLink[i].name}  </td><td>       
-	     ${tpLink[i].price}  </td><td>  ${tpLink[i].model}  </td><td>
-	     ${tpLink[i].total}  </td></tr>`;
+        content += `<tr>
+                        <td> ${(count++)}</td>
+                        <td> <img src = ${tpLink[i].image} alt = "${tpLink[i].name}"></td>
+                        <td> ${tpLink[i].name} </td>
+                        <td> ${tpLink[i].price} </td>                 
+                        <td> ${tpLink[i].model} </td>
+                        <td> ${tpLink[i].total} </td>
+                    </tr>`;
     }
+    document.getElementById("myTbody").innerHTML = content;
 }
 addTpLink()
+
+function totalTp() {
+    let sum = 0;
+    for (let i = 0; i < tpLink.length; i++) {
+        sum += Number(tpLink[i].price) * tpLink[i].total;
+    }
+    document.getElementById("sumTotal").innerHTML = sum;
+}
+totalTp()
+    // document.getElementById("sumTotal").innerText = totalTp();
+
+function compareName(a, b) {
+    if (a.name.toLowerCase() < b.name.toLowerCase()) { return -1; }
+    if (a.name.toLowerCase() > b.name.toLowerCase()) { return 1; }
+    return 0;
+}
+
+tpLink.sort(compareName);
+
+function myFunctionClick() {
+
+}
