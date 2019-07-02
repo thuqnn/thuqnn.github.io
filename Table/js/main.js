@@ -95,23 +95,25 @@ totalTp()
     // document.getElementById("sumTotal").innerText = totalTp();
 
 function sortColumn(columnName) {
-
     const dataType = typeof tpLink[0][columnName];
     sortDirection = !sortDirection;
-
-    switch (dataType) {
-        case 'number':
-            sortNumberColumn(sortDirection, columnName);
-            break;
-        case 'string':
-            sortAllColumn(sortDirection, columnName);
-            break;
+    if (dataType == 'number') {
+        sortNumberColumn(sortDirection, columnName);
+    } else if (dataType == 'string') {
+        sortStringColumn(sortDirection, columnName);
     }
-
     addTpLink(tpLink);
 }
 
-function sortAllColumn(sort, columnName) {
+function sortColumnPrice(columnName) {
+    sortDirection = !sortDirection;
+    if (columnName == 'price') {
+        sortNumberColumn(sortDirection, columnName);
+    }
+    addTpLink(tpLink);
+}
+
+function sortStringColumn(sort, columnName) {
     tpLink = tpLink.sort((p1, p2) => {
         return sort ? p1[columnName].localeCompare(p2[columnName]) : p2[columnName].localeCompare(p1[columnName])
     });
