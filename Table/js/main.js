@@ -104,11 +104,17 @@ function sortColumn(columnName) {
             sortNumberColumn(sortDirection, columnName);
             break;
         case 'string':
-            sortNumberColumn(sortDirection, columnName);
+            sortAllColumn(sortDirection, columnName);
             break;
     }
 
     addTpLink(tpLink);
+}
+
+function sortAllColumn(sort, columnName) {
+    tpLink = tpLink.sort((p1, p2) => {
+        return sort ? p1[columnName].localeCompare(p2[columnName]) : p2[columnName].localeCompare(p1[columnName])
+    });
 }
 
 function sortNumberColumn(sort, columnName) {
