@@ -64,6 +64,8 @@
 // myFunction();
 
 //Cách 2
+let sortDirection = false;
+
 function addTpLink() {
     let content = "";
     let count = 1;
@@ -77,6 +79,7 @@ function addTpLink() {
                         <td> ${tpLink[i].total} </td>
                     </tr>`;
     }
+
     document.getElementById("myTbody").innerHTML = content;
 }
 addTpLink()
@@ -91,14 +94,25 @@ function totalTp() {
 totalTp()
     // document.getElementById("sumTotal").innerText = totalTp();
 
-function compareName(a, b) {
-    if (a.name.toLowerCase() < b.name.toLowerCase()) { return -1; }
-    if (a.name.toLowerCase() > b.name.toLowerCase()) { return 1; }
-    return 0;
+function sortColumn(columnName) {
+
+    const dataType = typeof tpLink[0][columnName];
+    sortDirection = !sortDirection;
+
+    switch (dataType) {
+        case 'number':
+            sortNumberColumn(sortDirection, columnName);
+            break;
+        case 'string':
+            sortNumberColumn(sortDirection, columnName);
+            break;
+    }
+
+    addTpLink(tpLink);
 }
 
-tpLink.sort(compareName);
-
-function myFunctionClick() {
-
+function sortNumberColumn(sort, columnName) {
+    tpLink = tpLink.sort((p1, p2) => {
+        return sort ? p1[columnName] - p2[columnName] : p2[columnName] - p1[columnName]
+    });
 }

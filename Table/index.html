@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
     <title>Table</title>
 </head>
 
@@ -16,10 +17,10 @@
             <tr>
                 <th>Order</th>
                 <th>Image</th>
-                <th onclick="myFunctionClick()">Name</th>
-                <th>Price</th>
+                <th onclick="sortColumn('name')" class="sort">Name</th>
+                <th onclick="sortColumn('price')" class="sort">Price</th>
                 <th>Model</th>
-                <th>Total</th>
+                <th onclick="sortColumn('total')" class="sort">Total</th>
             </tr>
         </thead>
         <tbody id="myTbody"></tbody>
