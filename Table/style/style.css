@@ -53,19 +53,6 @@ div {
     text-align: right;
 }
 
-
-/* th.asc:after {
-    content: '\f0de';
-    font-family: FontAwesome;
-    color: white;
-}
-
-th.dsc:after {
-    content: '\f0dd';
-    font-family: FontAwesome;
-    color: white;
-} */
-
 .fa.fa-sort,
 .fa.fa-sort-asc,
 .fa.fa-sort-desc {

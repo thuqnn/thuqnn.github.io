@@ -82,43 +82,40 @@ function addTpLink() {
 }
 addTpLink()
 
+let sortDirection = false;
 
 function sortColumn(thElement) {
     thElement = $(thElement);
     const column = thElement.attr('data-column');
-
+    sortDirection = !sortDirection;
     if (thElement.attr('data-order') === 'asc') {
         thElement.attr('data-order', 'desc');
         thElement.children().removeClass('fa fa-sort-asc').addClass('fa fa-sort-desc');
-        sortAll(column);
+        sortAll(sortDirection, column);
     } else {
         thElement.attr('data-order', 'asc');
         thElement.children().removeClass('fa fa-sort-desc').addClass('fa fa-sort-asc');
-        sortAll(column);
+        sortAll(sortDirection, column);
     }
 
     addTpLink();
 }
 
 
-function sortAll(column) {
+function sortAll(sort, column) {
     tpLink.sort(function(a, b) {
         let x = a[column];
         let y = b[column];
-
         if (typeof x == 'string') x = x.toLocaleLowerCase()
         if (typeof y == 'string') y = y.toLocaleLowerCase()
-
-        if (x < y || x > y) {
-            return -1;
-        } else if (x > y || x < y) {
+        if (sort == (x < y)) {
             return 1;
-        } else {
-            return 0;
+        } else if (sort == (x > y)) {
+            return -1;
         }
+        return 0;
     })
 }
-
 
 
 function totalTp() {
