@@ -64,8 +64,6 @@
 // myFunction();
 
 //Cách 2
-
-
 function addTpLink() {
     let content = "";
     let count = 1;
@@ -84,15 +82,6 @@ function addTpLink() {
 }
 addTpLink()
 
-function totalTp() {
-    let sum = 0;
-    for (let i = 0; i < tpLink.length; i++) {
-        sum += Number(tpLink[i].price) * tpLink[i].total;
-    }
-    document.getElementById("sumTotal").innerHTML = sum;
-}
-totalTp()
-    // document.getElementById("sumTotal").innerText = totalTp();
 
 function sortColumn(thElement) {
     thElement = $(thElement);
@@ -111,12 +100,33 @@ function sortColumn(thElement) {
     addTpLink();
 }
 
+
 function sortAll(column) {
     tpLink.sort(function(a, b) {
         let x = a[column];
         let y = b[column];
+
         if (typeof x == 'string') x = x.toLocaleLowerCase()
         if (typeof y == 'string') y = y.toLocaleLowerCase()
 
+        if (x < y || x > y) {
+            return -1;
+        } else if (x > y || x < y) {
+            return 1;
+        } else {
+            return 0;
+        }
     })
 }
+
+
+
+function totalTp() {
+    let sum = 0;
+    for (let i = 0; i < tpLink.length; i++) {
+        sum += Number(tpLink[i].price) * tpLink[i].total;
+    }
+    document.getElementById("sumTotal").innerHTML = sum;
+}
+totalTp()
+    // document.getElementById("sumTotal").innerText = totalTp();
