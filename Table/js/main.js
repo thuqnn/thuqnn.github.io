@@ -1,42 +1,42 @@
 ﻿let tpLink = [{
         image: "https://images-na.ssl-images-amazon.com/images/I/41l4REP3iCL._SL500_AC_SS350_.jpg",
         name: "TP-Link AC1200 Smart WiFi Router",
-        price: "44",
+        price: 44,
         model: "AC1200",
         total: 76
     },
     {
         image: "https://images-na.ssl-images-amazon.com/images/I/31kr4aepPUL._SL500_AC_SS350_.jpg",
         name: "NETGEAR Nighthawk X6S AC4000 Tri-band WiFi ",
-        price: "219",
+        price: 219,
         model: "AC4000",
         total: 716
     },
     {
         image: "https://images-na.ssl-images-amazon.com/images/I/41IEOGEqKyL._SL500_AC_SS350_.jpg",
         name: "Wifi Router AC 5GHz Wireless Router Dual Band ",
-        price: "29",
+        price: 29,
         model: "AC 5GHz",
         total: 442
     },
     {
         image: "https://images-na.ssl-images-amazon.com/images/I/31K78FVYxIL._SL500_AC_SS350_.jpg",
         name: "Cudy AC1200 Dual Band Smart WiFi Router",
-        price: "44",
+        price: 44,
         model: "Cudy AC1200",
         total: 116
     },
     {
         image: "https://images-na.ssl-images-amazon.com/images/I/31w0k1Y-IqL._SL500_AC_SS350_.jpg",
         name: "NETGEAR R6700 Nighthawk AC1750 Dual Band",
-        price: "135",
+        price: 135,
         model: "R6700",
         total: 942
     },
     {
         image: "https://images-na.ssl-images-amazon.com/images/I/41UhtKBCsWL._SL500_AC_SS350_.jpg",
         name: "NETGEAR Nighthawk Pro Gaming XR500 ",
-        price: "259",
+        price: 259,
         model: "XR500",
         total: 332
     }
@@ -64,7 +64,7 @@
 // myFunction();
 
 //Cách 2
-let sortDirection = false;
+
 
 function addTpLink() {
     let content = "";
@@ -94,33 +94,29 @@ function totalTp() {
 totalTp()
     // document.getElementById("sumTotal").innerText = totalTp();
 
-function sortColumn(columnName) {
-    const dataType = typeof tpLink[0][columnName];
-    sortDirection = !sortDirection;
-    if (dataType == 'number') {
-        sortNumberColumn(sortDirection, columnName);
-    } else if (dataType == 'string') {
-        sortStringColumn(sortDirection, columnName);
+function sortColumn(thElement) {
+    thElement = $(thElement);
+    const column = thElement.attr('data-column');
+
+    if (thElement.attr('data-order') === 'asc') {
+        thElement.attr('data-order', 'desc');
+        thElement.children().removeClass('fa fa-sort-asc').addClass('fa fa-sort-desc');
+        sortAll(column);
+    } else {
+        thElement.attr('data-order', 'asc');
+        thElement.children().removeClass('fa fa-sort-desc').addClass('fa fa-sort-asc');
+        sortAll(column);
     }
-    addTpLink(tpLink);
+
+    addTpLink();
 }
 
-function sortColumnPrice(columnName) {
-    sortDirection = !sortDirection;
-    if (columnName == 'price') {
-        sortNumberColumn(sortDirection, columnName);
-    }
-    addTpLink(tpLink);
-}
+function sortAll(column) {
+    tpLink.sort(function(a, b) {
+        let x = a[column];
+        let y = b[column];
+        if (typeof x == 'string') x = x.toLocaleLowerCase()
+        if (typeof y == 'string') y = y.toLocaleLowerCase()
 
-function sortStringColumn(sort, columnName) {
-    tpLink = tpLink.sort((p1, p2) => {
-        return sort ? p1[columnName].localeCompare(p2[columnName]) : p2[columnName].localeCompare(p1[columnName])
-    });
-}
-
-function sortNumberColumn(sort, columnName) {
-    tpLink = tpLink.sort((p1, p2) => {
-        return sort ? p1[columnName] - p2[columnName] : p2[columnName] - p1[columnName]
-    });
+    })
 }
