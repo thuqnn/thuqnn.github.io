@@ -25,18 +25,6 @@ nav.navbar.navbar-expand-md.navbar-light.bg-light {
     article .text-img span {
         color: gray;
     }
-    footer .footer-bottom {
-        background-color: rgb(0, 140, 255);
-    }
-    footer .text-1 {
-        background-color: rgb(255, 187, 0);
-    }
-    footer .text-2 {
-        background-color: rgba(47, 255, 75, 0.76);
-    }
-    footer .center {
-        text-align: center;
-    }
 }
 
 @media only screen and (max-width: 992px) {
@@ -51,18 +39,6 @@ nav.navbar.navbar-expand-md.navbar-light.bg-light {
     }
     article .text-img span {
         color: black;
-    }
-    footer .footer-bottom {
-        background-color: rgb(255, 208, 0);
-    }
-    footer .text-1 {
-        background-color: rgb(60, 255, 0);
-    }
-    footer .text-2 {
-        background-color: rgba(154, 47, 255, 0.76);
-    }
-    footer .center {
-        text-align: center;
     }
     .navbar-light .navbar-nav .nav-link {
         color: red!important;
