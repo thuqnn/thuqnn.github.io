@@ -84,7 +84,6 @@ addTpLink()
 
 
 function sortColumn(thElement) {
-
     thElement = $(thElement);
     const column = thElement.attr('data-column');
     const sort = thElement.attr('data-order');
