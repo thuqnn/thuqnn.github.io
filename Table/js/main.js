@@ -82,39 +82,47 @@ function addTpLink() {
 }
 addTpLink()
 
-let sortDirection = false;
 
 function sortColumn(thElement) {
+
     thElement = $(thElement);
     const column = thElement.attr('data-column');
-    sortDirection = !sortDirection;
-    if (thElement.attr('data-order') === 'asc') {
+    const sort = thElement.attr('data-order');
+    $('.fa.fa-sort-asc').removeClass("fa fa-sort-asc").addClass('fa fa-sort');
+    $('.fa.fa-sort-desc').removeClass("fa fa-sort-desc").addClass('fa fa-sort');
+    if (sort === 'asc') {
         thElement.attr('data-order', 'desc');
         thElement.children().removeClass('fa fa-sort-asc').addClass('fa fa-sort-desc');
-        sortAll(sortDirection, column);
+        sortAll(column, sort);
+
     } else {
         thElement.attr('data-order', 'asc');
         thElement.children().removeClass('fa fa-sort-desc').addClass('fa fa-sort-asc');
-        sortAll(sortDirection, column);
+        sortAll(column, sort);
+
     }
 
     addTpLink();
 }
 
 
-function sortAll(sort, column) {
+function sortAll(column, sort) {
+
     tpLink.sort(function(a, b) {
         let x = a[column];
         let y = b[column];
         if (typeof x == 'string') x = x.toLocaleLowerCase()
         if (typeof y == 'string') y = y.toLocaleLowerCase()
-        if (sort == (x < y)) {
+        if (x > y) {
             return 1;
-        } else if (sort == (x > y)) {
+        } else if (x < y) {
             return -1;
-        }
+        } 
         return 0;
     })
+    if (sort == 'desc') {
+        return tpLink.reverse();
+    }
 }
 
 
