@@ -384,6 +384,14 @@ h2:hover,
     color: #000000;
 }
 
+.description-text a,
+.description-text.full-width a,
+.container-fluid.also-like.fullwidth_alsolike a,
+section.also-like.fullwidth_alsolike a,
+.comment a {
+    text-decoration: none;
+}
+
 @media (min-width: 1200px) {
     .container {
         max-width: 1062px;
