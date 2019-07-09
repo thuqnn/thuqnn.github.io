@@ -1,20 +1,20 @@
 @font-face {
     font-family: inconsolata;
-    src: url(../fonts/Inconsolata/Inconsolata-Regular.ttf);
+    src: url(../FONTS/Inconsolata/Inconsolata-Regular.ttf);
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: playfair_display;
-    src: url(../fonts/Playfair_Display/PlayfairDisplay-Regular.ttf);
+    src: url(../FONTS/Playfair_Display/PlayfairDisplay-Regular.ttf);
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: ubuntu_light;
-    src: url(../fonts/Ubuntu/Ubuntu-Light.ttf);
+    src: url(../FONTS/Ubuntu/Ubuntu-Light.ttf);
     font-weight: normal;
     font-style: normal;
 }
