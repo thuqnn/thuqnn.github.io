@@ -103,7 +103,11 @@ img {
     cursor: pointer;
 }
 
-.fullwidth_alsolike,
+section.also-like.fullwidth_alsolike {
+    margin-bottom: 0;
+}
+
+.container-fluid.also-like.fullwidth_alsolike,
 img.img-fluid.banner,
 img.img-fluid.about {
     margin-bottom: 0;
