@@ -47,6 +47,7 @@ nav.navbar.navbar-expand-sm.navbar-light.bg-light {
     font-family: inconsolata;
     font-size: 30px;
     color: #000000;
+    letter-spacing: 9px;
 }
 
 .navbar-light .navbar-nav .nav-link {
