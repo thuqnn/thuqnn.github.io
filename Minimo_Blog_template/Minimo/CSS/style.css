@@ -246,10 +246,6 @@ span,
     text-decoration: none;
 }
 
-a.fa:hover {
-    color: red;
-}
-
 .post-thumbnail .post a,
 a.fa,
 .description-thumbnail .post a,
@@ -379,6 +375,7 @@ h3.h3_comment {
 }
 
 h2:hover,
+a.fa:hover,
 .share .right a:hover.fa,
 .top-post ul li a:hover {
     color: #000000;
@@ -436,5 +433,14 @@ section.also-like.fullwidth_alsolike a,
     }
     .comment {
         text-align: center;
+    }
+    img.img-fluid.about {
+        margin: 0px 0 30px;
+    }
+    .right {
+        margin-bottom: 0;
+    }
+    .icon-comment img {
+        margin-bottom: 20px;
     }
 }
