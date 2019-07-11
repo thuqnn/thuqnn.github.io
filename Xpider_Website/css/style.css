@@ -376,14 +376,26 @@ input {
     .container {
         max-width: 1112px;
     }
+    .main-banner {
+        height: 1100px;
+    }
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     .banner1 {
         top: 0;
     }
     .main-banner {
         height: 930px;
+    }
+    .banner2 {
+        top: 5%;
+    }
+}
+
+@media (min-width: 768px) {
+    .banner1 {
+        top: 0;
     }
     .banner2 {
         top: 5%;
