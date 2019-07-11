@@ -321,6 +321,30 @@ img {
     max-width: 100%;
 }
 
+a.fa {
+    color: white;
+    background: black;
+    border-radius: 50%;
+    margin-right: 5px;
+    padding: 10px;
+}
+
+a.fa:hover {
+    color: black;
+    background: white;
+    border: 1px solid black;
+}
+
+a.fa.fa-facebook {
+    padding: 10px 12px;
+}
+
+.content a,
+.choose a,
+a.fa {
+    text-decoration: none;
+}
+
 .content a h3 {
     text-align: left;
 }
