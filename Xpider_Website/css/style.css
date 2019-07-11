@@ -396,7 +396,7 @@ input {
     top: 0;
     right: 0;
     height: 100%;
-    width: 200px;
+    width: 30%;
     background: transparent;
     border: none;
     border-left: 1px solid lightgrey;
@@ -472,6 +472,16 @@ button.btn.btn-text {
     .ml60 {
         margin: 0;
     }
+    .love-xpider .why a h3 {
+        padding-top: 20px;
+    }
+    .people {
+        margin-top: 0px;
+    }
+    .people p {
+        font-size: 20px;
+        line-height: 40px;
+    }
 }
 
 @media(max-width: 576px) {
@@ -498,9 +508,6 @@ button.btn.btn-text {
     nav.navbar.navbar-expand-sm.navbar-light.bg-light {
         margin-bottom: 0;
     }
-    .tryfree .simple h1 {
-        margin-top: 100px;
-    }
     footer.footer-main {
         margin-top: 130px;
         text-align: center;
@@ -524,5 +531,12 @@ button.btn.btn-text {
     }
     .left-team.why {
         padding-right: 0;
+    }
+    .people {
+        margin-top: 0px;
+    }
+    .people p {
+        font-size: 20px;
+        line-height: 40px;
     }
 }
