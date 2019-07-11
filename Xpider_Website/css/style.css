@@ -423,6 +423,9 @@ input {
     .banner2 {
         top: 5%;
     }
+    .banner-text p {
+        color: black;
+    }
 }
 
 @media (max-width: 768px) {
