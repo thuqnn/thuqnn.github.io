@@ -171,6 +171,10 @@ i.fa.fa-angle-down,
     line-height: 29px;
 }
 
+.ml60 {
+    margin: 0 62px;
+}
+
 .footer-right p,
 .choose p,
 .left-team p,
@@ -288,6 +292,7 @@ footer.footer-main {
     font-weight: 300;
     font-size: 28px;
     line-height: 48px;
+    padding-right: 10px;
 }
 
 .people h3 {
@@ -396,6 +401,22 @@ input {
     border-left: 1px solid lightgrey;
 }
 
+.mobile-main {
+    height: 702px;
+    background: #2F5BEA;
+}
+
+.mobile-container {
+    position: relative;
+}
+
+.img-mobile {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .sortware img,
 .people img {
     opacity: 0.7;
@@ -405,6 +426,18 @@ input {
 .sortware img:hover,
 .people img:hover {
     opacity: 1;
+}
+
+.left-team.why {
+    padding-right: 80px;
+}
+
+.left-team h3 {
+    margin-top: 0;
+}
+
+button.btn.btn-text {
+    border-bottom: 2px solid #2F5BEA;
 }
 
 @media (min-width: 1200px) {
@@ -434,6 +467,9 @@ input {
     }
     .banner1 {
         top: 0;
+    }
+    .ml60 {
+        margin: 0;
     }
 }
 
@@ -480,5 +516,12 @@ input {
     }
     button.btn.btn-outline-success {
         margin: 0 auto;
+    }
+    .col-md-2.mt20 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .left-team.why {
+        padding-right: 0;
     }
 }
