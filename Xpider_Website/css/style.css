@@ -429,6 +429,12 @@ input {
     .main-banner {
         height: 930px;
     }
+    .banner-text h1 {
+        color: black;
+    }
+    .banner-text p {
+        color: black;
+    }
 }
 
 @media(max-width: 576px) {
@@ -468,5 +474,11 @@ input {
     .float-right {
         float: none !important;
         text-align: center;
+    }
+    ul.navbar-nav.ml-auto.mt-2.mt-lg-0 {
+        text-align: center;
+    }
+    button.btn.btn-outline-success {
+        margin: 0 auto;
     }
 }
