@@ -388,6 +388,7 @@ input {
     border-radius: 5px;
     padding-left: 10px;
     outline: none;
+    border: none;
 }
 
 .addEmail button {
