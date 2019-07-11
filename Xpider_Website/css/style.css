@@ -417,9 +417,6 @@ input {
 }
 
 @media (max-width: 1170px) {
-    .banner1 {
-        top: 0;
-    }
     .banner-text p {
         color: black;
     }
