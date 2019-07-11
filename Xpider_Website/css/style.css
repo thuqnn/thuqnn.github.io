@@ -61,7 +61,7 @@ a.nav-link {
 
 .banner2 {
     position: absolute;
-    top: 8%;
+    top: 5%;
     z-index: 20;
 }
 
@@ -420,9 +420,6 @@ input {
     .banner1 {
         top: 0;
     }
-    .banner2 {
-        top: 5%;
-    }
     .banner-text p {
         color: black;
     }
@@ -437,6 +434,9 @@ input {
     }
     .banner-text p {
         color: black;
+    }
+    .banner1 {
+        top: 0;
     }
 }
 
