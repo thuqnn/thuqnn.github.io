@@ -403,19 +403,8 @@ input {
 }
 
 .mobile-main {
-    height: 702px;
+    height: 843px;
     background: #2F5BEA;
-}
-
-.mobile-container {
-    position: relative;
-}
-
-.img-mobile {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
 }
 
 .sortware img,
