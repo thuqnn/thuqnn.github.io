@@ -27,9 +27,9 @@ header {
 }
 
 .order-info {
-    background: url(/img/Mask.png) no-repeat;
+    background: url('../img/Mask.png') no-repeat;
     background-size: 100%;
-    max-height: 1016px;
+    height: 1016px;
     margin-top: 300px;
     position: relative;
 }
