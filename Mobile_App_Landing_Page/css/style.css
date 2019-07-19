@@ -150,6 +150,7 @@ button.btn.btn-success {
 
 .card {
     box-shadow: 1px 1px 24px whitesmoke;
+    border: none;
 }
 
 .btn-bu button.btn.btn-success.m-auto {
@@ -272,6 +273,10 @@ a:hover i.fa {
 
 .list-unstyled li:hover a {
     color: green;
+}
+
+.btn-bu button:hover.btn.btn-success.m-auto {
+    background: green;
 }
 
 .group2 p,
