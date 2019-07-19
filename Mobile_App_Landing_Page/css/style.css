@@ -330,4 +330,14 @@ p {
     section.everything {
         margin-top: 20px;
     }
+    header,
+    footer,
+    .order-info,
+    .bussiness,
+    .quotes {
+        height: auto;
+    }
+    .quotes {
+        display: none;
+    }
 }
