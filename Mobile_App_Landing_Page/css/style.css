@@ -309,7 +309,7 @@ p {
         margin-bottom: 0;
     }
     footer {
-        height: 468px;
+        height: auto;
     }
     .pb-3,
     .py-3 {
