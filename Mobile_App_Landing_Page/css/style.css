@@ -22,7 +22,7 @@ p {
 }
 
 header {
-    background: url(/img/bg-top.png) no-repeat;
+    background: url('../img/bg-top.png') no-repeat;
     background-size: 100%;
 }
 
@@ -47,7 +47,7 @@ header {
 }
 
 footer {
-    background: url(/img/Rectangle\ 7.png) no-repeat;
+    background: url('../img/Rectangle\ 7.png') no-repeat;
     background-size: 100%;
     height: 722px;
     position: relative;
@@ -81,7 +81,7 @@ section.mobile-banner {
     font-weight: normal;
     font-size: 20px;
     margin-bottom: 100px;
-    background: url(/img/oval1.png) right -3rem no-repeat;
+    background: url('../img/oval1.png') right -3rem no-repeat;
     background-size: 3%;
 }
 
@@ -102,7 +102,7 @@ section.bussiness {
     width: 100%;
     height: 600px;
     margin: 260px 0 60px;
-    background: url(/img/oval.png) left 0rem no-repeat;
+    background: url('../img/oval.png') left 0rem no-repeat;
     background-size: 3%;
 }
 
