@@ -325,6 +325,9 @@ button:hover.btn.btn-success {
     header {
         background-size: 100% 58%;
     }
+    .our-top-img img.static {
+        padding: 1rem 0;
+    }
 }
 
 @media (max-width:576px) {
