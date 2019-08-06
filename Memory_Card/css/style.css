@@ -39,10 +39,10 @@ img{
     top: 0;
     left: 0;
 }
-.card.flipped:hover .front{
+.flipped:hover .front{
     transform: rotateY(0deg);
 }
-.card.flipped:hover  .back{
+.card.flipped:hover .back{
     transform: rotateY(180deg);
 }
 .flipped .back,.flipped .front{

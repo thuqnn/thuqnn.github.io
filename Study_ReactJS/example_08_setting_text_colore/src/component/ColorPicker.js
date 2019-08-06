@@ -2,40 +2,39 @@ import React from 'react';
 
 
 class ColorPicker extends React.Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      objColor : ['red','green','blue','brown','yellow','aqua','gray','violet']
+    };
+  }
+  showColor(colors){
+    return {
+      backgroundColor : colors
+    }
+  }
+  setActiveColor(colors){
+    this.props.onReceiveColor(colors)
+  }
   render() {
+    var elementsColor = this.state.objColor.map((colors,index) =>{
+      return  <span key={index} 
+                    style={this.showColor(colors)}
+                    className = {this.props.color === colors ? 'active' : ' '}
+                    onClick={()=>{this.setActiveColor(colors)}}>
+              </span>
+    })
     return (
-      <div className="container mt-50">
-          <div className="row">
-            <div className="col-md-6">
-            <div className="card">
-              <div className="card-header">
-                Featured
-              </div>
-              <div className="card-body">
-              
-              </div>
+        <div className="col-md-6">
+          <div className="card">
+            <div className="card-header">
+              Color Picker
             </div>
-            </div>
-            <div className="col-md-6">
-            <div className="card">
-              <div className="card-header">
-                Featured
-              </div>
-              <div className="card-body">
-                <h5 className="card-title">Special title treatment</h5>
-                <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <button  className="btn btn-primary">Giam</button>
-                <button  className="btn btn-primary">Tang</button>
-              </div>
-              <button  className="btn btn-success btn-block">Reset</button>
-            </div>
-            </div>
-            <div className="col-md-12">
-              <p>Color: Red - Fontsize: 15px </p>
-              <div className="content">Noi dung hien thi</div>
+            <div className="card-body">
+             {elementsColor}
             </div>
           </div>
-      </div>
+        </div>
     );
   }
 }

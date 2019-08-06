@@ -32,6 +32,15 @@ button{
   border: 5px solid red;
   padding: 50px;
 }
+span{
+  padding: 10px 21px;
+  margin: 10px;
+  cursor: pointer;
+}
+.active{
+  border-radius: 50%;
+  transition: all 0.4s ease-out;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

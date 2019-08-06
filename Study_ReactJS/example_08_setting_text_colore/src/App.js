@@ -1,39 +1,49 @@
 import React from 'react';
 import './App.css';
+import ColorPicter from './component/ColorPicker';
+import SizeSetting from './component/SizeSetting';
+import Reset from './component/Reset';
+import Result from './component/Result';
 
 class App extends React.Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      color : 'red',
+      fontSize : 15
+    }
+    
+  }
+  onSetColor = (params) => {
+    this.setState({
+      color : params
+    })
+  }
+  onChangeSize = (value) => {
+      this.setState({
+        fontSize : (this.state.fontSize + value >= 8 && this.state.fontSize + value <=36 ? this.state.fontSize + value : this.state.fontSize)
+      })
+  
+  }
+  onSettingResetDefaul = (value) => {
+    if(value){
+      this.setState({
+        color : 'red',
+        fontSize : 15
+      })
+    }
+  }
   render() {
+
     return (
       <div className="container mt-50">
           <div className="row">
+            <ColorPicter color={this.state.color} onReceiveColor={this.onSetColor}/>
             <div className="col-md-6">
-            <div className="card">
-              <div className="card-header">
-                Featured
-              </div>
-              <div className="card-body">
-              
-              </div>
+            <SizeSetting fontSize = {this.state.fontSize} onChangeSize = {this.onChangeSize}/>
+           <Reset onSettingResetDefaul = {this.onSettingResetDefaul}/>
             </div>
-            </div>
-            <div className="col-md-6">
-            <div className="card">
-              <div className="card-header">
-                Featured
-              </div>
-              <div className="card-body">
-                <h5 className="card-title">Special title treatment</h5>
-                <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <button  className="btn btn-primary">Giam</button>
-                <button  className="btn btn-primary">Tang</button>
-              </div>
-              <button  className="btn btn-success btn-block">Reset</button>
-            </div>
-            </div>
-            <div className="col-md-12">
-              <p>Color: Red - Fontsize: 15px </p>
-              <div className="content">Noi dung hien thi</div>
-            </div>
+            <Result color={this.state.color} fontSize = {this.state.fontSize}/>
           </div>
       </div>
     );
