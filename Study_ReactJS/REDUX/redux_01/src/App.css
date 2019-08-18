@@ -18,13 +18,22 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
+.w-100 {
+  width: 80%!important;
+}
 .App-link {
   color: #61dafb;
 }
 td.text-center {
   display: flex;
   justify-content: center;
+}
+span.bg-danger.p-2 ,span.bg-success.p-2{
+  border-radius: 5px;
+}
+.col-md-4.my-3 {
+  text-align: right;
+  padding-right: 25px;
 }
 @keyframes App-logo-spin {
   from {

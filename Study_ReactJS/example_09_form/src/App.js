@@ -26,12 +26,22 @@ class App extends React.Component {
     event.preventDefault(); //ngan submit loader
     console.log(this.state);
   }
+  onChangeReset = (event) =>{
+    this.setState({
+      txtMail : '',
+      txtPassWord : '',
+      txtDescription : '',
+      sltGender : 0,
+      status : '',
+      chkBox : true
+    });
+  }
   render() {
     return (
       <div className="container mt-30">
         <div className="row justify-content-center">
           <div className="col-md-8">
-          <form onSubmit = {this.onChangeSubmit}>
+          <form onSubmit = {this.onChangeSubmit} onReset = {this.onChangeReset}>
               <div className="form-group">
               <label >Email address</label>
               <input type="email" className="form-control"

@@ -3,6 +3,8 @@ import "./App.css";
 import TaskForm from "./component/TaskForm";
 import Control from "./component/Control";
 import TaskList from "./component/TaskList";
+import {findIndex} from "lodash";
+
 class App extends React.Component {
   constructor(props){ //them sua xoa search filter....
     super(props);
@@ -77,8 +79,13 @@ class App extends React.Component {
     localStorage.setItem('tasks',JSON.stringify(tasks));
   }
   onUpdateStatus = (id) =>{
-    var index = this.findIndex(id);
     var {tasks} = this.state;
+    // var index = this.findIndex(id); c1
+    //c2 lodash
+    var index = findIndex(tasks,(task) => {
+      return task.id === id;
+    })
+    
     if(index !== -1){
       tasks[index].status = !tasks[index].status;
       this.setState({

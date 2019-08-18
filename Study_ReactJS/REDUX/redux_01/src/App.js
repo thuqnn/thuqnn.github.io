@@ -3,6 +3,9 @@ import "./App.css";
 import TaskForm from "./component/TaskForm";
 import Control from "./component/Control";
 import TaskList from "./component/TaskList";
+import {findIndex} from "lodash";
+import Demo from "./trainning/Demo";
+
 class App extends React.Component {
   constructor(props){ //them sua xoa search filter....
     super(props);
@@ -77,8 +80,12 @@ class App extends React.Component {
     localStorage.setItem('tasks',JSON.stringify(tasks));
   }
   onUpdateStatus = (id) =>{
-    var index = this.findIndex(id);
     var {tasks} = this.state;
+    //c2 lodash
+    var index = findIndex(tasks,(task) => {
+      return task.id === id;
+    })
+    
     if(index !== -1){
       tasks[index].status = !tasks[index].status;
       this.setState({
@@ -87,19 +94,11 @@ class App extends React.Component {
       localStorage.setItem('tasks',JSON.stringify(tasks));
     }
   }
-  findIndex = (id) =>{
-    var {tasks} = this.state;
-    var result = -1;
-    tasks.forEach((task,index) => {
-      if(task.id === id){
-        result = index;
-      }
-    })
-    return result;
-  }
   onDeleteUpdate = (id) =>{
    var {tasks} = this.state;
-   var index = this.findIndex(id);
+   var index = findIndex(tasks,(task) => {
+    return task.id === id;
+  })
    if(index !== -1){
      tasks.splice(index,1);
      this.setState({
@@ -111,7 +110,9 @@ class App extends React.Component {
   }
   onUpdate = (id) => {
     var {tasks} = this.state;
-    var index = this.findIndex(id);
+    var index = findIndex(tasks,(task) => {
+      return task.id === id;
+    })
     var taskEditing = tasks[index];
     this.setState({
       taskEdit : taskEditing
