@@ -132,7 +132,7 @@ i.far.fa-lightbulb{
   font-size: 1.75rem;
 }
 .scrolled-nav {
-  height: 5rem !important;
+  height: 5.3rem !important;
   line-height: 3.75rem !important;
   transition: 0.5s;
   border-bottom: none;
@@ -326,9 +326,7 @@ a:focus {
 .facebook span {
 	background-color: var(--fb-color);
 }
-.google-plus span {
-	background-color: var(--orange-color);
-}
+
 .youtube span {
 	background-color: var(--red2-color);
 }
@@ -344,9 +342,6 @@ a:focus {
 .icon-button .fa-facebook-f {
 	color: var(--fb-color);
 }
-.icon-button .fa-google-plus-g {
-	color: var(--orange-color);
-}
 .icon-button .fa-youtube {
 	color: var(--red2-color);
 }
@@ -356,7 +351,7 @@ a:focus {
 .icon-button .fa-instagram{
 	color: var(--red-color);
 }
-.icon-button:hover .fa-twitter,.icon-button:hover .fa-facebook-f,.icon-button:hover .fa-google-plus-g,.icon-button:hover .fa-youtube,.icon-button:hover .fa-instagram,.icon-button:hover .fa-pinterest,.icon-bar .youtube,.icon-bar .linkedin,.icon-bar .facebook,.icon-bar .youtube,.icon-bar .twitter,.icon-button i,.icon-bar a,.buttonload,.btn-download 
+.icon-button:hover .fa-twitter,.icon-button:hover .fa-facebook-f,.icon-button:hover .fa-youtube,.icon-button:hover .fa-instagram,.icon-button:hover .fa-pinterest,.icon-bar .youtube,.icon-bar .linkedin,.icon-bar .facebook,.icon-bar .youtube,.icon-bar .twitter,.icon-button i,.icon-bar a,.buttonload,.btn-download 
  {
   color: var(--white-color);
 }
@@ -383,9 +378,7 @@ a:focus {
 .icon-bar .twitter {
   background: var(--tw-color);
 }
-.icon-bar .google {
-  background: var(--orange-color);
-}
+
 .icon-bar .linkedin {
   background: var(--blue-color);
 }
