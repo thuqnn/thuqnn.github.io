@@ -161,7 +161,6 @@ nav .collapse>ul>li>a:before {
   height: 0;
   border: 2.5px solid transparent;
 }
-
 nav .collapse>ul>li>a:after{
   content: "";
   position: absolute;
@@ -171,11 +170,9 @@ nav .collapse>ul>li>a:after{
   height: 0;
   border: 2.5px solid transparent;
 }
-
 nav .collapse>ul>li>a:hover:after{
   animation: border_nav_fix_top_after 0.5s linear forwards;
 }
-
 @keyframes border_nav_fix_top_after{
 0%{
   width: 0;
@@ -194,7 +191,6 @@ nav .collapse>ul>li>a:hover:after{
   border-right-color: #007bff;
 }
 }
-
 nav .collapse>ul>li>a:hover:before{
   animation: border_nav_fix_top_before 0.5s linear forwards;
 }
@@ -216,7 +212,6 @@ nav .collapse>ul>li>a:hover:before{
       border-right-color: transparent;
   }
 }
-
 nav .collapse>ul>li>a:after {
     content: "";
     position: absolute;
@@ -353,7 +348,6 @@ a:focus {
 .contacts-address {
   display: flex;
 }
-
 /* icon */
 .icon-button {
   background-color: var(--white-color);
