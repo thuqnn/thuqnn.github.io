@@ -1,3 +1,22 @@
-html
-    head
-    body
+nav.navbar.navbar-light.navbar-expand-md.bg-light.justify-content-center.fixed-top
+  a.navbar-brand.d-flex.w-50.mr-auto(href='/')
+    img.img-fluid(src='../img/logo_white.png' alt='#')
+  button.navbar-toggler(type='button' data-toggle='collapse' data-target='#collapsingNavbar3')
+    span.navbar-toggler-icon
+  #collapsingNavbar3.navbar-collapse.collapse.w-100
+    ul.navbar-nav.w-100.justify-content-center
+      li.nav-item
+        a.nav-link(href='../index.html') ANIME
+      li.nav-item
+        a.nav-link(href='../movies.html') MOVIES
+      li.nav-item.active
+        a.nav-link(href='../trends.html') BXH
+      li.nav-item
+        a.nav-link(href='../news.html') TIN TỨC
+      li.nav-item
+        a.nav-link(href='../contacts.html') LIÊN LẠC
+    ul.nav.navbar-nav.ml-auto.w-100.justify-content-end
+      li.nav-item
+        a.nav-link(href='#') <i class="fas fa-search"></i>
+      li.nav-item
+        a.nav-link(href='#') <i class="far fa-lightbulb"></i>

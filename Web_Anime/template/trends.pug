@@ -1,3 +1,292 @@
-html
-    head
-    body
+extends template-parts/layout.pug
+block favicon
+    link(rel='shortcut icon' type='image/png' href='img/award.png')
+block header
+    title Bảng Xếp Hạng
+block content
+    header.trends
+    section.content-trends
+        .container-fluid
+            .row
+                .col-lg-12
+                    .portfolioFilter.clearfix
+                        a.current(href='#' data-filter='*') Tất Cả
+                        a(href='#' data-filter='.webTemplates') Xu Hướng
+                        a(href='#' data-filter='.logos') Xếp hạng hàng đầu
+                        a(href='#' data-filter='.drawings') Top Anime Mới Nhất
+                        a(href='#' data-filter='.ui') Top Movies Mới Nhất
+                    .portfolioContainer
+                        .webTemplates.objects
+                           .card-data.wow.zoomInLeft
+                                .card-deck.h-100
+                                    .card.hvr-glow
+                                        .items-play-img
+                                            a(href='../watch.html')
+                                                .img-items
+                                                    img.card-img-top.img-fluid.h-100.w-100(src='./img/listmovies/darling-in-the-franxx-8969.jpg' alt='list movies')
+                                                .icon-items
+                                                    img.card-img-top.img-fluid.h-100.w-100(src='./img/icon-play.png' alt='list movies')
+                                        .card-body
+                                            a(href='../watch.html')
+                                                h5.card-title Vua Hải Tặc
+                                            .star-votes
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star-half-alt
+                                                i.far.fa-star   
+                                        .card-footer.bg-transparentk    
+                                            .vote-views
+                                                span Lượt xem: 144,279,366
+                        .drawings.places
+                           .card-data.wow.zoomInLeft
+                                .card-deck.h-100
+                                    .card.hvr-glow
+                                        .items-play-img
+                                            a(href='../watch.html')
+                                                .img-items
+                                                    img.card-img-top.img-fluid.h-100.w-100(src='./img/listmovies/eyeshield-21-966.jpg' alt='list movies')
+                                                .icon-items
+                                                    img.card-img-top.img-fluid.h-100.w-100(src='./img/icon-play.png' alt='list movies')
+                                        .card-body
+                                            a(href='../watch.html')
+                                                h5.card-title KIMETSU NO YAIBA
+                                            .star-votes
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star-half-alt
+                                                i.far.fa-star   
+                                        .card-footer.bg-transparentk    
+                                            .vote-views
+                                                span Lượt xem: 2,232,773                        
+                        .webTemplates.food
+                           .card-data.wow.zoomIn
+                                .card-deck.h-100
+                                    .card.hvr-glow
+                                        .items-play-img
+                                            a(href='../watch.html')
+                                                .img-items
+                                                    img.card-img-top.img-fluid.h-100.w-100(src='./img/listmovies/fate-stay-night-unlimited-blade-works-2-6861.jpg' alt='list movies')
+                                                .icon-items
+                                                    img.card-img-top.img-fluid.h-100.w-100(src='./img/icon-play.png' alt='list movies')
+                                        .card-body
+                                            a(href='../watch.html')
+                                                h5.card-title BORUTO: NARUTO NEXT GENERATIONS
+                                            .star-votes
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star-half-alt
+                                                i.far.fa-star   
+                                        .card-footer.bg-transparentk    
+                                            .vote-views
+                                                span Lượt xem: 28,681,801
+                        .logos.drawings
+                           .card-data.wow.zoomInRight
+                                .card-deck.h-100
+                                    .card.hvr-glow
+                                        .items-play-img
+                                            a(href='../watch.html')
+                                                .img-items
+                                                    img.card-img-top.img-fluid.h-100.w-100(src='./img/listmovies/peace-sign-10255.jpg' alt='list movies')
+                                                .icon-items
+                                                    img.card-img-top.img-fluid.h-100.w-100(src='./img/icon-play.png' alt='list movies')
+
+                                        .card-body
+                                            a(href='../watch.html')
+                                                h5.card-title HỘI PHÁP SƯ
+                                            .star-votes
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star-half-alt
+                                                i.far.fa-star   
+                                        .card-footer.bg-transparentk    
+                                            .vote-views
+                                                span Lượt xem: 30,869,439
+                        .webTemplates
+                           .card-data.wow.zoomInRight
+                                .card-deck.h-100
+                                    .card.hvr-glow
+                                        .items-play-img
+                                            a(href='../watch.html')
+                                                .img-items
+                                                    img.card-img-top.img-fluid.h-100.w-100(src='./img/listmovies/rakshasa-street-8146.jpg' alt='list movies')
+                                                .icon-items
+                                                    img.card-img-top.img-fluid.h-100.w-100(src='./img/icon-play.png' alt='list movies')
+
+                                        .card-body
+                                            a(href='../watch.html')
+                                                h5.card-title ARIFURETA SHOKUGYOU DE SEKAI SAIKYOU
+                                            .star-votes
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star-half-alt
+                                                i.far.fa-star   
+                                        .card-footer.bg-transparentk    
+                                            .vote-views
+                                                span Lượt xem: 23,481,249
+                        .ui
+                           .card-data.wow.zoomInLeft
+                                .card-deck.h-100
+                                    .card.hvr-glow
+                                        .items-play-img
+                                            a(href='../watch.html')
+                                                .img-items
+                                                    img.card-img-top.img-fluid.h-100.w-100(src='./img/listmovies/relife-7011.jpg' alt='list movies')
+                                                .icon-items
+                                                    img.card-img-top.img-fluid.h-100.w-100(src='./img/icon-play.png' alt='list movies')
+
+                                        .card-body
+                                            a(href='../watch.html')
+                                                h5.card-title BLACK CLOVER
+                                            .star-votes
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star-half-alt
+                                                i.far.fa-star   
+                                        .card-footer.bg-transparentk    
+                                            .vote-views
+                                                span Lượt xem: 9,969,966
+                        .drawings
+                           .card-data.wow.zoomInLeft
+                                .card-deck.h-100
+                                    .card.hvr-glow
+                                        .items-play-img
+                                            a(href='../watch.html')
+                                                .img-items
+                                                    img.card-img-top.img-fluid.h-100.w-100(src='./img/listmovies/tegami-bachi-letter-bee-2686.jpg' alt='list movies')
+                                                .icon-items
+                                                    img.card-img-top.img-fluid.h-100.w-100(src='./img/icon-play.png' alt='list movies')
+
+                                        .card-body
+                                            a(href='../watch.html')
+                                                h5.card-title DORAEMON 
+                                            .star-votes
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star-half-alt
+                                                i.far.fa-star   
+                                        .card-footer.bg-transparentk    
+                                            .vote-views
+                                                span Lượt xem: 2,556,906 
+                        .webTemplates
+                           .card-data.wow.zoomIn
+                                .card-deck.h-100
+                                    .card.hvr-glow
+                                        .items-play-img
+                                            a(href='../watch.html')
+                                                .img-items
+                                                    img.card-img-top.img-fluid.h-100.w-100(src='./img/listmovies/tegami-bachi-letter-bee-reverse-3282.jpg' alt='list movies')
+                                                .icon-items
+                                                    img.card-img-top.img-fluid.h-100.w-100(src='./img/icon-play.png' alt='list movies')
+
+                                        .card-body
+                                            a(href='../watch.html')
+                                                h5.card-title NANATSU NO TAIZAI
+                                            .star-votes
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star-half-alt
+                                                i.far.fa-star   
+                                        .card-footer.bg-transparentk    
+                                            .vote-views
+                                                span Lượt xem: 11,293,978
+                        .drawings
+                           .card-data.wow.zoomInRight
+                                .card-deck.h-100
+                                    .card.hvr-glow
+                                        .items-play-img
+                                            a(href='../watch.html')
+                                                .img-items
+                                                    img.card-img-top.img-fluid.h-100.w-100(src='./img/listmovies/the-ancient-magus-bride-those-awaiting-a-star-7758.jpg' alt='list movies')
+                                                .icon-items
+                                                    img.card-img-top.img-fluid.h-100.w-100(src='./img/icon-play.png' alt='list movies')
+
+                                        .card-body
+                                            a(href='../watch.html')
+                                                h5.card-title VINLAND SAGA
+                                            .star-votes
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star-half-alt
+                                                i.far.fa-star   
+                                        .card-footer.bg-transparentk    
+                                            .vote-views
+                                                span Lượt xem: 184,084
+                        .logos
+                           .card-data.wow.zoomInRight
+                                .card-deck.h-100
+                                    .card.hvr-glow
+                                        .items-play-img
+                                            a(href='../watch.html')
+                                                .img-items
+                                                    img.card-img-top.img-fluid.h-100.w-100(src='./img/listmovies/you-and-me-2-4688.jpg' alt='list movies')
+                                                .icon-items
+                                                    img.card-img-top.img-fluid.h-100.w-100(src='./img/icon-play.png' alt='list movies')
+
+                                        .card-body
+                                            a(href='../watch.html')
+                                                h5.card-title ONE PUNCH MAN
+                                            .star-votes
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star-half-alt
+                                                i.far.fa-star   
+                                        .card-footer.bg-transparentk    
+                                            .vote-views
+                                                span Lượt xem: 8,007,631
+                        .ui
+                           .card-data.wow.zoomInLeft
+                                .card-deck.h-100
+                                    .card.hvr-glow
+                                        .items-play-img
+                                            a(href='../watch.html')
+                                                .img-items
+                                                    img.card-img-top.img-fluid.h-100.w-100(src='./img/listmovies/yuri-on-ice-7793.jpg' alt='list movies')
+                                                .icon-items
+                                                    img.card-img-top.img-fluid.h-100.w-100(src='./img/icon-play.png' alt='list movies')
+
+                                        .card-body
+                                            a(href='../watch.html')
+                                                h5.card-title ENEN NO SHOUBOUTAI
+                                            .star-votes
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star-half-alt
+                                                i.far.fa-star   
+                                        .card-footer.bg-transparentk    
+                                            .vote-views
+                                                span Lượt xem: 235,654
+                        .logos
+                           .card-data.wow.zoomInLeft
+                                .card-deck.h-100
+                                    .card.hvr-glow
+                                        .items-play-img
+                                            a(href='../watch.html')
+                                                .img-items
+                                                    img.card-img-top.img-fluid.h-100.w-100(src='./img/listmovies/yuru-yuri-2-4671.jpg' alt='list movies')
+                                                .icon-items
+                                                    img.card-img-top.img-fluid.h-100.w-100(src='./img/icon-play.png' alt='list movies')
+                                        .card-body
+                                            a(href='../watch.html')
+                                                h5.card-title COP CRAFT
+                                            .star-votes
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star-half-alt
+                                                i.far.fa-star   
+                                        .card-footer.bg-transparentk    
+                                            .vote-views
+                                                span Lượt xem: 73,754
+
+    include template-parts/footer.pug

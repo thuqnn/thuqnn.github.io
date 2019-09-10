@@ -1,3 +1,268 @@
-html
-    head
-    body
+extends template-parts/layout.pug
+block favicon
+    link(rel='shortcut icon' type='image/png' href='img/seats.png')
+block header
+    title Xem Phim Anime
+    #fb-root
+    script(async='' defer='' crossorigin='anonymous' src='https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&autoLogAppEvents=1&version=v4.0&appId=452092868894850')
+block content
+    header.watch-anime
+        .container
+            .row
+                .col-md-12
+                    <iframe width="100%" height="630" src="https://www.youtube.com/embed/S8_YwFLCh4U?start=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    .menu-movies
+                        .row
+                            .col-md-6
+                                button.buttonload
+                                    i.fas.fa-history.fa-spin
+                                    span VIETSUB
+                                button.btn-download
+                                    i.fas.fa-download
+                                    span Download
+                            .col-md-6.text-right
+                                button.buttonload
+                                    i.fas.fa-exclamation-triangle
+                                    span Báo Lỗi
+                                button.btn-download
+                                    i.fas.fa-step-forward
+                                    span Tự Chuyển Tập
+                                button.buttonload
+                                    i.fas.fa-history.fa-lightbulb
+                                    span Tắt Đèn  
+            .row
+                .col-md-12
+                    h6 DANH SÁCH TẬP   
+                    .list-button
+                        button.btn.btn-primary(type='button') 1
+                        button.btn.btn-primary(type='button') 2
+                        button.btn.btn-primary(type='button') 3
+                        button.btn.btn-primary(type='button') 4
+                        button.btn.btn-primary(type='button') 5
+                        button.btn.btn-primary(type='button') 6
+                        button.btn.btn-primary(type='button') 7
+                        button.btn.btn-primary(type='button') 8
+                        button.btn.btn-primary(type='button') 9
+                        button.btn.btn-primary(type='button') 10
+                        button.btn.btn-primary(type='button') 11
+                        button.btn.btn-primary(type='button') 12
+                        button.btn.btn-primary(type='button') 13
+                        button.btn.btn-primary(type='button') 14
+                        button.btn.btn-primary(type='button') 15
+                        button.btn.btn-primary(type='button') 16
+                        button.btn.btn-primary(type='button') 17
+                        button.btn.btn-primary(type='button') 18
+                        button.btn.btn-primary(type='button') 19
+                        button.btn.btn-primary(type='button') 20
+                        button.btn.btn-primary(type='button') 21
+                        button.btn.btn-primary(type='button') 22
+                        button.btn.btn-primary(type='button') 23
+                        button.btn.btn-primary(type='button') 24
+                        button.btn.btn-primary(type='button') 25
+                        button.btn.btn-primary(type='button') 26
+                        button.btn.btn-primary(type='button') 27
+                        button.btn.btn-primary(type='button') 28
+                        button.btn.btn-primary(type='button') 29
+                        button.btn.btn-primary(type='button') 30
+                        button.btn.btn-primary(type='button') 31
+                        button.btn.btn-primary(type='button') 32
+                        button.btn.btn-primary(type='button') 33
+                        button.btn.btn-primary(type='button') 34
+                        button.btn.btn-primary(type='button') 35
+                        button.btn.btn-primary(type='button') 35
+                        button.btn.btn-primary(type='button') 37
+                        button.btn.btn-primary(type='button') 38
+                        button.btn.btn-primary(type='button') 39
+                        button.btn.btn-primary(type='button') 40
+                        button.btn.btn-primary(type='button') 1
+                        button.btn.btn-primary(type='button') 2
+                        button.btn.btn-primary(type='button') 3
+                        button.btn.btn-primary(type='button') 4
+                        button.btn.btn-primary(type='button') 5
+                        button.btn.btn-primary(type='button') 6
+                        button.btn.btn-primary(type='button') 7
+                        button.btn.btn-primary(type='button') 8
+                        button.btn.btn-primary(type='button') 9
+                        button.btn.btn-primary(type='button') 10
+                        button.btn.btn-primary(type='button') 11
+                        button.btn.btn-primary(type='button') 12
+                        button.btn.btn-primary(type='button') 13
+                        button.btn.btn-primary(type='button') 14
+                        button.btn.btn-primary(type='button') 15
+                        button.btn.btn-primary(type='button') 16
+                        button.btn.btn-primary(type='button') 17
+                        button.btn.btn-primary(type='button') 18
+                        button.btn.btn-primary(type='button') 19
+                        button.btn.btn-primary(type='button') 20
+                        button.btn.btn-primary(type='button') 21
+                        button.btn.btn-primary(type='button') 22
+                        button.btn.btn-primary(type='button') 23
+                        button.btn.btn-primary(type='button') 24
+                        button.btn.btn-primary(type='button') 25
+                        button.btn.btn-primary(type='button') 26
+                        button.btn.btn-primary(type='button') 27
+                        button.btn.btn-primary(type='button') 28
+                        button.btn.btn-primary(type='button') 29
+                        button.btn.btn-primary(type='button') 30
+                        button.btn.btn-primary(type='button') 31
+                        button.btn.btn-primary(type='button') 32
+                        button.btn.btn-primary(type='button') 33
+                        button.btn.btn-primary(type='button') 34
+                        button.btn.btn-primary(type='button') 35
+                        button.btn.btn-primary(type='button') 35
+                        button.btn.btn-primary(type='button') 37
+                        button.btn.btn-primary(type='button') 38
+                        button.btn.btn-primary(type='button') 39
+                        button.btn.btn-primary(type='button') 40                             
+    section.content-watchanime
+            .container
+                .row
+                    .col-md-8
+                        .row
+                            .col-md-4
+                                img.card-img.img-fluid.img-thumbnail.hvr-glow(src='./img/listmovies/the-ancient-magus-bride-those-awaiting-a-star-7758.jpg' alt='news img')
+                                .star-votes
+                                    i.fas.fa-star
+                                    i.fas.fa-star
+                                    i.fas.fa-star
+                                    i.fas.fa-star-half-alt
+                                    i.far.fa-star
+                                .icon-votes
+                                    i.far.fa-calendar-alt 
+                                        span 2019
+                                    i.fas.fa-tags 
+                                        span Trường Học,  Kịch tính
+                            .col-md-8
+                                .text-watch
+                                    h3 Cà Rốt Và Thứ Ba Phần 1
+                                    p Carole and Tuesday (2019)
+                                    h6 Thông tin:
+                                    p Ngày phát hành : 11/04/2019
+                                        <br /> Thời lượng: N/A
+                                        <br />Kịch bản: Aya Watanabe
+                                        <br />Đạo diễn: Motonobu Hori, Shinichiro Watanabe
+                                        <br />Diễn viên: Kana Ichinose, Miyu Irino, Hiroshi Kamiya
+                                        <br />Thể loại: Tâm lý, Lãng mạn, Khoa học viễn tưởng, Anime, Âm nhạc
+                                        <br />Quốc gia: Nhật Bản
+                                        <br />Số tập: 16/24
+                                    h6  Tóm Tắt :
+                                    p Bộ anime Carole and Tuesday là câu chuyện kể về hai cô gái, một cô gái. Bỏ cuộc sống ở đô thị của thành phố Alba, cô làm việc bán thời gian trong khi cố gắng trở thành một nhạc sĩ. Cô ấy luôn cảm thấy như thiếu một cái gì đó. Tên cô ấy là Carole. Có một cô gái. Sinh ra trong một gia đình giàu có ở thị trấn Herschel City, cô mơ ước trở thành một nhạc sĩ, nhưng không có ai xung quanh cô hiểu được. Cô cảm thấy mình là người cô đơn nhất thế giới. Tên cô ấy là thứ ba. Một cuộc gặp gỡ cơ hội mang họ lại với nhau. Họ muốn hát. Họ muốn làm âm nhạc. Cùng nhau, họ cảm thấy như họ có thể có cơ hội. Hai người họ chỉ có thể tạo ra một làn sóng nhỏ. Nhưng làn sóng đó cuối cùng sẽ phát triển thành một thứ gì đó lớn hơn ...                                 
+                                .social-icon
+                                    a.icon-button.twitter(href='#')
+                                        i.fab.fa-twitter
+                                        span
+                                    a.icon-button.facebook(href='#')
+                                        i.fab.fa-facebook-f
+                                        span
+                                    a.icon-button.instagram(href='#')
+                                        i.fab.fa-instagram
+                                        span
+                                    a.icon-button.google-plus(href='#')
+                                        i.fab.fa-google-plus-g
+                                        span
+                                    a.icon-button.youtube(href='#')
+                                        i.fab.fa-youtube
+                                        span
+                                    a.icon-button.pinterest(href='#')
+                                        i.fab.fa-pinterest
+                                        span
+                        .comment-facebook
+                            .fb-comments(data-href='https://developers.facebook.com/docs/plugins/comments#configurator' data-width='100%' data-numposts='5')
+                    .col-md-4
+                        .news-day
+                            h3 Phim Mới Nhất
+                            .card
+                                .card.mb-3.hvr-glow
+                                    .row.no-gutters
+                                        .col-md-4
+                                            a(href='../infos.html')
+                                                img.card-img.img-fluid.img-thumbnail(src='./img/listmovies/fate-stay-night-unlimited-blade-works-2-6861.jpg' alt='news img')
+                                        .col-md-8
+                                            .card-body
+                                                b.card-title Tin tức anime
+                                                a(href='../infos.html')
+                                                    p.card-text
+                                                    | Boku no Hero Academia "nhá hàng" visual cho một mùa mới đầy hấp dẫn!
+                                                p.card-text
+                                                small.text-muted Last updated 3 mins ago
+
+                                .card.mb-3.hvr-glow
+                                    .row.no-gutters
+                                        .col-md-4
+                                            a(href='../infos.html')
+                                                img.card-img.img-fluid.img-thumbnail(src='./img/listmovies/you-and-me-2-4688.jpg' alt='news img')
+                                        .col-md-8
+                                            .card-body
+                                                h6.card-title Tin tức anime
+                                                a(href='../infos.html')
+                                                    p.card-text
+                                                    | Top 10 cặp đôi anime mùa Hè 2019 tuần 7! - "Cặp đôi quốc dân" đã quay trở lại!
+                                                p.card-text
+                                                small.text-muted Last updated 3 mins ago
+                                .card.mb-3.hvr-glow
+                                    .row.no-gutters
+                                        .col-md-4
+                                            a(href='../infos.html')
+                                                img.card-img.img-fluid.img-thumbnail(src='./img/listmovies/relife-7011.jpg' alt='news img')
+                                        .col-md-8
+                                            .card-body
+                                                h6.card-title Nhân vật
+                                                a(href='../infos.html')
+                                                    p.card-text
+                                                    | Boku no Hero Academia "nhá hàng" visual cho một mùa mới đầy hấp dẫn!
+                                                p.card-text
+                                                small.text-muted Last updated 3 mins ago
+                                .card.mb-3.hvr-glow
+                                    .row.no-gutters
+                                        .col-md-4
+                                            a(href='../infos.html')    
+                                                img.card-img.img-fluid.img-thumbnail(src='./img/listmovies/the-crew.jpeg' alt='news img')
+                                        .col-md-8
+                                            .card-body
+                                                h6.card-title Tổng Hợp
+                                                a(href='../infos.html')
+                                                    p.card-text
+                                                    | Boku no Hero Academia "nhá hàng" visual cho một mùa mới đầy hấp dẫn!
+                                                p.card-text
+                                                small.text-muted Last updated 3 mins ago
+                                .card.mb-3.hvr-glow
+                                    .row.no-gutters
+                                        .col-md-4
+                                            a(href='../infos.html')
+                                                img.card-img.img-fluid.img-thumbnail(src='./img/listmovies/you-and-me-2-4688.jpg' alt='news img')
+                                        .col-md-8
+                                            .card-body
+                                                h6.card-title Tin tức anime
+                                                a(href='../infos.html')
+                                                    p.card-text
+                                                    | Top 10 cặp đôi anime mùa Hè 2019 tuần 7! - "Cặp đôi quốc dân" đã quay trở lại!
+                                                p.card-text
+                                                small.text-muted Last updated 3 mins ago
+                                .card.mb-3.hvr-glow
+                                    .row.no-gutters
+                                        .col-md-4
+                                            a(href='../infos.html')
+                                                img.card-img.img-fluid.img-thumbnail(src='./img/listmovies/relife-7011.jpg' alt='news img')
+                                        .col-md-8
+                                            .card-body
+                                                h6.card-title Nhân vật
+                                                a(href='../infos.html')
+                                                    p.card-text
+                                                    | Boku no Hero Academia "nhá hàng" visual cho một mùa mới đầy hấp dẫn!
+                                                p.card-text
+                                                small.text-muted Last updated 3 mins ago
+                                .card.mb-3.hvr-glow
+                                    .row.no-gutters
+                                        .col-md-4
+                                            a(href='../infos.html')
+                                                img.card-img.img-fluid.img-thumbnail(src='./img/listmovies/the-crew.jpeg' alt='news img')
+                                        .col-md-8
+                                            .card-body
+                                                h6.card-title Tổng Hợp
+                                                a(href='../infos.html')
+                                                    p.card-text
+                                                    | Boku no Hero Academia "nhá hàng" visual cho một mùa mới đầy hấp dẫn!
+                                                p.card-text
+                                                small.text-muted Last updated 3 mins ago           
+                include  template-parts/slider.pug
+    include template-parts/footer.pug

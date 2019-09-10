@@ -1,3 +1,171 @@
-html
-    head
-    body
+extends template-parts/layout.pug
+block favicon
+    link(rel='shortcut icon' type='image/png' href='img/mystery.png')
+block header
+    title Tin Tức Anime
+block content
+    header.news
+    section.social-fixed
+        .icon-bar
+            a.facebook(href='#')
+                i.fab.fa-facebook
+            a.twitter(href='#')
+                i.fab.fa-twitter
+            a.google(href='#')
+                i.fab.fa-google
+            a.linkedin(href='#')
+                i.fab.fa-linkedin
+            a.youtube(href='#')
+                i.fab.fa-youtube
+    section.content-news
+       .container
+            .row
+                .col-md-8
+                    .card
+                        a(href='../infos.html')
+                            img.card-img-top.img-fluid.img-thumbnail(src='./img/slider/ade34e45362e6d9a_a75f4a75f9f5d1b6_15671515635976283185710.jpg' alt='news img')
+                        .card-body
+                            .card-body
+                                a(href='../infos.html')
+                                    h5.card-title Fairy Gone - "Hậu giới thần tiên" đã quay lại!
+                                p.card-text
+                                | Mới đây, trang web chính thức cho cho dự án anime gốc Fairy Gone của P.A. Works đã công bố promo video, key visual và dàn diễn viên cho nửa sau của dự án. Promo video cũng đã giới thiệu cho ca khúc mở đầu mới "STILL STANDING" sẽ do [K]NoW_NAME trình bày.
+                                p.card-text
+                                small.text-muted 1 giờ trước - 102 lượt xem
+   
+                        .card.mb-5.hvr-glow
+                            .row.no-gutters
+                                .col-md-4
+                                    a(href='../infos.html')
+                                        img.card-img.img-fluid.img-thumbnail(src='./img/slider/f9f07ce2bcd54b37_98d2d8a1b169e7b2_18753915635989121185710.jpg' alt='news img')
+                                .col-md-8
+                                    .card-body
+                                        a(href='../infos.html')
+                                            h5.card-title Fairy Gone - "Hậu giới thần tiên" đã quay lại!
+                                        p.card-text
+                                        | Mới đây, trang web chính thức cho cho dự án anime gốc Fairy Gone của P.A. Works đã công bố promo video, key visual và dàn diễn viên cho nửa sau của dự án. Promo video cũng đã giới thiệu cho ca khúc mở đầu mới "STILL STANDING" sẽ do [K]NoW_NAME trình bày.
+                                        p.card-text
+                                        small.text-muted 1 giờ trước - 102 lượt xem
+
+                        .card.mb-5.hvr-glow
+                            .row.no-gutters
+                                .col-md-4
+                                    a(href='../infos.html')    
+                                        img.card-img.img-fluid.img-thumbnail(src='./img/slider/549538.jpg' alt='news img')
+                                .col-md-8
+                                    .card-body
+                                        a(href='../infos.html')    
+                                            h5.card-title Fairy Gone - "Hậu giới thần tiên" đã quay lại!
+                                        p.card-text
+                                        | Mới đây, trang web chính thức cho cho dự án anime gốc Fairy Gone của P.A. Works đã công bố promo video, key visual và dàn diễn viên cho nửa sau của dự án. Promo video cũng đã giới thiệu cho ca khúc mở đầu mới "STILL STANDING" sẽ do [K]NoW_NAME trình bày.
+                                        p.card-text
+                                        small.text-muted 1 giờ trước - 102 lượt xem
+                        .card.mb-5.hvr-glow
+                            .row.no-gutters
+                                .col-md-4
+                                    a(href='../infos.html')
+                                        img.card-img.img-fluid.img-thumbnail(src='./img/slider/277c2661aabedbed_f0f76383aa7bf705_14045615677773094185710.jpg' alt='news img')
+                                .col-md-8
+                                    .card-body
+                                        a(href='../infos.html')
+                                            h5.card-title Fairy Gone - "Hậu giới thần tiên" đã quay lại!
+                                        p.card-text
+                                        | Mới đây, trang web chính thức cho cho dự án anime gốc Fairy Gone của P.A. Works đã công bố promo video, key visual và dàn diễn viên cho nửa sau của dự án. Promo video cũng đã giới thiệu cho ca khúc mở đầu mới "STILL STANDING" sẽ do [K]NoW_NAME trình bày.
+                                        p.card-text
+                                        small.text-muted 1 giờ trước - 102 lượt xem
+                    .view-more
+                        a.viewmore-button(href='#')
+                            | VIEW MORE 
+                            i.fas.fa-level-down-alt                                                                                                           
+                .col-md-4
+                    .news-day
+                        h3 Tin Tức Mới Nhất
+                        .card
+                            .card.mb-3.hvr-glow
+                                .row.no-gutters
+                                    .col-md-4
+                                        a(href='../infos.html')
+                                            img.card-img.img-fluid.img-thumbnail(src='./img/listmovies/fate-stay-night-unlimited-blade-works-2-6861.jpg' alt='news img')
+                                    .col-md-8
+                                        .card-body
+                                            b.card-title Tin tức anime
+                                            a(href='../infos.html')    
+                                                p.card-text Top 10 cặp đôi anime mùa Hè 2019 tuần 7! - "Cặp đôi quốc dân" đã quay trở lại!
+                                            p.card-text
+                                            small.text-muted Last updated 3 mins ago
+
+                            .card.mb-3.hvr-glow
+                                .row.no-gutters
+                                    .col-md-4
+                                        a(href='../infos.html')
+                                            img.card-img.img-fluid.img-thumbnail(src='./img/listmovies/you-and-me-2-4688.jpg' alt='news img')
+                                    .col-md-8
+                                        .card-body
+                                            h6.card-title Tin tức anime
+                                            a(href='../infos.html')    
+                                                p.card-text Top 10 cặp đôi anime mùa Hè 2019 tuần 7! - "Cặp đôi quốc dân" đã quay trở lại!
+                                            p.card-text
+                                            small.text-muted Last updated 3 mins ago
+                            .card.mb-3.hvr-glow
+                                .row.no-gutters
+                                    .col-md-4
+                                        a(href='../infos.html')
+                                            img.card-img.img-fluid.img-thumbnail(src='./img/listmovies/relife-7011.jpg' alt='news img')
+                                    .col-md-8
+                                        .card-body
+                                            h6.card-title Nhân vật
+                                            a(href='../infos.html')    
+                                                p.card-text Top 10 cặp đôi anime mùa Hè 2019 tuần 7! - "Cặp đôi quốc dân" đã quay trở lại!
+                                            p.card-text
+                                            small.text-muted Last updated 3 mins ago
+                            .card.mb-3.hvr-glow
+                                .row.no-gutters
+                                    .col-md-4
+                                        a(href='../infos.html')
+                                            img.card-img.img-fluid.img-thumbnail(src='./img/listmovies/the-crew.jpeg' alt='news img')
+                                    .col-md-8
+                                        .card-body
+                                            h6.card-title Tổng Hợp
+                                            a(href='../infos.html')    
+                                                p.card-text Top 10 cặp đôi anime mùa Hè 2019 tuần 7! - "Cặp đôi quốc dân" đã quay trở lại!
+                                            p.card-text
+                                            small.text-muted Last updated 3 mins ago
+                            .card.mb-3.hvr-glow
+                                .row.no-gutters
+                                    .col-md-4
+                                        a(href='../infos.html')
+                                            img.card-img.img-fluid.img-thumbnail(src='./img/listmovies/you-and-me-2-4688.jpg' alt='news img')
+                                    .col-md-8
+                                        .card-body
+                                            h6.card-title Tin tức anime
+                                            a(href='../infos.html')    
+                                                p.card-text Top 10 cặp đôi anime mùa Hè 2019 tuần 7! - "Cặp đôi quốc dân" đã quay trở lại!
+                                            p.card-text
+                                            small.text-muted Last updated 3 mins ago
+                            .card.mb-3.hvr-glow
+                                .row.no-gutters
+                                    .col-md-4
+                                            a(href='../infos.html')    
+                                                img.card-img.img-fluid.img-thumbnail(src='./img/listmovies/the-crew.jpeg' alt='news img')
+                                    .col-md-8
+                                        .card-body
+                                            h6.card-title Nhân vật
+                                            a(href='../infos.html')    
+                                                p.card-text Boku no Hero Academia "nhá hàng" visual cho một mùa mới đầy hấp dẫn!
+                                            p.card-text
+                                            small.text-muted Last updated 3 mins ago
+                            .card.mb-3.hvr-glow
+                                .row.no-gutters
+                                    .col-md-4
+                                        a(href='../infos.html')
+                                            img.card-img.img-fluid.img-thumbnail(src='./img/listmovies/the-crew.jpeg' alt='news img')
+                                    .col-md-8
+                                        .card-body
+                                            h6.card-title Tổng Hợp
+                                            a(href='../infos.html')    
+                                                p.card-text Boku no Hero Academia "nhá hàng" visual cho một mùa mới đầy hấp dẫn!
+                                            p.card-text
+                                            small.text-muted Last updated 3 mins ago                                                
+    .container
+        include template-parts/slider.pug                              
+    include template-parts/footer.pug
