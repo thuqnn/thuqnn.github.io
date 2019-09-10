@@ -119,7 +119,7 @@ footer.footer-main a:hover,li.nav-item a:hover {
   margin-bottom: 0.625rem;
 }
 .navbar {
-  height: 5.0625rem;
+  height: 7rem;
   line-height: 5.0625rem;
    background-color: rgba(0, 0, 0, 0.53)!important;
     transition: 0.5s;
@@ -132,7 +132,7 @@ i.far.fa-lightbulb{
   font-size: 1.75rem;
 }
 .scrolled-nav {
-  height: 3.755rem !important;
+  height: 5rem !important;
   line-height: 3.75rem !important;
   transition: 0.5s;
   border-bottom: none;
