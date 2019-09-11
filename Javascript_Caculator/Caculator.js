@@ -1,60 +1,57 @@
-var idText = document.getElementById("textview");
-
+let idText = document.getElementById("textview");
 function addNumber(num) {
-    idText.value += num;
-    if (num == "c") {
-        idText.value = "";
-    }
+  idText.value += num;
+  if (num == "c") {
+    idText.value = "";
+  }
 }
 
 function backSpace() {
-    var x = idText.value;
-    var y = x.length - 1;
-    var newnumber = x.substring(0, y);
-    idText.value = newnumber;
+  let x = idText.value;
+  idText.value = x.substr(0, x.length - 1);
 }
 
 function runPlus() {
-    idText.value += "+";
+  idText.value += "+";
 }
 
 function runMinus() {
-    idText.value += "-";
+  idText.value += "-";
 }
 
 function runDivide() {
-    idText.value += "/";
+  idText.value += "/";
 }
 
 function runMultiply() {
-    idText.value += "*";
+ idText.value += "*";
 }
 
 function dotButton() {
-    idText.value += ".";
+  idText.value += ".";
 }
 
 function runEquals() {
-    var equals = eval(idText.value);
-    idText.value = equals;
+  let equals = eval(idText.value);
+  idText.value = equals;
 }
 
 function percent() {
-    idText.value = idText.value / 100;
+  idText.value = idText.value / 100;
 }
 
 function powerButton() {
-    idText.value = Math.pow(idText.value, 2);
+  idText.value = Math.pow(idText.value, 2);
 }
 
 function sqrtButton() {
-    idText.value = Math.sqrt(idText.value);
+  idText.value = Math.sqrt(idText.value);
 }
 
 function piButton() {
-    idText.value = Math.PI;
+  idText.value = Math.PI;
 }
 
 function cosButton() {
-    idText.value = Math.cos(idText.value);
+  idText.value = Math.cos(idText.value);
 }
