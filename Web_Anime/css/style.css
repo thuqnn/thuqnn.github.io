@@ -257,7 +257,8 @@ a:focus {
 }
 .list-button {
   text-align: center;
-  border: 1px solid darkgray;
+  border-top: 1px dashed darkgray;
+  border-bottom: 1px dashed darkgray;
   margin: 10px 0;
   height: auto;
   padding: 1.25rem 0;
