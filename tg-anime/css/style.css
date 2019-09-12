@@ -135,7 +135,7 @@ p.titlenew,p.titlenewbig {
   color: white;
   font-weight: 600;
   padding: 5%;
-  background-color: #2098d187;
+  background-color: rgba(0, 0, 0, 0.53)!important;
   width: 100%;
 }
 p.titlenewbig{
@@ -537,7 +537,10 @@ p.titlenewbig a,p.titlenew a,.icon-button:hover .fa-twitter,.icon-button:hover .
   .slick-slider .slick-arrow.slick-next:before {
     content: "\f054";
   }
-  
+  .slick-slide img {
+    display: block;
+    padding: 0 15px;
+}
 @media (min-width: 1200px) {
   .container {
       max-width: 1440px;
