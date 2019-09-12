@@ -125,6 +125,23 @@ footer.footer-main a:hover,li.nav-item a:hover,i.far.fa-calendar-alt, i.fas.fa-t
 .watch-anime h6, .star-votes {
   margin: 0.937rem 0;
 }
+.images-new,.images-newbig {
+    position: relative;
+}
+p.titlenew,p.titlenewbig {
+  position: absolute;
+  left: 0;
+  bottom: -10%;
+  color: white;
+  font-weight: 600;
+  padding: 5%;
+  background-color: #2098d1b3;
+  width: 100%;
+}
+p.titlenewbig{
+  bottom: -5%;
+}
+
 .navbar {
   height: 7rem;
   line-height: 5.0625rem;
@@ -248,7 +265,7 @@ a:focus {
   max-width: 100%;
   flex: 100%;
 }
-i.fas.fa-tags a,.col-md-6 .card-deck.h-100 .card .card-body a,.content-tops .card .row .col-md-8 .card.h-100 .card-body a,a.viewmore-button,.card-data .card-deck.h-100 .card .card-body a,.row.no-gutters .col-md-8 .card-body a {
+p.titlenewbig a,p.titlenew a,i.fas.fa-tags a,.col-md-6 .card-deck.h-100 .card .card-body a,.content-tops .card .row .col-md-8 .card.h-100 .card-body a,a.viewmore-button,.card-data .card-deck.h-100 .card .card-body a,.row.no-gutters .col-md-8 .card-body a {
   text-decoration: none;
 }
 i.fas.fa-tags a,i.far.fa-calendar-alt span{
@@ -369,7 +386,7 @@ i.fas.fa-star,i.fas.fa-star-half-alt,i.far.fa-star {
 .icon-button .fa-instagram{
 	color: var(--red-color);
 }
-.icon-button:hover .fa-twitter,.icon-button:hover .fa-facebook-f,.icon-button:hover .fa-youtube,.icon-button:hover .fa-instagram,.icon-button:hover .fa-pinterest,.icon-bar .youtube,.icon-bar .linkedin,.icon-bar .facebook,.icon-bar .youtube,.icon-bar .twitter,.icon-button i,.icon-bar a,.buttonload,.btn-download 
+p.titlenewbig a,p.titlenew a,.icon-button:hover .fa-twitter,.icon-button:hover .fa-facebook-f,.icon-button:hover .fa-youtube,.icon-button:hover .fa-instagram,.icon-button:hover .fa-pinterest,.icon-bar .youtube,.icon-bar .linkedin,.icon-bar .facebook,.icon-bar .youtube,.icon-bar .twitter,.icon-button i,.icon-bar a,.buttonload,.btn-download 
  {
   color: var(--white-color);
 }
