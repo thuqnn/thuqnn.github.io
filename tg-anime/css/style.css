@@ -157,6 +157,7 @@ p.titlenewbig{
   border-radius: 5px;
   outline: none;
   transition: all 0.4s ease-out;
+  color: var(--white-color);
 }
 .menu-movies button:hover,.list-button button:hover {
   background: #007bff;
