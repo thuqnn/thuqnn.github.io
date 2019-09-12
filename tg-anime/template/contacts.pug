@@ -1,0 +1,55 @@
+extends template-parts/layout.pug
+block header
+    title Liên Hệ
+block content
+    header.contacts
+    
+    section.content-contacts
+        .container
+            .row
+                .col-md-12
+                    h2 LIÊN HỆ CHÚNG TÔI
+            .row
+                .col-md-5
+                    h6 TheGioiAnime.Com
+                    p -Trang web xem Anime Hay HD trực tuyến với đầy đủ của Nhật Bản, Hàn Quốc, Mỹ, Anh, Anime Hay Nhất, mới Nhất.Mọi dữ liệu về phim anime trên website này đều được chúng tôi điều được sưu tầm trên các dịch vụ đăng tải video trực tuyến như Google, Youtube...
+                    h6 Liên Hệ Quảng Cáo
+                    .contacts-address
+                        span.fas.fa-map-marker-alt
+                        .info-address.ml-2
+                            b ĐỊA CHỈ
+                            p Tầng 5, Tòa nhà FPT Cầu Giấy, phố Duy Tân,Hà Nội
+                    .contacts-address
+                        span.fas.fa-phone-volume
+                        .info-address.ml-2
+                            b ĐIỆN THOẠI
+                            p 083.888.0123
+                    .contacts-address
+                        span.fas.fa-envelope-open
+                        .info-address.ml-2
+                            b EMAIL
+                            p tganime@gmail.com
+                .col-md-7
+                    section
+                        div
+                            .row
+                                .col-sm-12
+                                    .row
+                                        .col-sm-8.col-sm-offset-2.form-contacts
+                                            form(method='post' data-form-title='CONTACT US')
+                                            input(type='hidden' data-form-email='true')
+                                            .form-group
+                                                input.form-control(type='text' name='name' required='' placeholder='Nhập Tên*' data-form-field='Name')
+                                            .form-group
+                                                input.form-control(type='email' name='email' required='' placeholder='Nhập Email*' data-form-field='Email')
+                                            .form-group
+                                                input.form-control(type='tel' name='phone' placeholder='Nhập Phone' data-form-field='Phone')
+                                            .form-group
+                                                textarea.form-control(name='message' placeholder='Tin Nhắn' rows='7' data-form-field='Message')
+                                            div
+                                                button.btn.btn-lg.btn-primary(type='submit') GỬI
+
+    section.map-contacts
+        #map
+            iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.0434574544406!2d105.78172201482066!3d21.030947093079767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab4c76b12a3b%3A0x9a311c833456d5f0!2zUGjhu5EgRHV5IFTDom4sIEPhuqd1IEdp4bqleSwgSMOgIE7hu5lpLCBWaWV0bmFt!5e0!3m2!1sen!2s!4v1567970307767!5m2!1sen!2s' width='100%' height='450' frameborder='0' style='border:0;' allowfullscreen='')
+    include template-parts/footer.pug
