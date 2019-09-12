@@ -10,7 +10,7 @@
 :root {
 	--orange-color: #EB5B49;
 	--white-color: #ffffff;
-	--blue-color: #2098d1;
+	--blue-color: #2098D1;
 	--gray-color: darkgray;
   --black-color: #000000;
   --yellow-color: yellow;
@@ -299,6 +299,9 @@ i.fas.fa-tags a,i.far.fa-calendar-alt span{
 }
 .contacts-address {
   display: flex;
+}
+.sort-info b {
+  display: block;
 }
 /* icon */
 i.fas.fa-star,i.fas.fa-star-half-alt,i.far.fa-star {
