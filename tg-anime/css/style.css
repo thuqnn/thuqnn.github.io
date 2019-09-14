@@ -577,6 +577,13 @@ p.titlenew a,
     color: var(--white-color);
 }
 
+a#backtotop {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    font-size: 50px;
+}
+
 .onoff {
     background: rgba(0, 0, 0, 0.8) !important;
     color: var(--white-color);
