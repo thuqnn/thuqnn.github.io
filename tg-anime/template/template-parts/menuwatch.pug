@@ -17,6 +17,9 @@ nav.navbar.navbar-light.navbar-expand-md.bg-light.justify-content-center.fixed-t
         a.nav-link.hvr-underline-from-left(href='./contacts.html') LIÊN HỆ
     ul.nav.navbar-nav.ml-auto.w-100.justify-content-end
       li.nav-item
-        a.nav-link(href='#') <i class="fas fa-search"></i>
+        .search
+          input.form-control.input-sm(type='text' maxlength='64' placeholder='Search')
+          button.btn.btn-primary.btn-sm(type='submit')
+            i.fa.fa-search(aria-hidden='true')
       li.nav-item
-        a.nav-link(href='#') <i class="far fa-lightbulb"></i>
+            i.far.fa-lightbulb

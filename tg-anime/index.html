@@ -16,22 +16,29 @@
   <title>TG Anime - Trang chủ</title>
 </head>
 <body>
-  <nav class="navbar navbar-light navbar-expand-md bg-light justify-content-center fixed-top"><a class="navbar-brand d-flex w-50 mr-auto" href="./index.html"><img class="img-fluid" src="./img/logo_white.png" alt="#"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3"><span class="navbar-toggler-icon"></span></button>
-    <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
-      <ul class="navbar-nav w-100 justify-content-center">
-        <li class="nav-item"><a class="nav-link active hvr-underline-from-left" href="./index.html">ANIME</a></li>
-        <li class="nav-item"><a class="nav-link hvr-underline-from-left" href="./movies.html">MOVIES</a></li>
-        <li class="nav-item"><a class="nav-link hvr-underline-from-left" href="./trends.html">BXH</a></li>
-        <li class="nav-item"><a class="nav-link hvr-underline-from-left" href="./news.html">TIN TỨC</a></li>
-        <li class="nav-item"><a class="nav-link hvr-underline-from-left" href="./contacts.html">LIÊN HỆ</a></li>
-      </ul>
-      <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
-        <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-search"></i></a></li>
-        <li class="nav-item"><a class="nav-link" href="#"><i class="far fa-lightbulb"></i></a></li>
-      </ul>
-    </div>
-  </nav>
+  <div id="topheader">
+    <nav class="navbar navbar-light navbar-expand-md bg-light justify-content-center fixed-top"><a class="navbar-brand d-flex w-50 mr-auto" href="./index.html"><img class="img-fluid" src="./img/logo_white.png" alt="#"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3"><span class="navbar-toggler-icon"></span></button>
+      <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
+        <ul class="navbar-nav w-100 justify-content-center" id="itemsmenu">
+          <li class="nav-item active"><a class="nav-link" href="./index.html">ANIME</a></li>
+          <li class="nav-item"><a class="nav-link" href="./movies.html">MOVIES</a></li>
+          <li class="nav-item"><a class="nav-link" href="./trends.html">BXH</a></li>
+          <li class="nav-item"><a class="nav-link" href="./news.html">TIN TỨC</a></li>
+          <li class="nav-item"><a class="nav-link" href="./contacts.html">LIÊN HỆ</a></li>
+        </ul>
+        <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
+          <li class="nav-item">
+            <div class="search">
+              <input class="form-control input-sm" type="text" maxlength="64" placeholder="Search">
+              <button class="btn btn-primary btn-sm" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+            </div>
+          </li>
+          <li class="nav-item"><i class="far fa-lightbulb"></i></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
   <header class="header">
     <div class="bg" style="opacity: 0.9;">
       <video class="pc" loop="" muted="" preload="none" autoplay="">
@@ -394,7 +401,7 @@
   <section class="copyright">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-6"><a href=""><img src="./img/logo_black.png" alt="logo-footer"></a></div>
+        <div class="col-md-6" id="logofooter"><a href=""><img src="./img/logo_black.png" alt="logo-footer"></a></div>
         <div class="col-md-6 text-right copyright-p">
           <p>Copyright © 2019 Tg-Anime.com, Inc.</p>
         </div>
@@ -404,8 +411,9 @@
 </body>
 <!-- Optional JavaScript-->
 <!-- jQuery first, then Popper.js, then Bootstrap JS-->
-<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script src="./lib/popper.min.js"></script>
 <script src="./lib/bootstrap.min.js"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>

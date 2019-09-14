@@ -29,8 +29,13 @@
         <li class="nav-item"><a class="nav-link hvr-underline-from-left" href="./contacts.html">LIÊN HỆ</a></li>
       </ul>
       <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
-        <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-search"></i></a></li>
-        <li class="nav-item"><a class="nav-link" href="#"><i class="far fa-lightbulb"></i></a></li>
+        <li class="nav-item">
+          <div class="search">
+            <input class="form-control input-sm" type="text" maxlength="64" placeholder="Search">
+            <button class="btn btn-primary btn-sm" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+          </div>
+        </li>
+        <li class="nav-item"><i class="far fa-lightbulb"></i></li>
       </ul>
     </div>
   </nav>
@@ -47,7 +52,7 @@
               <div class="col-md-6 text-right">
                 <button class="buttonload"><i class="fas fa-exclamation-triangle"></i><span>Báo Lỗi</span></button>
                 <button class="btn-download"><i class="fas fa-step-forward"></i><span>Tự Chuyển Tập</span></button>
-                <button class="buttonload"><i class="fas fa-history fa-lightbulb"></i><span>Tắt Đèn  </span></button>
+                <button class="buttonload" id="onoffwatch"><i class="fas fa-history fa-lightbulb"></i><span>Tắt Đèn  </span></button>
               </div>
             </div>
           </div>
@@ -321,7 +326,7 @@
   <section class="copyright">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-6"><a href=""><img src="./img/logo_black.png" alt="logo-footer"></a></div>
+        <div class="col-md-6" id="logofooter"><a href=""><img src="./img/logo_black.png" alt="logo-footer"></a></div>
         <div class="col-md-6 text-right copyright-p">
           <p>Copyright © 2019 Tg-Anime.com, Inc.</p>
         </div>

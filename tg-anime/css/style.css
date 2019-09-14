@@ -242,11 +242,17 @@ p.titlenewbig {
 
 i.far.fa-lightbulb {
     font-size: 1.75rem;
+    cursor: pointer;
+    color: var(--white-color);
+}
+
+.blueoff {
+    color: var(--blue-color);
 }
 
 .scrolled-nav {
     height: 5.3rem !important;
-    line-height: 3.75rem !important;
+    line-height: 5.3rem !important;
     transition: 0.5s;
     border-bottom: none;
     background: rgba(0, 0, 0, 0.8) !important;
@@ -570,9 +576,64 @@ p.titlenew a,
     color: var(--white-color);
 }
 
+.onoff {
+    background: rgba(0, 0, 0, 0.8) !important;
+    color: var(--white-color);
+}
+
 .active {
-    background-color: var(--blue-color);
-    color: #fff!important;
+    color: var(--gray-color)!important;
+}
+
+.borderwhite {
+    border: 1px solid rgb(255, 254, 254);
+}
+
+.footerblack {
+    color: var(--black-color);
+}
+
+.search {
+    padding: 5px 0;
+    width: 230px;
+    height: 30px;
+    position: relative;
+    left: 10px;
+    float: left;
+    line-height: 22px;
+    display: flex;
+    margin: 15px 20px;
+}
+
+.search input {
+    position: absolute;
+    width: 0px;
+    float: Left;
+    margin-left: 210px;
+    -webkit-transition: all 0.7s ease-in-out;
+    -moz-transition: all 0.7s ease-in-out;
+    -o-transition: all 0.7s ease-in-out;
+    transition: all 0.7s ease-in-out;
+    height: 30px;
+    line-height: 18px;
+    padding: 0 2px 0 2px;
+    border-radius: 5px;
+}
+
+.search:hover input,
+.search input:focus {
+    width: 200px;
+    margin-left: 0px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.search button.btn {
+    height: 30px;
+    position: absolute;
+    right: 0;
+    top: 5px;
+    border-radius: 4px;
 }
 
 .text-adward {
@@ -787,6 +848,16 @@ p.titlenew a,
     }
     .pinterest {
         display: none;
+    }
+    section.social-fixed {
+        display: none;
+    }
+    header.movies,
+    header.trends,
+    header.news,
+    header.contacts,
+    header.infos {
+        min-height: 6.875rem;
     }
 }
 
