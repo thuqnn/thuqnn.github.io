@@ -152,7 +152,8 @@ footer.footer-main a:hover,
 li.nav-item a:hover,
 i.far.fa-calendar-alt,
 i.fas.fa-tags,
-i.fas.fa-tags a:hover {
+i.fas.fa-tags a:hover,
+.iconblue {
     color: var(--blue-color)!important;
 }
 
@@ -582,7 +583,7 @@ p.titlenew a,
 }
 
 .active {
-    color: var(--gray-color)!important;
+    background-color: var(--blue-color)!important;
 }
 
 .borderwhite {

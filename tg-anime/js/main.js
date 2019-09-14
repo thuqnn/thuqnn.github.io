@@ -1,30 +1,31 @@
 $(document).ready(function() {
     $("i.far.fa-lightbulb").click(function() {
         $("body").toggleClass("onoff");
+        $("section.slider").toggleClass("onoff");
         $("footer.footer-main").toggleClass("footerblack");
         $(".quick-search").toggleClass("borderwhite");
         $(".news-signup").toggleClass("borderwhite");
         $(".advanced-search").toggleClass("borderwhite");
         $(".menu-movies button").toggleClass("borderwhite");
         $(".list-button button").toggleClass("borderwhite");
+        $(this).toggleClass("iconblue");
         $('section.copyright #logofooter').append('<img src="./img/logo_white.png"/>');
         $('section.copyright #logofooter a img').remove();
     });
-});
-$(document).ready(function() {
     $("#onoffwatch").click(function() {
         $("body").toggleClass("onoff");
     });
+    $(".list-button button").click(function() {
+            $(".list-button button").removeClass("active");
+            $(this).addClass("active");
+        })
+        // $('.navbar-nav li ').click(function() {
+        //     $('.navbar-nav li ').removeClass("active");
+        //     $(this).addClass("active");
+        // });
 });
-$('.navbar-nav li ').click(function() {
 
-    //remove all active classes
-    $('.navbar-nav li ').removeClass("active");
 
-    //add active to the element clicked
-    $(this).addClass("active");
-
-});
 
 var $container = $('.portfolioContainer');
 $container.isotope({
@@ -50,7 +51,16 @@ $('.portfolioFilter a').click(function() {
     });
     return false;
 });
-
+$(function() {
+    var navbar = $('.navbar');
+    $(window).scroll(function() {
+        if ($(window).scrollTop() <= 40) {
+            navbar.removeClass('scrolled-nav');
+        } else {
+            navbar.addClass('scrolled-nav');
+        }
+    });
+});
 if ($('.carousel2-1 .carousel').length > 0) {
     $('.carousel2-1 .carousel').slick({
         slidesToShow: 3,
@@ -77,17 +87,6 @@ if ($('.carousel2-1 .carousel').length > 0) {
         ]
     });
 }
-
-$(function() {
-    var navbar = $('.navbar');
-    $(window).scroll(function() {
-        if ($(window).scrollTop() <= 40) {
-            navbar.removeClass('scrolled-nav');
-        } else {
-            navbar.addClass('scrolled-nav');
-        }
-    });
-});
 new WOW().init();
 $('.center').slick({
     centerMode: true,
