@@ -245,6 +245,8 @@ i.far.fa-lightbulb {
     font-size: 1.75rem;
     cursor: pointer;
     color: var(--white-color);
+    display: flex;
+    margin: 15px 20px;
 }
 
 .blueoff {
@@ -253,7 +255,7 @@ i.far.fa-lightbulb {
 
 .scrolled-nav {
     height: 5.3rem !important;
-    line-height: 5.3rem !important;
+    line-height: 3.3rem !important;
     transition: 0.5s;
     border-bottom: none;
     background: rgba(0, 0, 0, 0.8) !important;
@@ -601,6 +603,14 @@ a#backtotop {
     color: var(--black-color);
 }
 
+section.news-anime {
+    height: auto;
+    margin-top: 3.125rem;
+    overflow: hidden;
+    background: url(../img/bg_introduction.png) right top 0rem no-repeat;
+    background-size: 50%;
+}
+
 .search {
     padding: 5px 0;
     width: 230px;
@@ -610,7 +620,7 @@ a#backtotop {
     float: left;
     line-height: 22px;
     display: flex;
-    margin: 15px 20px;
+    margin: 10px 20px;
 }
 
 .search input {

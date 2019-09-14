@@ -14,6 +14,16 @@ $(document).ready(function() {
     });
     $("#onoffwatch").click(function() {
         $("body").toggleClass("onoff");
+        $("section.slider").toggleClass("onoff");
+        $("footer.footer-main").toggleClass("footerblack");
+        $(".quick-search").toggleClass("borderwhite");
+        $(".news-signup").toggleClass("borderwhite");
+        $(".advanced-search").toggleClass("borderwhite");
+        $(".menu-movies button").toggleClass("borderwhite");
+        $(".list-button button").toggleClass("borderwhite");
+        $(this).toggleClass("iconblue");
+        $('section.copyright #logofooter').append('<img src="./img/logo_white.png"/>');
+        $('section.copyright #logofooter a img').remove();
     });
     $(".list-button button").click(function() {
             $(".list-button button").removeClass("active");
