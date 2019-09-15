@@ -38,6 +38,10 @@ img {
     max-width: 100%;
 }
 
+a {
+    text-decoration: none;
+}
+
 .items-play-img {
     position: relative;
 }
@@ -581,7 +585,7 @@ p.titlenew a,
 
 a#backtotop {
     position: fixed;
-    right: 0;
+    right: 1%;
     bottom: 0;
     font-size: 50px;
 }
@@ -609,6 +613,7 @@ section.news-anime {
     overflow: hidden;
     background: url(../img/bg_introduction.png) right top 0rem no-repeat;
     background-size: 50%;
+    background-color: var(--white-color);
 }
 
 .search {
@@ -844,7 +849,7 @@ section.news-anime {
     }
 }
 
-@media all and (max-width: 680px) {
+@media all and (max-width: 768px) {
     .icon-button {
         border-radius: 1.6rem;
         font-size: 0.8rem;
@@ -870,6 +875,40 @@ section.news-anime {
     section.social-fixed {
         display: none;
     }
+    .text-banner h3 {
+        letter-spacing: 0;
+    }
+    .text-right,
+    .menu-movies {
+        text-align: center!important;
+    }
+    header.movies,
+    header.trends,
+    header.news,
+    header.contacts,
+    header.infos {
+        min-height: 13.875rem;
+    }
+    .navbar-light .navbar-nav .nav-link {
+        color: rgba(0, 0, 0, .5);
+        font-size: 12px;
+        width: 70px;
+        padding: 0;
+        margin: 0;
+    }
+    ul.nav.navbar-nav.ml-auto.w-100.justify-content-end.nav-search {
+        display: inline-block;
+        margin-right: 15px;
+    }
+    section.news-anime {
+        font-size: 10px;
+    }
+    .slick-initialized .slick-slide h3 {
+        font-size: 10px;
+    }
+}
+
+@media all and (max-width: 575px) {
     header.movies,
     header.trends,
     header.news,
@@ -886,8 +925,50 @@ section.news-anime {
         margin: 0;
     }
     a.nav-link {
-        width: 67px;
+        width: 4.187rem;
         font-size: 10px;
         text-align: center;
+    }
+    header.movies,
+    header.trends,
+    header.news,
+    header.contacts,
+    header.infos {
+        min-height: 18.875rem;
+    }
+    ul.nav.navbar-nav.ml-auto.w-100.justify-content-end.nav-search {
+        display: inline-block;
+        margin-right: 15px;
+    }
+    .slick-initialized .slick-slide h3 {
+        font-size: 10px;
+    }
+    section.news-anime {
+        font-size: 12px;
+    }
+    .icon-button {
+        border-radius: 2.6rem;
+        font-size: 1.8rem;
+        height: 2.6rem;
+        line-height: 2.6rem;
+        width: 1.6rem;
+    }
+    .icon-button:hover span {
+        width: 1.6rem;
+        height: 1.6rem;
+        border-radius: 1.6rem;
+        margin: -0.8rem;
+    }
+    /* Icons */
+    .icon-button i {
+        height: 1.6rem;
+        line-height: 1.6rem;
+        width: 1.6rem;
+    }
+    .pinterest {
+        display: none;
+    }
+    section.social-fixed {
+        display: none;
     }
 }
