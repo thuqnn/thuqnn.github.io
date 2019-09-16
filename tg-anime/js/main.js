@@ -15,9 +15,10 @@ $(document).ready(function() {
         $(".icon-votes span").toggleClass("icon-votes-white");
         $(".icon-votes a").toggleClass("icon-votes-whitea");
         $("select#exampleFormControlSelect1").toggleClass("inputblack");
-        $(this).toggleClass("iconblue");
         $('section.copyright #logofooter').append('<img src="./img/logo_white.png"/>');
         $('section.copyright #logofooter a img').remove();
+        $("i.fas.fa-history.fa-lightbulb").toggleClass("iconblue");
+        $(this).toggleClass("iconblue");
     });
     $("#onoffwatch").click(function() {
         $("body").toggleClass("onoff");
@@ -26,11 +27,12 @@ $(document).ready(function() {
         $(".quick-search").toggleClass("borderwhite");
         $(".news-signup").toggleClass("borderwhite");
         $(".advanced-search").toggleClass("borderwhite");
-        $(".menu-movies button").toggleClass("borderwhite");
-        $(".list-button button").toggleClass("borderwhite");
-        $(this).toggleClass("iconblue");
+        $("i.fas.fa-history.fa-lightbulb").toggleClass("iconblue");
         $('section.copyright #logofooter').append('<img src="./img/logo_white.png"/>');
         $('section.copyright #logofooter a img').remove();
+    });
+    $('.view-more').click(function() {
+        $('.content-more').toggle();
     });
     $(".list-button button").click(function() {
             $(".list-button button").removeClass("active");
