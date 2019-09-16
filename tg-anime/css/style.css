@@ -466,7 +466,6 @@ i.fas.fa-star,
 i.fas.fa-star-half-alt,
 i.far.fa-star {
     color: #ffc107;
-    margin-right: 3px;
 }
 
 .icon-button {
@@ -592,7 +591,7 @@ a#backtotop {
 }
 
 .onoff {
-    background: rgba(0, 0, 0, 0.8) !important;
+    background: #2D2D2D !important;
     color: var(--white-color);
 }
 
@@ -605,7 +604,20 @@ a#backtotop {
 }
 
 .footerblack {
-    color: var(--black-color);
+    background: #2D2D2D !important;
+}
+
+.dark-card,
+.darkmovies-card,
+.inputblack {
+    background: #212121;
+}
+
+.text-white,
+.icon-votes-white,
+.icon-votes-whitea,
+.inputblack {
+    color: var(--white-color)!important;
 }
 
 section.news-anime {

@@ -9,6 +9,12 @@ $(document).ready(function() {
         $(".advanced-search").toggleClass("borderwhite");
         $(".menu-movies button").toggleClass("borderwhite");
         $(".list-button button").toggleClass("borderwhite");
+        $(".card.h-100").toggleClass("dark-card");
+        $(".card.hvr-glow").toggleClass("darkmovies-card");
+        $(".text-dark").toggleClass("text-white");
+        $(".icon-votes span").toggleClass("icon-votes-white");
+        $(".icon-votes a").toggleClass("icon-votes-whitea");
+        $("select#exampleFormControlSelect1").toggleClass("inputblack");
         $(this).toggleClass("iconblue");
         $('section.copyright #logofooter').append('<img src="./img/logo_white.png"/>');
         $('section.copyright #logofooter a img').remove();
