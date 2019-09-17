@@ -591,8 +591,8 @@ section.news-anime,
 
 a#backtotop {
     position: fixed;
-    right: 1%;
-    bottom: 0;
+    right: 30px;
+    bottom: 25px;
     font-size: 50px;
 }
 
@@ -956,7 +956,6 @@ section.news-anime {
     }
     ul.nav.navbar-nav.ml-auto.w-100.justify-content-end.nav-search {
         display: inline-block;
-        margin-right: 15px;
     }
     section.news-anime {
         font-size: 10px;
@@ -973,5 +972,6 @@ section.news-anime {
     header.contacts,
     header.infos {
         min-height: 6.875rem;
+        margin-top: 7rem;
     }
 }
