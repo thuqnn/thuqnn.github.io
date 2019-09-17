@@ -34,6 +34,7 @@
 body {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    overflow: scroll;
 }
 
 img {
@@ -980,17 +981,15 @@ section.news-anime {
         background: #2d292994;
         align-items: center;
     }
-    .navbar {
-        height: 6rem;
-        margin-right: 15px;
-        line-height: 4.0625rem;
-    }
-    .navwatch,
-    ul.nav.navbar-nav.ml-auto.w-100.justify-content-end.nav-search {
-        margin-right: 0;
-    }
+    .navbar,
     .scrolled-nav {
         height: 6.3rem !important;
         line-height: 2.3rem;
+        margin: 0;
+        width: auto;
+        padding: 0;
+    }
+    .navbar-light .navbar-toggler {
+        margin-right: 25px;
     }
 }
