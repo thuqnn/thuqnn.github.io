@@ -434,7 +434,13 @@ i.fas.fa-tags a,
 }
 
 i.fas.fa-tags a,
-i.far.fa-calendar-alt span {
+i.far.fa-calendar-alt span,
+section.news-anime h1,
+section.news-anime h4 {
+    color: black;
+}
+
+{
     color: var(--bg-black2);
 }
 
@@ -635,7 +641,7 @@ section.news-anime {
     margin-top: 3.125rem;
     overflow: hidden;
     background: url(../img/bg_introduction.png) right top 0rem no-repeat;
-    background-size: 50%;
+    background-size: 100%;
 }
 
 .search {
