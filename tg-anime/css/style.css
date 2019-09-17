@@ -948,15 +948,9 @@ section.news-anime {
     header.infos {
         min-height: 13.875rem;
     }
-    .navbar-light .navbar-nav .nav-link {
-        color: rgba(0, 0, 0, .5);
-        font-size: 12px;
-        width: 70px;
-        padding: 0;
-        margin: 0;
-    }
     ul.nav.navbar-nav.ml-auto.w-100.justify-content-end.nav-search {
         display: inline-block;
+        margin-right: 15px;
     }
     section.news-anime {
         font-size: 10px;
@@ -974,22 +968,5 @@ section.news-anime {
     header.infos {
         min-height: 6.875rem;
         margin-top: 7rem;
-    }
-    ul#itemsmenu,
-    ul.navbar-nav.w-100.justify-content-center,
-    ul.nav.navbar-nav.ml-auto.w-100.justify-content-end.nav-search {
-        background: #2d292994;
-        align-items: center;
-    }
-    .navbar,
-    .scrolled-nav {
-        height: 6.3rem !important;
-        line-height: 2.3rem;
-        margin: 0;
-        width: auto;
-        padding: 0;
-    }
-    .navbar-light .navbar-toggler {
-        margin-right: 25px;
     }
 }
