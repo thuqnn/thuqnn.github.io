@@ -112,6 +112,16 @@ section.slider {
     background-color: var(--white-color);
 }
 
+.card {
+    border: none;
+}
+
+.no-gutters,
+.card.hvr-glow,
+.content-tops .card {
+    border: 1px solid rgba(0, 0, 0, .125);
+}
+
 section.content-anime .card,
 .quick-search,
 .advanced-search,
