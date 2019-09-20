@@ -14,7 +14,10 @@ block content
                             .col-md-6
                                 button.buttonload
                                     i.fas.fa-history.fa-spin
-                                    span VIETSUB
+                                    span#vietsub VietSub
+                                button.buttonload
+                                    i.fas.fa-history.fa-spin
+                                    span#vietsub Thuyết Minh
                                 button.btn-download
                                     i.fas.fa-download
                                     span Download
@@ -32,7 +35,8 @@ block content
                 .col-md-12
                     h6 DANH SÁCH TẬP   
                     .list-button
-                        - for (var x = 1; x < 60; x++)
+                        button.active 1
+                        - for (var x = 2; x < 60; x++)
                             button=x   
     section.content-watchanime
             .container
@@ -184,5 +188,3 @@ block content
                                                 small.text-muted Last updated 3 mins ago           
                 include  template-parts/slider.pug
     include template-parts/footer.pug
-    a(href="")#backtotop
-        i.fas.fa-chevron-circle-up

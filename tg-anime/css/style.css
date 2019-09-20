@@ -440,10 +440,6 @@ section.news-anime h4 {
     color: black;
 }
 
-{
-    color: var(--bg-black2);
-}
-
 .fa-tags:before {
     margin-right: 5px;
 }
@@ -1001,11 +997,10 @@ section.news-anime {
     div#collapsingNavbar3,
     div#collapsingNavbar4 {
         background-color: rgba(0, 0, 0, 0.53)!important;
-        margin-right: 15px;
         margin-top: -12px;
     }
-    div#collapsingNavbar4 {
-        margin-right: 0;
+    .content-anime .row.wow.slideInUp {
+        margin: 0;
     }
     .navbar {
         height: 5.3rem;

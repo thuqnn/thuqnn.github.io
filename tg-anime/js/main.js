@@ -1,5 +1,43 @@
 $(document).ready(function() {
     new WOW().init();
+    $("#register-form").on("submit", function() {
+        var idValid = true;
+        if ($("#name").val().trim() == '') {
+            $('#name').next('small').text('Vui lòng nhập tên!');
+            idValid = false;
+        } else {
+            $('#name').next('small').text('');
+        }
+        if ($("#email").val().match(/^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/) == null) {
+            $("#email").next('small').text("Vui lòng nhập email !");
+            idValid = false;
+        } else {
+            $("#email").next('small').text('');
+        }
+        if ($("#phone").val().match(/^([\(]{1}[0-9]{3}[\)]{1}[\.| |\-]{0,1}|^[0-9]{3}[\.|\-| ]?)?[0-9]{3}(\.|\-| )?[0-9]{4}$/) == null) {
+            $("#phone").next('small').text("Vui lòng nhập số điện thoại !");
+            idValid = false;
+        } else {
+            $("#phone").next('small').text('');
+        }
+        if ($("#message").val().trim() == '') {
+            $("#message").next('small').text("Vui lòng nhập nội dung tin nhắn !");
+            idValid = false;
+        } else {
+            $("#message").next('small').text('');
+        }
+        return idValid;
+    })
+    let uri = document.URL;
+    let urinew = uri.split('?')[0];
+    let uri_dec = decodeURIComponent(uri);
+    let content = uri_dec.replace(/[&?]/g, '<br/>').replace(/[+]/g, ' ').replace(/[=]/g, ': ').replace('signup: Sign Up', '').replace(urinew, '');
+    let splitStr = content.split('<br/>');
+    let totalStr = "";
+    for (let i = 0; i < splitStr.length; i++) {
+        totalStr += "<br/>" + splitStr[i].charAt(0).toUpperCase() + splitStr[i].slice(1).toLowerCase();
+    }
+    $("#username").html(totalStr);
     $("i.far.fa-lightbulb").click(function() {
         $("body").toggleClass("onoff");
         $("section.slider").toggleClass("onoff");
@@ -31,11 +69,16 @@ $(document).ready(function() {
         $('section.copyright #logofooter').append('<img src="./img/logo_white.png"/>');
         $('section.copyright #logofooter a img').remove();
     });
+
     $('.view-more').click(function() {
         $('.content-more').toggle();
     });
     $(".list-button button").click(function() {
-            $(".list-button button").removeClass("active");
+        $(".list-button button").removeClass("active");
+        $(this).addClass("active");
+    })
+    $(".menu-movies button").click(function() {
+            $(".menu-movies button").removeClass("active");
             $(this).addClass("active");
         })
         // $('.navbar-nav li ').click(function() {
@@ -66,6 +109,20 @@ $(document).ready(function() {
         });
         return false;
     });
+    var btn = $('#button');
+
+    $(window).scroll(function() {
+        if ($(window).scrollTop() > 300) {
+            btn.addClass('show');
+        } else {
+            btn.removeClass('show');
+        }
+    });
+
+    btn.on('click', function(e) {
+        e.preventDefault();
+        $('html, body').animate({ scrollTop: 0 }, '300');
+    });
     $(function() {
         var navbar = $('.navbar');
         $(window).scroll(function() {
@@ -76,6 +133,7 @@ $(document).ready(function() {
             }
         });
     });
+
     if ($('.carousel2-1 .carousel').length > 0) {
         $('.carousel2-1 .carousel').slick({
             slidesToShow: 3,

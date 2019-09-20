@@ -36,21 +36,12 @@ block content
                                 .col-sm-12
                                     .row
                                         .col-sm-8.col-sm-offset-2.form-contacts
-                                            form#register-form(action="contactssuccess.html")
-                                                input(type='hidden' data-form-email='true')
-                                                .form-group
-                                                    input.form-control(id="name" type='text' name='Tên Bạn ' placeholder='Nhập Tên*' data-form-field='Name')
-                                                    small.error
-                                                .form-group
-                                                    input.form-control(id="email" type='email' name='Địa chỉ email ' placeholder='Nhập Email*' data-form-field='Email')
-                                                    small.error
-                                                .form-group
-                                                    input.form-control(id = "phone" type='tel' name='Số điện thoại ' placeholder='Nhập Phone*' data-form-field='Phone')
-                                                    small.error
-                                                .form-group
-                                                    textarea.form-control(id="message" name='Nội Dung Tin Nhắn ' placeholder='Tin Nhắn' rows='7' data-form-field='Message')
-                                                div
-                                                    input.txtsubmit(type='submit' name='Tình Trạng ' placeholder='GỬI' value='Gửi')
+                                            .wrap
+                                                h1.loginsuccess
+                                                    |  Bạn đã gửi thông tin thành công!
+                                                .register
+                                                    .info
+                                                    p#username
 
     section.map-contacts
         #map
