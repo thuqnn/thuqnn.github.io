@@ -21,11 +21,11 @@
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3"><span class="navbar-toggler-icon"></span></button>
       <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
         <ul class="navbar-nav w-100 justify-content-center" id="itemsmenu">
-          <li class="nav-item"><a class="nav-link" href="./index.html">ANIME</a></li>
-          <li class="nav-item"><a class="nav-link" href="./movies.html">MOVIES</a></li>
-          <li class="nav-item"><a class="nav-link" href="./trends.html">BXH</a></li>
-          <li class="nav-item"><a class="nav-link" href="./news.html">TIN TỨC</a></li>
-          <li class="nav-item"><a class="nav-link" href="./contacts.html">LIÊN HỆ</a></li>
+          <li class="nav-item active" data-toggle="tab" role="tab"><a class="nav-link" href="./index.html">ANIME</a></li>
+          <li class="nav-item" data-toggle="tab" role="tab"><a class="nav-link" href="./movies.html">MOVIES</a></li>
+          <li class="nav-item" data-toggle="tab" role="tab"><a class="nav-link" href="./trends.html">BXH</a></li>
+          <li class="nav-item" data-toggle="tab" role="tab"><a class="nav-link" href="./news.html">TIN TỨC</a></li>
+          <li class="nav-item" data-toggle="tab" role="tab"><a class="nav-link" href="./contacts.html">LIÊN HỆ</a></li>
         </ul>
         <ul class="nav navbar-nav ml-auto w-100 justify-content-end nav-search">
           <li class="nav-item">
@@ -306,16 +306,12 @@
         <div class="col-md-3">
           <h6>Flickr Gallery</h6>
           <div class="gallery-footer">
-            <div class="row">
-              <div class="col-md-4 img-gallery"><img class="img-fluid img-thumbnail hvr-glow" src="./img/slider/images.jpg" alt="card visa"></div>
-              <div class="col-md-4 img-gallery"><img class="img-fluid img-thumbnail hvr-glow" src="./img/slider/awesome-anime-wallpapers-1920x1080-anime-wallpaper-pc-full-hd.jpg" alt="card visa"></div>
-              <div class="col-md-4 img-gallery"><img class="img-fluid img-thumbnail hvr-glow" src="./img/slider/top-best-upcoming-anime-2018-list.jpg" alt="card visa"></div>
-            </div>
-            <div class="row">
-              <div class="col-md-4 img-gallery"><img class="img-fluid img-thumbnail hvr-glow" src="./img/slider/the-ancient-magus-bride-8591-1.jpg" alt="card visa"></div>
-              <div class="col-md-4 img-gallery"><img class="img-fluid img-thumbnail hvr-glow" src="./img/slider/549538.jpg" alt="card visa"></div>
-              <div class="col-md-4 img-gallery"><img class="img-fluid img-thumbnail hvr-glow" src="./img/slider/1.jpg" alt="card visa"></div>
-            </div>
+            <div class="gallery-flickr"><img class="img-fluid img-thumbnail hvr-glow flickr-img" src="./img/slider/images.jpg" alt="card visa"></div>
+            <div class="gallery-flickr"><img class="img-fluid img-thumbnail hvr-glow flickr-img" src="./img/slider/awesome-anime-wallpapers-1920x1080-anime-wallpaper-pc-full-hd.jpg" alt="card visa"></div>
+            <div class="gallery-flickr">   <img class="img-fluid img-thumbnail hvr-glow flickr-img" src="./img/slider/top-best-upcoming-anime-2018-list.jpg" alt="card visa"></div>
+            <div class="gallery-flickr">   <img class="img-fluid img-thumbnail hvr-glow flickr-img" src="./img/slider/the-ancient-magus-bride-8591-1.jpg" alt="card visa"></div>
+            <div class="gallery-flickr">   <img class="img-fluid img-thumbnail hvr-glow flickr-img" src="./img/slider/549538.jpg" alt="card visa"></div>
+            <div class="gallery-flickr">   <img class="img-fluid img-thumbnail hvr-glow flickr-img" src="./img/slider/1.jpg" alt="card visa"></div>
           </div>
         </div>
         <div class="col-md-3">
@@ -353,7 +349,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section><a id="back-to-top" href="#" title="Back to top">&uarr;</a>
 </body>
 <!-- Optional JavaScript-->
 <!-- jQuery first, then Popper.js, then Bootstrap JS-->
@@ -362,6 +358,7 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script src="./lib/popper.min.js"></script>
 <script src="./lib/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="./lib/isotope.pkgd.min.js"></script>
 <script src="./lib/wow.min.js"></script>
