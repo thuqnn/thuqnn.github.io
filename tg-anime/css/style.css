@@ -1095,6 +1095,25 @@
         section.content-news {
             font-size: 12px;
         }
+        footer.footer-main a {
+            font-size: 10px;
+        }
+        section.content-anime .card .card-body h5.card-title {
+            font-size: 14px;
+            padding: 5px 0;
+        }
+        i.fas.fa-tags a {
+            font-size: 9px;
+        }
+        .card-img {
+            height: 100%;
+        }
+        section.content-trends .container-fluid {
+            width: 90%;
+        }
+        .portfolioFilter a {
+            display: flex;
+        }
     }
     
     @media all and (max-width: 575px) {
