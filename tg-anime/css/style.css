@@ -627,7 +627,7 @@
     }
     
     .active {
-        background-color: var(--blue-color)!important;
+        border-bottom: 5px solid var(--blue-color);
     }
     
     .borderwhite {
@@ -757,8 +757,7 @@
         color: var(--red-color);
     }
     
-    i.fas.fa-step-forward,
-    i.fas.fa-history.fa-spin {
+    i.fas.fa-step-forward {
         color: var(--yellow-color);
     }
     
@@ -937,6 +936,9 @@
     }
     
     @media (max-width: 1200px) {
+        .slick-initialized .slick-slide h3 {
+            width: 90%;
+        }
         .navbar-expand-md .navbar-nav .nav-link {
             padding-right: .5rem;
             padding-left: .5rem;
@@ -998,7 +1000,20 @@
         }
     }
     
-    @media all and (max-width: 768px) {
+    @media (max-width: 768px) {
+        .form-sort button.btn.btn-primary,
+        .form-sort button.btn.btn-danger {
+            font-size: 12px;
+        }
+        .news-signup button.btn.btn-primary,
+        .news-signup .input-group input::placeholder,
+        .quick-search .input-group input::placeholder {
+            font-size: 10px;
+        }
+        .news-signup button.btn.btn-primary,
+        .quick-search .input-group button.btn-primary {
+            padding: 4px;
+        }
         .icon-button {
             border-radius: 1.6rem;
             font-size: 0.8rem;
@@ -1068,6 +1083,18 @@
             height: 3.25rem;
             width: 3.25rem;
         }
+        p.titlenew a {
+            font-size: 8px;
+        }
+        .slick-initialized .slick-slide h3 {
+            width: 86%;
+        }
+        .news-day {
+            font-size: 10px;
+        }
+        section.content-news {
+            font-size: 12px;
+        }
     }
     
     @media all and (max-width: 575px) {
@@ -1134,5 +1161,8 @@
         }
         section.news-anime h4 {
             margin-bottom: 25px;
+        }
+        .slick-initialized .slick-slide h3 {
+            width: 86%;
         }
     }

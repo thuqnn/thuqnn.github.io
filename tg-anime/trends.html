@@ -1,355 +1,425 @@
 <!DOCTYPE html>
+
 <head>
-  <!-- Required meta tags-->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="shortcut icon" type="image/png" href="img/tv.png">
-  <!-- Bootstrap CSS-->
-  <link rel="stylesheet" href="./lib/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;display=swap&amp;subset=vietnamese" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-  <link href="./lib/hover-min.css" rel="stylesheet" media="all">
-  <link href="./lib/hover.css" rel="stylesheet" media="all">
-  <link rel="stylesheet" href="./lib/animate.css">
-  <link rel="stylesheet" href="css/style.css">
-  <title>Bảng Xếp Hạng</title>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" type="image/png" href="img/tv.png">
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;display=swap&amp;subset=vietnamese" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link href="./lib/hover-min.css" rel="stylesheet" media="all">
+    <link href="./lib/hover.css" rel="stylesheet" media="all">
+    <link rel="stylesheet" href="./lib/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Bảng Xếp Hạng</title>
 </head>
+
 <body>
-  <div id="topheader">
-    <nav class="navbar navbar-light navbar-expand-md bg-light justify-content-center fixed-top"><a class="navbar-brand d-flex w-50 mr-auto" href="./index.html"><img class="img-fluid" src="./img/logo_white.png" alt="#"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3"><span class="navbar-toggler-icon"></span></button>
-      <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
-        <ul class="navbar-nav w-100 justify-content-center" id="itemsmenu">
-          <li class="nav-item active" data-toggle="tab" role="tab"><a class="nav-link" href="./index.html">ANIME</a></li>
-          <li class="nav-item" data-toggle="tab" role="tab"><a class="nav-link" href="./movies.html">MOVIES</a></li>
-          <li class="nav-item" data-toggle="tab" role="tab"><a class="nav-link" href="./trends.html">BXH</a></li>
-          <li class="nav-item" data-toggle="tab" role="tab"><a class="nav-link" href="./news.html">TIN TỨC</a></li>
-          <li class="nav-item" data-toggle="tab" role="tab"><a class="nav-link" href="./contacts.html">LIÊN HỆ</a></li>
-        </ul>
-        <ul class="nav navbar-nav ml-auto w-100 justify-content-end nav-search">
-          <li class="nav-item">
-            <div class="search">
-              <input class="form-control input-sm" type="text" maxlength="64" placeholder="Search">
-              <button class="btn btn-primary btn-sm" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+    <div id="topheader">
+        <nav class="navbar navbar-light navbar-expand-md bg-light justify-content-center fixed-top">
+            <a class="navbar-brand d-flex w-50 mr-auto" href="./index.html"><img class="img-fluid" src="./img/logo_white.png" alt="#"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3"><span class="navbar-toggler-icon"></span></button>
+            <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
+                <ul class="navbar-nav w-100 justify-content-center" id="itemsmenu">
+                    <li class="nav-item"><a class="nav-link" href="./index.html">ANIME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./movies.html">MOVIES</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="./trends.html">BXH</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./news.html">TIN TỨC</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./contacts.html">LIÊN HỆ</a></li>
+                </ul>
+                <ul class="nav navbar-nav ml-auto w-100 justify-content-end nav-search">
+                    <li class="nav-item">
+                        <div class="search">
+                            <input class="form-control input-sm" type="text" maxlength="64" placeholder="Search">
+                            <button class="btn btn-primary btn-sm" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                        </div>
+                    </li>
+                    <li class="nav-item"><i class="far fa-lightbulb"></i></li>
+                </ul>
             </div>
-          </li>
-          <li class="nav-item"><i class="far fa-lightbulb"></i></li>
-        </ul>
-      </div>
-    </nav>
-  </div>
-  <header class="trends"></header>
-  <section class="content-trends">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="portfolioFilter clearfix"><a class="current" href="#" data-filter="*">Tất Cả</a><a href="#" data-filter=".webTemplates">Xu Hướng</a><a href="#" data-filter=".logos">Xếp hạng hàng đầu</a><a href="#" data-filter=".drawings">Top Anime Mới Nhất</a><a href="#" data-filter=".ui">Top Movies Mới Nhất</a></div>
-          <div class="portfolioContainer">
-            <div class="webTemplates objects logos">
-              <div class="card-data">
-                <div class="card-deck h-100">
-                  <div class="card hvr-glow">
-                    <div class="items-play-img"><a href="./watch.html">
-                        <div class="img-items"><img class="card-img-top img-fluid h-100 w-100" src="./img/listmovies/darling-in-the-franxx-8969.jpg" alt="list movies"></div>
-                        <div class="icon-items"><img class="card-img-top img-fluid h-100 w-100" src="./img/icon-play.png" alt="list movies"></div>
-                        <div class="text-adward"><b>1</b></div></a></div>
-                    <div class="card-body"><a href="./watch.html">
-                        <h5 class="card-title">Vua Hải Tặc</h5></a>
-                      <div class="star-votes"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                      <div class="text-votes"><span>Năm xuất bản: 2017</span></div>
-                    </div>
-                    <div class="card-footer bg-transparentk">   
-                      <div class="vote-views"><span>Lượt xem: 144,279,366                  </span></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="webTemplates food logos">
-              <div class="card-data">
-                <div class="card-deck h-100">
-                  <div class="card hvr-glow">
-                    <div class="items-play-img"><a href="./watch.html">
-                        <div class="img-items"><img class="card-img-top img-fluid h-100 w-100" src="./img/listmovies/fate-stay-night-unlimited-blade-works-2-6861.jpg" alt="list movies"></div>
-                        <div class="icon-items"><img class="card-img-top img-fluid h-100 w-100" src="./img/icon-play.png" alt="list movies"></div>
-                        <div class="text-adward"><b>2</b></div></a></div>
-                    <div class="card-body"><a href="./watch.html">
-                        <h5 class="card-title">BORUTO AND NARUTO</h5></a>
-                      <div class="star-votes"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                      <div class="text-votes"><span>Năm xuất bản: 2019   </span></div>
-                    </div>
-                    <div class="card-footer bg-transparentk">   
-                      <div class="vote-views"><span>Lượt xem: 28,681,801</span></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="logos drawings">
-              <div class="card-data">
-                <div class="card-deck h-100">
-                  <div class="card hvr-glow">
-                    <div class="items-play-img"><a href="./watch.html">
-                        <div class="img-items"><img class="card-img-top img-fluid h-100 w-100" src="./img/listmovies/peace-sign-10255.jpg" alt="list movies"></div>
-                        <div class="icon-items"><img class="card-img-top img-fluid h-100 w-100" src="./img/icon-play.png" alt="list movies"></div>
-                        <div class="text-adward"><b>3</b></div></a></div>
-                    <div class="card-body"><a href="./watch.html">
-                        <h5 class="card-title">HỘI PHÁP SƯ</h5></a>
-                      <div class="star-votes"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                      <div class="text-votes"><span>Năm xuất bản: 2019</span></div>
-                    </div>
-                    <div class="card-footer bg-transparentk">   
-                      <div class="vote-views"><span>Lượt xem: 30,869,439</span></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="webTemplates logos">
-              <div class="card-data">
-                <div class="card-deck h-100">
-                  <div class="card hvr-glow">
-                    <div class="items-play-img"><a href="./watch.html">
-                        <div class="img-items"><img class="card-img-top img-fluid h-100 w-100" src="./img/listmovies/tegami-bachi-letter-bee-reverse-3282.jpg" alt="list movies"></div>
-                        <div class="icon-items"><img class="card-img-top img-fluid h-100 w-100" src="./img/icon-play.png" alt="list movies"></div>
-                        <div class="text-adward"><b>4</b></div></a></div>
-                    <div class="card-body"><a href="./watch.html">
-                        <h5 class="card-title">NANATSU NO TAIZAI</h5></a>
-                      <div class="star-votes"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                      <div class="text-votes"><span>Năm xuất bản: 2016</span></div>
-                    </div>
-                    <div class="card-footer bg-transparentk">   
-                      <div class="vote-views"><span>Lượt xem: 11,293,978</span></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="logos">
-              <div class="card-data">
-                <div class="card-deck h-100">
-                  <div class="card hvr-glow">
-                    <div class="items-play-img"><a href="./watch.html">
-                        <div class="img-items"><img class="card-img-top img-fluid h-100 w-100" src="./img/listmovies/you-and-me-2-4688.jpg" alt="list movies"></div>
-                        <div class="icon-items"><img class="card-img-top img-fluid h-100 w-100" src="./img/icon-play.png" alt="list movies"></div>
-                        <div class="text-adward"><b>5</b></div></a></div>
-                    <div class="card-body"><a href="./watch.html">
-                        <h5 class="card-title">ONE PUNCH MAN</h5></a>
-                      <div class="star-votes"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                      <div class="text-votes"><span>Năm xuất bản: 2019</span></div>
-                    </div>
-                    <div class="card-footer bg-transparentk">   
-                      <div class="vote-views"><span>Lượt xem: 8,007,631</span></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="logos">
-              <div class="card-data">
-                <div class="card-deck h-100">
-                  <div class="card hvr-glow">
-                    <div class="items-play-img"><a href="./watch.html">
-                        <div class="img-items"><img class="card-img-top img-fluid h-100 w-100" src="./img/listmovies/yuru-yuri-2-4671.jpg" alt="list movies"></div>
-                        <div class="icon-items"><img class="card-img-top img-fluid h-100 w-100" src="./img/icon-play.png" alt="list movies"></div>
-                        <div class="text-adward"><b>6</b></div></a></div>
-                    <div class="card-body"><a href="./watch.html">
-                        <h5 class="card-title">COP CRAFT</h5></a>
-                      <div class="star-votes"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                      <div class="text-votes"><span>Năm xuất bản: 2015  </span></div>
-                    </div>
-                    <div class="card-footer bg-transparentk">   
-                      <div class="vote-views"><span>Lượt xem: 1,273,754</span></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="webTemplates">
-              <div class="card-data">
-                <div class="card-deck h-100">
-                  <div class="card hvr-glow">
-                    <div class="items-play-img"><a href="./watch.html">
-                        <div class="img-items"><img class="card-img-top img-fluid h-100 w-100" src="./img/listmovies/rakshasa-street-8146.jpg" alt="list movies"></div>
-                        <div class="icon-items"><img class="card-img-top img-fluid h-100 w-100" src="./img/icon-play.png" alt="list movies"></div>
-                        <div class="text-adward"><b>7</b></div></a></div>
-                    <div class="card-body"><a href="./watch.html">
-                        <h5 class="card-title">ARIFURETA DE SEKAI</h5></a>
-                      <div class="star-votes"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
-                      <div class="text-votes"><span>Năm xuất bản: 2015   </span></div>
-                    </div>
-                    <div class="card-footer bg-transparentk">   
-                      <div class="vote-views"><span>Lượt xem: 23,481,249</span></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="ui">
-              <div class="card-data">
-                <div class="card-deck h-100">
-                  <div class="card hvr-glow">
-                    <div class="items-play-img"><a href="./watch.html">
-                        <div class="img-items"><img class="card-img-top img-fluid h-100 w-100" src="./img/listmovies/relife-7011.jpg" alt="list movies"></div>
-                        <div class="icon-items"><img class="card-img-top img-fluid h-100 w-100" src="./img/icon-play.png" alt="list movies"></div>
-                        <div class="text-adward"><b>8</b></div></a></div>
-                    <div class="card-body"><a href="./watch.html">
-                        <h5 class="card-title">BLACK CLOVER</h5></a>
-                      <div class="star-votes"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i></div>
-                      <div class="text-votes"><span>Năm xuất bản: 2019   </span></div>
-                    </div>
-                    <div class="card-footer bg-transparentk">   
-                      <div class="vote-views"><span>Lượt xem: 9,969,966</span></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="drawings">
-              <div class="card-data">
-                <div class="card-deck h-100">
-                  <div class="card hvr-glow">
-                    <div class="items-play-img"><a href="./watch.html">
-                        <div class="img-items"><img class="card-img-top img-fluid h-100 w-100" src="./img/listmovies/tegami-bachi-letter-bee-2686.jpg" alt="list movies"></div>
-                        <div class="icon-items"><img class="card-img-top img-fluid h-100 w-100" src="./img/icon-play.png" alt="list movies"></div>
-                        <div class="text-adward"><b>9</b></div></a></div>
-                    <div class="card-body"><a href="./watch.html">
-                        <h5 class="card-title">DORAEMON </h5></a>
-                      <div class="star-votes"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i></div>
-                      <div class="text-votes"><span>Năm xuất bản: 2019   </span></div>
-                    </div>
-                    <div class="card-footer bg-transparentk">   
-                      <div class="vote-views"><span>Lượt xem: 2,556,906 </span></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="ui">
-              <div class="card-data">
-                <div class="card-deck h-100">
-                  <div class="card hvr-glow">
-                    <div class="items-play-img"><a href="./watch.html">
-                        <div class="img-items"><img class="card-img-top img-fluid h-100 w-100" src="./img/listmovies/yuri-on-ice-7793.jpg" alt="list movies"></div>
-                        <div class="icon-items"><img class="card-img-top img-fluid h-100 w-100" src="./img/icon-play.png" alt="list movies"></div>
-                        <div class="text-adward"><b>10</b></div></a></div>
-                    <div class="card-body"><a href="./watch.html">
-                        <h5 class="card-title">ENEN NO SHOUBOUTAI</h5></a>
-                      <div class="star-votes"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
-                      <div class="text-votes"><span>Năm xuất bản: 2019   </span></div>
-                    </div>
-                    <div class="card-footer bg-transparentk">   
-                      <div class="vote-views"><span>Lượt xem: 235,654</span></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="drawings places">
-              <div class="card-data">
-                <div class="card-deck h-100">
-                  <div class="card hvr-glow">
-                    <div class="items-play-img"><a href="./watch.html">
-                        <div class="img-items"><img class="card-img-top img-fluid h-100 w-100" src="./img/listmovies/eyeshield-21-966.jpg" alt="list movies"></div>
-                        <div class="icon-items"><img class="card-img-top img-fluid h-100 w-100" src="./img/icon-play.png" alt="list movies"></div>
-                        <div class="text-adward"><b>11</b></div></a></div>
-                    <div class="card-body"><a href="./watch.html">
-                        <h5 class="card-title">KIMETSU NO YAIBA</h5></a>
-                      <div class="star-votes"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
-                      <div class="text-votes"><span>Năm xuất bản: 2019   </span></div>
-                    </div>
-                    <div class="card-footer bg-transparentk">   
-                      <div class="vote-views"><span>Lượt xem: 232,773      </span></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="drawings">
-              <div class="card-data">
-                <div class="card-deck h-100">
-                  <div class="card hvr-glow">
-                    <div class="items-play-img"><a href="./watch.html">
-                        <div class="img-items"><img class="card-img-top img-fluid h-100 w-100" src="./img/listmovies/the-ancient-magus-bride-those-awaiting-a-star-7758.jpg" alt="list movies"></div>
-                        <div class="icon-items"><img class="card-img-top img-fluid h-100 w-100" src="./img/icon-play.png" alt="list movies"></div>
-                        <div class="text-adward"><b>12</b></div></a></div>
-                    <div class="card-body"><a href="./watch.html">
-                        <h5 class="card-title">VINLAND SAGA</h5></a>
-                      <div class="star-votes"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
-                      <div class="text-votes"><span>Năm xuất bản: 2019   </span></div>
-                    </div>
-                    <div class="card-footer bg-transparentk">   
-                      <div class="vote-views"><span>Lượt xem: 184,084</span></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+        </nav>
     </div>
-  </section>
-  <footer class="footer-main">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <h6>Thế Giới Anime</h6>
-          <div class="card-visa"><a href="#"><img class="img-fluid" src="./img/footer/Badges.png" alt="card visa"></a><a href="#"><img class="img-fluid" src="./img/footer/blackamazonsvg.png" alt="card visa"></a><a href="#"><img class="img-fluid" src="./img/footer/US_UK_Download_on_the.png" alt="card visa"></a></div>
-          <p>Xem phim hoạt hình hay nhất , mới nhất, chất lượng cao nhất Việt Nam</p>
-        </div>
-        <div class="col-md-2">
-          <h6>Theo dõi chúng tôi</h6>
-          <div class="social-icon"><a class="icon-button twitter" href="#"><i class="fab fa-twitter"></i><span></span></a><a class="icon-button facebook" href="#"><i class="fab fa-facebook-f"></i><span></span></a><a class="icon-button instagram" href="#"><i class="fab fa-instagram"></i><span></span></a><a class="icon-button youtube" href="#"><i class="fab fa-youtube"></i><span></span></a><a class="icon-button pinterest" href="#"><i class="fab fa-pinterest"></i><span></span></a></div>
-        </div>
-        <div class="col-md-3">
-          <h6>Flickr Gallery</h6>
-          <div class="gallery-footer">
-            <div class="gallery-flickr"><img class="img-fluid img-thumbnail hvr-glow flickr-img" src="./img/slider/images.jpg" alt="card visa"></div>
-            <div class="gallery-flickr"><img class="img-fluid img-thumbnail hvr-glow flickr-img" src="./img/slider/awesome-anime-wallpapers-1920x1080-anime-wallpaper-pc-full-hd.jpg" alt="card visa"></div>
-            <div class="gallery-flickr">   <img class="img-fluid img-thumbnail hvr-glow flickr-img" src="./img/slider/top-best-upcoming-anime-2018-list.jpg" alt="card visa"></div>
-            <div class="gallery-flickr">   <img class="img-fluid img-thumbnail hvr-glow flickr-img" src="./img/slider/the-ancient-magus-bride-8591-1.jpg" alt="card visa"></div>
-            <div class="gallery-flickr">   <img class="img-fluid img-thumbnail hvr-glow flickr-img" src="./img/slider/549538.jpg" alt="card visa"></div>
-            <div class="gallery-flickr">   <img class="img-fluid img-thumbnail hvr-glow flickr-img" src="./img/slider/1.jpg" alt="card visa"></div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <h6>Movies</h6>
-          <div class="row">
-            <div class="col-md-6">
-              <ul>
-                <li><a href="./index.html">Anime Mới</a></li>
-                <li><a href="./movies.html">Movies Mới</a></li>
-                <li><a href="./trends.html">Phổ Biến Nhất</a></li>
-                <li><a href="./watch.html">Top Trailer</a></li>
-                <li><a href="./news.html">Tin Tức Phim</a></li>
-              </ul>
+    <header class="trends"></header>
+    <section class="content-trends">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="portfolioFilter clearfix"><a class="current" href="#" data-filter="*">Tất Cả</a><a href="#" data-filter=".webTemplates">Xu Hướng</a><a href="#" data-filter=".logos">Xếp hạng hàng đầu</a><a href="#" data-filter=".drawings">Top Anime Mới Nhất</a><a href="#" data-filter=".ui">Top Movies Mới Nhất</a></div>
+                    <div class="portfolioContainer">
+                        <div class="webTemplates objects logos">
+                            <div class="card-data">
+                                <div class="card-deck h-100">
+                                    <div class="card hvr-glow">
+                                        <div class="items-play-img">
+                                            <a href="./watch.html">
+                                                <div class="img-items"><img class="card-img-top img-fluid h-100 w-100" src="./img/listmovies/darling-in-the-franxx-8969.jpg" alt="list movies"></div>
+                                                <div class="icon-items"><img class="card-img-top img-fluid h-100 w-100" src="./img/icon-play.png" alt="list movies"></div>
+                                                <div class="text-adward"><b>1</b></div>
+                                            </a>
+                                        </div>
+                                        <div class="card-body">
+                                            <a href="./watch.html">
+                                                <h5 class="card-title">Vua Hải Tặc</h5>
+                                            </a>
+                                            <div class="star-votes"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                                            <div class="text-votes"><span>Năm xuất bản: 2017</span></div>
+                                        </div>
+                                        <div class="card-footer bg-transparentk">
+                                            <div class="vote-views"><span class="fas fa-eye"> Lượt xem: 144,279,366                  </span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="webTemplates food logos">
+                            <div class="card-data">
+                                <div class="card-deck h-100">
+                                    <div class="card hvr-glow">
+                                        <div class="items-play-img">
+                                            <a href="./watch.html">
+                                                <div class="img-items"><img class="card-img-top img-fluid h-100 w-100" src="./img/listmovies/fate-stay-night-unlimited-blade-works-2-6861.jpg" alt="list movies"></div>
+                                                <div class="icon-items"><img class="card-img-top img-fluid h-100 w-100" src="./img/icon-play.png" alt="list movies"></div>
+                                                <div class="text-adward"><b>2</b></div>
+                                            </a>
+                                        </div>
+                                        <div class="card-body">
+                                            <a href="./watch.html">
+                                                <h5 class="card-title">BORUTO AND NARUTO</h5>
+                                            </a>
+                                            <div class="star-votes"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                                            <div class="text-votes"><span>Năm xuất bản: 2019   </span></div>
+                                        </div>
+                                        <div class="card-footer bg-transparentk">
+                                            <div class="vote-views"><span class="fas fa-eye"> Lượt xem: 28,681,801</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="logos drawings">
+                            <div class="card-data">
+                                <div class="card-deck h-100">
+                                    <div class="card hvr-glow">
+                                        <div class="items-play-img">
+                                            <a href="./watch.html">
+                                                <div class="img-items"><img class="card-img-top img-fluid h-100 w-100" src="./img/listmovies/peace-sign-10255.jpg" alt="list movies"></div>
+                                                <div class="icon-items"><img class="card-img-top img-fluid h-100 w-100" src="./img/icon-play.png" alt="list movies"></div>
+                                                <div class="text-adward"><b>3</b></div>
+                                            </a>
+                                        </div>
+                                        <div class="card-body">
+                                            <a href="./watch.html">
+                                                <h5 class="card-title">HỘI PHÁP SƯ</h5>
+                                            </a>
+                                            <div class="star-votes"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                                            <div class="text-votes"><span>Năm xuất bản: 2019</span></div>
+                                        </div>
+                                        <div class="card-footer bg-transparentk">
+                                            <div class="vote-views"><span class="fas fa-eye"> Lượt xem: 30,869,439</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="webTemplates logos">
+                            <div class="card-data">
+                                <div class="card-deck h-100">
+                                    <div class="card hvr-glow">
+                                        <div class="items-play-img">
+                                            <a href="./watch.html">
+                                                <div class="img-items"><img class="card-img-top img-fluid h-100 w-100" src="./img/listmovies/tegami-bachi-letter-bee-reverse-3282.jpg" alt="list movies"></div>
+                                                <div class="icon-items"><img class="card-img-top img-fluid h-100 w-100" src="./img/icon-play.png" alt="list movies"></div>
+                                                <div class="text-adward"><b>4</b></div>
+                                            </a>
+                                        </div>
+                                        <div class="card-body">
+                                            <a href="./watch.html">
+                                                <h5 class="card-title">NANATSU NO TAIZAI</h5>
+                                            </a>
+                                            <div class="star-votes"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                                            <div class="text-votes"><span>Năm xuất bản: 2016</span></div>
+                                        </div>
+                                        <div class="card-footer bg-transparentk">
+                                            <div class="vote-views"><span class="fas fa-eye"> Lượt xem: 11,293,978</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="logos">
+                            <div class="card-data">
+                                <div class="card-deck h-100">
+                                    <div class="card hvr-glow">
+                                        <div class="items-play-img">
+                                            <a href="./watch.html">
+                                                <div class="img-items"><img class="card-img-top img-fluid h-100 w-100" src="./img/listmovies/you-and-me-2-4688.jpg" alt="list movies"></div>
+                                                <div class="icon-items"><img class="card-img-top img-fluid h-100 w-100" src="./img/icon-play.png" alt="list movies"></div>
+                                                <div class="text-adward"><b>5</b></div>
+                                            </a>
+                                        </div>
+                                        <div class="card-body">
+                                            <a href="./watch.html">
+                                                <h5 class="card-title">ONE PUNCH MAN</h5>
+                                            </a>
+                                            <div class="star-votes"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                                            <div class="text-votes"><span>Năm xuất bản: 2019</span></div>
+                                        </div>
+                                        <div class="card-footer bg-transparentk">
+                                            <div class="vote-views"><span class="fas fa-eye"> Lượt xem: 8,007,631</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="logos">
+                            <div class="card-data">
+                                <div class="card-deck h-100">
+                                    <div class="card hvr-glow">
+                                        <div class="items-play-img">
+                                            <a href="./watch.html">
+                                                <div class="img-items"><img class="card-img-top img-fluid h-100 w-100" src="./img/listmovies/yuru-yuri-2-4671.jpg" alt="list movies"></div>
+                                                <div class="icon-items"><img class="card-img-top img-fluid h-100 w-100" src="./img/icon-play.png" alt="list movies"></div>
+                                                <div class="text-adward"><b>6</b></div>
+                                            </a>
+                                        </div>
+                                        <div class="card-body">
+                                            <a href="./watch.html">
+                                                <h5 class="card-title">COP CRAFT</h5>
+                                            </a>
+                                            <div class="star-votes"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                                            <div class="text-votes"><span>Năm xuất bản: 2015  </span></div>
+                                        </div>
+                                        <div class="card-footer bg-transparentk">
+                                            <div class="vote-views"><span class="fas fa-eye"> Lượt xem: 1,273,754</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="webTemplates">
+                            <div class="card-data">
+                                <div class="card-deck h-100">
+                                    <div class="card hvr-glow">
+                                        <div class="items-play-img">
+                                            <a href="./watch.html">
+                                                <div class="img-items"><img class="card-img-top img-fluid h-100 w-100" src="./img/listmovies/rakshasa-street-8146.jpg" alt="list movies"></div>
+                                                <div class="icon-items"><img class="card-img-top img-fluid h-100 w-100" src="./img/icon-play.png" alt="list movies"></div>
+                                                <div class="text-adward"><b>7</b></div>
+                                            </a>
+                                        </div>
+                                        <div class="card-body">
+                                            <a href="./watch.html">
+                                                <h5 class="card-title">ARIFURETA DE SEKAI</h5>
+                                            </a>
+                                            <div class="star-votes"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
+                                            <div class="text-votes"><span>Năm xuất bản: 2015   </span></div>
+                                        </div>
+                                        <div class="card-footer bg-transparentk">
+                                            <div class="vote-views"><span class="fas fa-eye"> Lượt xem: 23,481,249</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui">
+                            <div class="card-data">
+                                <div class="card-deck h-100">
+                                    <div class="card hvr-glow">
+                                        <div class="items-play-img">
+                                            <a href="./watch.html">
+                                                <div class="img-items"><img class="card-img-top img-fluid h-100 w-100" src="./img/listmovies/relife-7011.jpg" alt="list movies"></div>
+                                                <div class="icon-items"><img class="card-img-top img-fluid h-100 w-100" src="./img/icon-play.png" alt="list movies"></div>
+                                                <div class="text-adward"><b>8</b></div>
+                                            </a>
+                                        </div>
+                                        <div class="card-body">
+                                            <a href="./watch.html">
+                                                <h5 class="card-title">BLACK CLOVER</h5>
+                                            </a>
+                                            <div class="star-votes"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i></div>
+                                            <div class="text-votes"><span>Năm xuất bản: 2019   </span></div>
+                                        </div>
+                                        <div class="card-footer bg-transparentk">
+                                            <div class="vote-views"><span class="fas fa-eye"> Lượt xem: 9,969,966</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="drawings">
+                            <div class="card-data">
+                                <div class="card-deck h-100">
+                                    <div class="card hvr-glow">
+                                        <div class="items-play-img">
+                                            <a href="./watch.html">
+                                                <div class="img-items"><img class="card-img-top img-fluid h-100 w-100" src="./img/listmovies/tegami-bachi-letter-bee-2686.jpg" alt="list movies"></div>
+                                                <div class="icon-items"><img class="card-img-top img-fluid h-100 w-100" src="./img/icon-play.png" alt="list movies"></div>
+                                                <div class="text-adward"><b>9</b></div>
+                                            </a>
+                                        </div>
+                                        <div class="card-body">
+                                            <a href="./watch.html">
+                                                <h5 class="card-title">DORAEMON </h5>
+                                            </a>
+                                            <div class="star-votes"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i></div>
+                                            <div class="text-votes"><span>Năm xuất bản: 2019   </span></div>
+                                        </div>
+                                        <div class="card-footer bg-transparentk">
+                                            <div class="vote-views"><span class="fas fa-eye"> Lượt xem: 2,556,906 </span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui">
+                            <div class="card-data">
+                                <div class="card-deck h-100">
+                                    <div class="card hvr-glow">
+                                        <div class="items-play-img">
+                                            <a href="./watch.html">
+                                                <div class="img-items"><img class="card-img-top img-fluid h-100 w-100" src="./img/listmovies/yuri-on-ice-7793.jpg" alt="list movies"></div>
+                                                <div class="icon-items"><img class="card-img-top img-fluid h-100 w-100" src="./img/icon-play.png" alt="list movies"></div>
+                                                <div class="text-adward"><b>10</b></div>
+                                            </a>
+                                        </div>
+                                        <div class="card-body">
+                                            <a href="./watch.html">
+                                                <h5 class="card-title">ENEN NO SHOUBOUTAI</h5>
+                                            </a>
+                                            <div class="star-votes"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
+                                            <div class="text-votes"><span>Năm xuất bản: 2019   </span></div>
+                                        </div>
+                                        <div class="card-footer bg-transparentk">
+                                            <div class="vote-views"><span class="fas fa-eye"> Lượt xem: 235,654</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="drawings places">
+                            <div class="card-data">
+                                <div class="card-deck h-100">
+                                    <div class="card hvr-glow">
+                                        <div class="items-play-img">
+                                            <a href="./watch.html">
+                                                <div class="img-items"><img class="card-img-top img-fluid h-100 w-100" src="./img/listmovies/eyeshield-21-966.jpg" alt="list movies"></div>
+                                                <div class="icon-items"><img class="card-img-top img-fluid h-100 w-100" src="./img/icon-play.png" alt="list movies"></div>
+                                                <div class="text-adward"><b>11</b></div>
+                                            </a>
+                                        </div>
+                                        <div class="card-body">
+                                            <a href="./watch.html">
+                                                <h5 class="card-title">KIMETSU NO YAIBA</h5>
+                                            </a>
+                                            <div class="star-votes"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
+                                            <div class="text-votes"><span>Năm xuất bản: 2019   </span></div>
+                                        </div>
+                                        <div class="card-footer bg-transparentk">
+                                            <div class="vote-views"><span class="fas fa-eye"> Lượt xem: 232,773      </span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="drawings">
+                            <div class="card-data">
+                                <div class="card-deck h-100">
+                                    <div class="card hvr-glow">
+                                        <div class="items-play-img">
+                                            <a href="./watch.html">
+                                                <div class="img-items"><img class="card-img-top img-fluid h-100 w-100" src="./img/listmovies/the-ancient-magus-bride-those-awaiting-a-star-7758.jpg" alt="list movies"></div>
+                                                <div class="icon-items"><img class="card-img-top img-fluid h-100 w-100" src="./img/icon-play.png" alt="list movies"></div>
+                                                <div class="text-adward"><b>12</b></div>
+                                            </a>
+                                        </div>
+                                        <div class="card-body">
+                                            <a href="./watch.html">
+                                                <h5 class="card-title">VINLAND SAGA</h5>
+                                            </a>
+                                            <div class="star-votes"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
+                                            <div class="text-votes"><span>Năm xuất bản: 2019   </span></div>
+                                        </div>
+                                        <div class="card-footer bg-transparentk">
+                                            <div class="vote-views"><span class="fas fa-eye"> Lượt xem: 184,084</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-6">
-              <ul>
-                <li><a href="">Thông Tin</a></li>
-                <li><a href="">Gallery</a></li>
-                <li><a href="">Dịch Vụ</a></li>
-                <li><a href="">Chính sách bảo mật</a></li>
-                <li><a href="./contacts.html">Liên Hệ</a></li>
-              </ul>
+        </div>
+    </section>
+    <footer class="footer-main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h6>Thế Giới Anime</h6>
+                    <div class="card-visa">
+                        <a href="#"><img class="img-fluid" src="./img/footer/Badges.png" alt="card visa"></a>
+                        <a href="#"><img class="img-fluid" src="./img/footer/blackamazonsvg.png" alt="card visa"></a>
+                        <a href="#"><img class="img-fluid" src="./img/footer/US_UK_Download_on_the.png" alt="card visa"></a>
+                    </div>
+                    <p>Xem phim hoạt hình hay nhất , mới nhất, chất lượng cao nhất Việt Nam</p>
+                </div>
+                <div class="col-md-2">
+                    <h6>Theo dõi chúng tôi</h6>
+                    <div class="social-icon"><a class="icon-button twitter" href="#"><i class="fab fa-twitter"></i><span></span></a><a class="icon-button facebook" href="#"><i class="fab fa-facebook-f"></i><span></span></a><a class="icon-button instagram" href="#"><i class="fab fa-instagram"></i><span></span></a>
+                        <a class="icon-button youtube" href="#"><i class="fab fa-youtube"></i><span></span></a><a class="icon-button pinterest" href="#"><i class="fab fa-pinterest"></i><span></span></a></div>
+                </div>
+                <div class="col-md-3">
+                    <h6>Flickr Gallery</h6>
+                    <div class="gallery-footer">
+                        <div class="gallery-flickr"><img class="img-fluid img-thumbnail hvr-glow flickr-img" src="./img/slider/images.jpg" alt="card visa"></div>
+                        <div class="gallery-flickr"><img class="img-fluid img-thumbnail hvr-glow flickr-img" src="./img/slider/awesome-anime-wallpapers-1920x1080-anime-wallpaper-pc-full-hd.jpg" alt="card visa"></div>
+                        <div class="gallery-flickr"> <img class="img-fluid img-thumbnail hvr-glow flickr-img" src="./img/slider/top-best-upcoming-anime-2018-list.jpg" alt="card visa"></div>
+                        <div class="gallery-flickr"> <img class="img-fluid img-thumbnail hvr-glow flickr-img" src="./img/slider/the-ancient-magus-bride-8591-1.jpg" alt="card visa"></div>
+                        <div class="gallery-flickr"> <img class="img-fluid img-thumbnail hvr-glow flickr-img" src="./img/slider/549538.jpg" alt="card visa"></div>
+                        <div class="gallery-flickr"> <img class="img-fluid img-thumbnail hvr-glow flickr-img" src="./img/slider/1.jpg" alt="card visa"></div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <h6>Movies</h6>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul>
+                                <li><a href="./index.html">Anime Mới</a></li>
+                                <li><a href="./movies.html">Movies Mới</a></li>
+                                <li><a href="./trends.html">Phổ Biến Nhất</a></li>
+                                <li><a href="./watch.html">Top Trailer</a></li>
+                                <li><a href="./news.html">Tin Tức Phim</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul>
+                                <li><a href="">Thông Tin</a></li>
+                                <li><a href="">Gallery</a></li>
+                                <li><a href="">Dịch Vụ</a></li>
+                                <li><a href="">Chính sách bảo mật</a></li>
+                                <li><a href="./contacts.html">Liên Hệ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
-  </footer>
-  <section class="copyright">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-6" id="logofooter"><a href=""><img src="./img/logo_black.png" alt="logo-footer"></a></div>
-        <div class="col-md-6 text-right copyright-p">
-          <p>Copyright © 2019 Tg-Anime.com, Inc.</p>
+    </footer>
+    <section class="copyright">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6" id="logofooter">
+                    <a href=""><img src="./img/logo_black.png" alt="logo-footer"></a>
+                </div>
+                <div class="col-md-6 text-right copyright-p">
+                    <p>Copyright © 2019 Tg-Anime.com, Inc.</p>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </section><a id="back-to-top" href="#" title="Back to top">&uarr;</a>
+    </section><a id="back-to-top" href="#" title="Back to top">&uarr;</a>
 </body>
 <!-- Optional JavaScript-->
 <!-- jQuery first, then Popper.js, then Bootstrap JS-->

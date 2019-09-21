@@ -1,5 +1,6 @@
 $(document).ready(function() {
     new WOW().init();
+    //end wow
     $("#register-form").on("submit", function() {
         var idValid = true;
         if ($("#name").val().trim() == '') {
@@ -38,6 +39,7 @@ $(document).ready(function() {
         totalStr += "<br/>" + splitStr[i].charAt(0).toUpperCase() + splitStr[i].slice(1).toLowerCase();
     }
     $("#username").html(totalStr);
+    //end validate
     if ($('#back-to-top').length) {
         var scrollTrigger = 300, // px
             backToTop = function() {
@@ -59,6 +61,7 @@ $(document).ready(function() {
             }, 700);
         });
     }
+    //end backtotop
     $("i.far.fa-lightbulb").click(function() {
         $("body").toggleClass("onoff");
         $("section.slider").toggleClass("onoff");
@@ -84,6 +87,7 @@ $(document).ready(function() {
         $(".content-tops .card").toggleClass("borderwhite");
         $(this).toggleClass("iconblue");
     });
+    //end light top
     $("#onoffwatch").click(function() {
         $("body").toggleClass("onoff");
         $("section.slider").toggleClass("onoff");
@@ -95,10 +99,11 @@ $(document).ready(function() {
         $('section.copyright #logofooter').append('<img src="./img/logo_white.png"/>');
         $('section.copyright #logofooter a img').remove();
     });
-
+    //end light watch
     $('.view-more').click(function() {
         $('.content-more').toggle();
     });
+    //end view more
     $(".list-button button").click(function() {
         $(".list-button button").removeClass("active");
         $(this).addClass("active");
@@ -107,19 +112,13 @@ $(document).ready(function() {
         $(".menu-movies button").removeClass("active");
         $(this).addClass("active");
     })
-
-    $(function() {
-        $('a[data-toggle="tab"]').on('click', function(e) {
-            window.localStorage.setItem('active', $(e.target).attr('href'));
-        });
-        var activeTab = window.localStorage.getItem('active');
-        if (activeTab) {
-            $('ul#itemsmenu a[href="' + activeTab + '"]').tab('show');
-            window.localStorage.removeItem("active");
-            $(this).removeClass("active");
-        }
-    });
-
+    $("#vietsub").click(function() {
+        $(this).toggleClass("fas fa-sync");
+    })
+    $("#voice").click(function() {
+            $(this).toggleClass("fas fa-sync");
+        })
+        //isotope lib
     var $container = $('.portfolioContainer');
     $container.isotope({
         filter: '*',
