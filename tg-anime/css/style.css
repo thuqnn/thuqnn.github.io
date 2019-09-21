@@ -1205,4 +1205,10 @@
         .view-more {
             margin-bottom: 50px;
         }
+        .navbar {
+            line-height: 2rem;
+        }
+        .scrolled-nav {
+            line-height: 2.3rem !important;
+        }
     }
