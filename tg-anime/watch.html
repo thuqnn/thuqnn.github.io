@@ -1,363 +1,323 @@
 <!DOCTYPE html>
-
 <head>
-    <!-- Required meta tags-->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="shortcut icon" type="image/png" href="img/tv.png">
-    <!-- Bootstrap CSS-->
-    <link rel="stylesheet" href="./lib/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;display=swap&amp;subset=vietnamese" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-    <link href="./lib/hover-min.css" rel="stylesheet" media="all">
-    <link href="./lib/hover.css" rel="stylesheet" media="all">
-    <link rel="stylesheet" href="./lib/animate.css">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Xem Phim Anime</title>
-    <div id="fb-root"></div>
-    <script async="" defer="" crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&amp;autoLogAppEvents=1&amp;version=v4.0&amp;appId=452092868894850"></script>
+  <!-- Required meta tags-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="shortcut icon" type="image/png" href="img/tv.png">
+  <!-- Bootstrap CSS-->
+  <link rel="stylesheet" href="./lib/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;display=swap&amp;subset=vietnamese" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+  <link href="./lib/hover-min.css" rel="stylesheet" media="all">
+  <link href="./lib/hover.css" rel="stylesheet" media="all">
+  <link rel="stylesheet" href="./lib/animate.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Xem Phim Anime</title>
+  <div id="fb-root"></div>
+  <script async="" defer="" crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&amp;autoLogAppEvents=1&amp;version=v4.0&amp;appId=452092868894850"></script>
 </head>
-
 <body>
-    <nav class="navbar navbar-light navbar-expand-md bg-light justify-content-center fixed-top navwatch">
-        <a class="navbar-brand d-flex w-50 mr-auto" href="./index.html"><img class="img-fluid" src="./img/logo_white.png" alt="#"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar4"><span class="navbar-toggler-icon"></span></button>
-        <div class="navbar-collapse collapse w-100" id="collapsingNavbar4">
-            <ul class="navbar-nav w-100 justify-content-center">
-                <li class="nav-item"><a class="nav-link" href="./index.html">ANIME</a></li>
-                <li class="nav-item"><a class="nav-link" href="./movies.html">MOVIES</a></li>
-                <li class="nav-item active"><a class="nav-link" href="./trends.html">BXH</a></li>
-                <li class="nav-item"><a class="nav-link" href="./news.html">TIN TỨC</a></li>
-                <li class="nav-item"><a class="nav-link" href="./contacts.html">LIÊN HỆ</a></li>
-            </ul>
-            <ul class="nav navbar-nav ml-auto w-100 justify-content-end nav-search">
-                <li class="nav-item">
-                    <div class="search">
-                        <input class="form-control input-sm" type="text" maxlength="64" placeholder="Search">
-                        <button class="btn btn-primary btn-sm" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
-                    </div>
-                </li>
-                <li class="nav-item"><i class="far fa-lightbulb"></i></li>
-            </ul>
-        </div>
-    </nav>
-    <header class="watch-anime">
-        <div class="container">
+  <nav class="navbar navbar-light navbar-expand-md bg-light justify-content-center fixed-top navwatch"><a class="navbar-brand d-flex w-50 mr-auto" href="./index.html"><img class="img-fluid" src="./img/logo_white.png" alt="#"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar4"><span class="navbar-toggler-icon"></span></button>
+    <div class="navbar-collapse collapse w-100" id="collapsingNavbar4">
+      <ul class="navbar-nav w-100 justify-content-center">
+        <li class="nav-item"><a class="nav-link" href="./index.html">ANIME</a></li>
+        <li class="nav-item"><a class="nav-link" href="./movies.html">MOVIES</a></li>
+        <li class="nav-item active"><a class="nav-link" href="./trends.html">BXH</a></li>
+        <li class="nav-item"><a class="nav-link" href="./news.html">TIN TỨC</a></li>
+        <li class="nav-item"><a class="nav-link" href="./contacts.html">LIÊN HỆ</a></li>
+      </ul>
+      <ul class="nav navbar-nav ml-auto w-100 justify-content-end nav-search">
+        <li class="nav-item">
+          <div class="search">
+            <input class="form-control input-sm" type="text" maxlength="64" placeholder="Search">
+            <button class="btn btn-primary btn-sm" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+          </div>
+        </li>
+        <li class="nav-item"><i class="far fa-lightbulb"></i></li>
+      </ul>
+    </div>
+  </nav>
+  <header class="watch-anime">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12"><iframe width="100%" height="560" src="https://www.youtube.com/embed/S8_YwFLCh4U?start=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div class="menu-movies">
             <div class="row">
-                <div class="col-md-12"><iframe width="100%" height="560" src="https://www.youtube.com/embed/S8_YwFLCh4U?start=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <div class="menu-movies">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <button class="buttonload"><span id="vietsub">&nbsp;VietSub</span></button>
-                                <button class="buttonload"><span id="voice">&nbsp;Thuyết Minh</span></button>
-                                <button class="btn-download"><i class="fas fa-download"></i><span>Download</span></button>
-                            </div>
-                            <div class="col-md-6 text-right">
-                                <button class="buttonload"><i class="fas fa-exclamation-triangle"></i><span>Báo Lỗi</span></button>
-                                <button class="btn-download"><i class="fas fa-step-forward"></i><span>Tự Chuyển Tập</span></button>
-                                <button class="buttonload" id="onoffwatch"><i class="fas fa-history fa-lightbulb"></i><span>Tắt Đèn  </span></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              <div class="col-md-6">
+                <button class="buttonload"><span id="vietsub">&nbsp;VietSub</span></button>
+                <button class="buttonload"><span id="voice">&nbsp;Thuyết Minh</span></button>
+                <button class="btn-download"><i class="fas fa-download"></i><span>Download</span></button>
+              </div>
+              <div class="col-md-6 text-right">
+                <button class="buttonload"><i class="fas fa-exclamation-triangle"></i><span>Báo Lỗi</span></button>
+                <button class="btn-download"><i class="fas fa-step-forward"></i><span>Tự Chuyển Tập</span></button>
+                <button class="buttonload" id="onoffwatch"><i class="fas fa-history fa-lightbulb"></i><span>Tắt Đèn  </span></button>
+              </div>
             </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <h6>DANH SÁCH TẬP </h6>
-                    <div class="list-button">
-                        <button class="active">1</button>
-                        <button>2</button>
-                        <button>3</button>
-                        <button>4</button>
-                        <button>5</button>
-                        <button>6</button>
-                        <button>7</button>
-                        <button>8</button>
-                        <button>9</button>
-                        <button>10</button>
-                        <button>11</button>
-                        <button>12</button>
-                        <button>13</button>
-                        <button>14</button>
-                        <button>15</button>
-                        <button>16</button>
-                        <button>17</button>
-                        <button>18</button>
-                        <button>19</button>
-                        <button>20</button>
-                        <button>21</button>
-                        <button>22</button>
-                        <button>23</button>
-                        <button>24</button>
-                        <button>25</button>
-                        <button>26</button>
-                        <button>27</button>
-                        <button>28</button>
-                        <button>29</button>
-                        <button>30</button>
-                        <button>31</button>
-                        <button>32</button>
-                        <button>33</button>
-                        <button>34</button>
-                        <button>35</button>
-                        <button>36</button>
-                        <button>37</button>
-                        <button>38</button>
-                        <button>39</button>
-                        <button>40</button>
-                        <button>41</button>
-                        <button>42</button>
-                        <button>43</button>
-                        <button>44</button>
-                        <button>45</button>
-                        <button>46</button>
-                        <button>47</button>
-                        <button>48</button>
-                        <button>49</button>
-                        <button>50</button>
-                        <button>51</button>
-                        <button>52</button>
-                        <button>53</button>
-                        <button>54</button>
-                        <button>55</button>
-                        <button>56</button>
-                        <button>57</button>
-                        <button>58</button>
-                        <button>59</button>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
-    </header>
-    <section class="content-watchanime">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8">
-                    <div class="row">
-                        <div class="col-md-4"><img class="card-img img-fluid img-thumbnail hvr-glow" src="./img/listmovies/the-ancient-magus-bride-those-awaiting-a-star-7758.jpg" alt="news img">
-                            <div class="star-votes"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i></div>
-                            <div class="icon-votes"><i class="far fa-calendar-alt"> <span>2019</span></i><i class="fas fa-tags"> <a href="">Trường Học,</a><a href=""> Kịch tính</a></i></div>
-                        </div>
-                        <div class="col-md-8">
-                            <div class="text-watch">
-                                <h3>Cà Rốt Và Thứ Ba Phần 1</h3>
-                                <p>Carole and Tuesday (2019)</p>
-                                <h6>Thông tin:</h6>
-                                <p>
-                                    Ngày phát hành : 11/04/2019<br /> Thời lượng: N/A
-                                    <br />Kịch bản: Aya Watanabe
-                                    <br />Đạo diễn: Motonobu Hori, Shinichiro Watanabe
-                                    <br />Diễn viên: Kana Ichinose, Miyu Irino, Hiroshi Kamiya
-                                    <br />Thể loại: Tâm lý, Lãng mạn, Khoa học viễn tưởng, Anime, Âm nhạc
-                                    <br />Quốc gia: Nhật Bản
-                                    <br />Số tập: 16/24
-                                </p>
-                                <h6> Tóm Tắt :</h6>
-                                <p>Bộ anime Carole and Tuesday là câu chuyện kể về hai cô gái, một cô gái. Bỏ cuộc sống ở đô thị của thành phố Alba, cô làm việc bán thời gian trong khi cố gắng trở thành một nhạc sĩ. Cô ấy luôn cảm thấy như thiếu một cái
-                                    gì đó. Tên cô ấy là Carole. Có một cô gái. Sinh ra trong một gia đình giàu có ở thị trấn Herschel City, cô mơ ước trở thành một nhạc sĩ, nhưng không có ai xung quanh cô hiểu được. Cô cảm thấy mình là người cô đơn nhất
-                                    thế giới. Tên cô ấy là thứ ba. Một cuộc gặp gỡ cơ hội mang họ lại với nhau. Họ muốn hát. Họ muốn làm âm nhạc. Cùng nhau, họ cảm thấy như họ có thể có cơ hội. Hai người họ chỉ có thể tạo ra một làn sóng nhỏ. Nhưng làn
-                                    sóng đó cuối cùng sẽ phát triển thành một thứ gì đó lớn hơn ... </p>
-                            </div>
-                            <div class="social-icon"><a class="icon-button twitter" href="#"><i class="fab fa-twitter"></i><span></span></a><a class="icon-button facebook" href="#"><i class="fab fa-facebook-f"></i><span></span></a>
-                                <a class="icon-button instagram" href="#"><i class="fab fa-instagram"></i><span></span></a><a class="icon-button youtube" href="#"><i class="fab fa-youtube"></i><span></span></a>
-                                <a class="icon-button pinterest" href="#"><i class="fab fa-pinterest"></i><span></span></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="comment-facebook">
-                        <div class="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#configurator" data-width="100%" data-numposts="5"></div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="news-day">
-                        <h3>Phim Mới Nhất</h3>
-                        <div class="card">
-                            <div class="card mb-3 hvr-glow">
-                                <div class="row no-gutters">
-                                    <div class="col-md-4">
-                                        <a href="./watch.html"><img class="card-img img-fluid img-thumbnail" src="./img/listmovies/fate-stay-night-unlimited-blade-works-2-6861.jpg" alt="news img"></a>
-                                    </div>
-                                    <div class="col-md-8">
-                                        <div class="card-body"><a class="card-title" href="">AFRICA NO SALARYMAN TẬP 0</a>
-                                            <p class="card-text"><i class="fas fa-eye"></i> 357,865 lượt xem</p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"> </i><br/><small class="text-muted">Last updated 3 mins ago</small>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card mb-3 hvr-glow">
-                                <div class="row no-gutters">
-                                    <div class="col-md-4">
-                                        <a href="./watch.html"><img class="card-img img-fluid img-thumbnail" src="./img/listmovies/you-and-me-2-4688.jpg" alt="news img"></a>
-                                    </div>
-                                    <div class="col-md-8">
-                                        <div class="card-body"><a class="card-title" href="">GIVEN MOVIE</a>
-                                            <p class="card-text"><i class="fas fa-eye"></i> 608 lượt xem</p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"> </i><br/><small class="text-muted">Last updated 3 mins ago</small>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card mb-3 hvr-glow">
-                                <div class="row no-gutters">
-                                    <div class="col-md-4">
-                                        <a href="./watch.html"><img class="card-img img-fluid img-thumbnail" src="./img/listmovies/relife-7011.jpg" alt="news img"></a>
-                                    </div>
-                                    <div class="col-md-8">
-                                        <div class="card-body"><a class="card-title" href="">KEISHICHO TOKUMU-BU ...</a>
-                                            <p class="card-text"><i class="fas fa-eye"></i> 723 lượt xem</p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"> </i><br/><small class="text-muted">Last updated 3 mins ago</small>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card mb-3 hvr-glow">
-                                <div class="row no-gutters">
-                                    <div class="col-md-4">
-                                        <a href="./watch.html"> <img class="card-img img-fluid img-thumbnail" src="./img/listmovies/the-crew.jpeg" alt="news img"></a>
-                                    </div>
-                                    <div class="col-md-8">
-                                        <div class="card-body"><a class="card-title" href="">KANDAGAWA JET GIRLS TẬP 0</a>
-                                            <p class="card-text"><i class="fas fa-eye"></i> 421 lượt xem</p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"> </i><br/><small class="text-muted">Last updated 3 mins ago</small>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card mb-3 hvr-glow">
-                                <div class="row no-gutters">
-                                    <div class="col-md-4">
-                                        <a href="./watch.html"><img class="card-img img-fluid img-thumbnail" src="./img/listmovies/you-and-me-2-4688.jpg" alt="news img"></a>
-                                    </div>
-                                    <div class="col-md-8">
-                                        <div class="card-body"><a class="card-title" href="">CHUUBYOU GEKIHATSU BOY TẬP 0</a>
-                                            <p class="card-text"><i class="fas fa-eye"></i> 433 lượt xem</p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"> </i><br/><small class="text-muted">Last updated 3 mins ago</small>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card mb-3 hvr-glow">
-                                <div class="row no-gutters">
-                                    <div class="col-md-4">
-                                        <a href="./watch.html"><img class="card-img img-fluid img-thumbnail" src="./img/listmovies/relife-7011.jpg" alt="news img"></a>
-                                    </div>
-                                    <div class="col-md-8">
-                                        <div class="card-body"><a class="card-title" href=""> ORE WA MOSHIKASHITARA...</a>
-                                            <p class="card-text"><i class="fas fa-eye"></i> 297,607 lượt xem</p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"> </i><br/><small class="text-muted">Last updated 3 mins ago</small>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card mb-3 hvr-glow">
-                                <div class="row no-gutters">
-                                    <div class="col-md-4">
-                                        <a href="./watch.html"><img class="card-img img-fluid img-thumbnail" src="./img/listmovies/the-crew.jpeg" alt="news img"></a>
-                                    </div>
-                                    <div class="col-md-8">
-                                        <div class="card-body"><a class="card-title" href="">NO GUNS LIFE TẬP 0</a>
-                                            <p class="card-text"><i class="fas fa-eye"></i> 1,030 lượt xem</p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"> </i><br/><small class="text-muted">Last updated 3 mins ago         </small>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <h3>PHIM TƯƠNG TỰ</h3>
-            <div class="center">
-                <div>
-                    <a href="./watch.html"> <img class="img-fluid" src="./img/slider/the-ancient-magus-bride-8591-1.jpg" alt="#">
-                        <h3>SALARYMAN KINTAROU TẬP 3</h3>
-                    </a>
-                </div>
-                <div>
-                    <a href="./watch.html"> <img class="img-fluid" src="./img/slider/277c2661aabedbed_f0f76383aa7bf705_14045615677773094185710.jpg" alt="#"></a>
-                    <h3>YOUJO SENKI MOVIE: MANNER EIZOU</h3>
-                </div>
-                <div>
-                    <a href="./watch.html"> <img class="img-fluid" src="./img/slider/adef363ede8579ad_9e9359fa9e25c88e_90071156545906339674.jpg" alt="#">
-                        <h3>CHIHAYAFURU - SEASON 3 TẬP 0</h3>
-                    </a>
-                </div>
-                <div>
-                    <a href="./watch.html"> <img class="img-fluid" src="./img/slider/8f26727cf732f2b9_f51c70d3ceb1b3e0_11959215635972575185710.jpg" alt="#"></a>
-                    <h3>HATAAGE! KEMONO MICHI TẬP 0</h3>
-                </div>
-                <div>
-                    <a href="./watch.html"> <img class="img-fluid" src="./img/slider/f9f07ce2bcd54b37_98d2d8a1b169e7b2_18753915635989121185710.jpg" alt="#"></a>
-                    <h3>NHÀ TRỌ KỲ QUÁI VỚI NHỮNG SINH VẬT BÍ ẨN TẬP 1</h3>
-                </div>
-                <div>
-                    <a href="./watch.html"> <img class="img-fluid" src="./img/slider/ad0cd34ebb20c84e_d7eee25416c9156a_17778115635980387185710.jpg" alt="#"></a>
-                    <h3>SABER MARIONETTE J TẬP 1</h3>
-                </div>
-            </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <h6>DANH SÁCH TẬP   </h6>
+          <div class="list-button">
+            <button class="activebutton">1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button>10</button>
+            <button>11</button>
+            <button>12</button>
+            <button>13</button>
+            <button>14</button>
+            <button>15</button>
+            <button>16</button>
+            <button>17</button>
+            <button>18</button>
+            <button>19</button>
+            <button>20</button>
+            <button>21</button>
+            <button>22</button>
+            <button>23</button>
+            <button>24</button>
+            <button>25</button>
+            <button>26</button>
+            <button>27</button>
+            <button>28</button>
+            <button>29</button>
+            <button>30</button>
+            <button>31</button>
+            <button>32</button>
+            <button>33</button>
+            <button>34</button>
+            <button>35</button>
+            <button>36</button>
+            <button>37</button>
+            <button>38</button>
+            <button>39</button>
+            <button>40</button>
+            <button>41</button>
+            <button>42</button>
+            <button>43</button>
+            <button>44</button>
+            <button>45</button>
+            <button>46</button>
+            <button>47</button>
+            <button>48</button>
+            <button>49</button>
+            <button>50</button>
+            <button>51</button>
+            <button>52</button>
+            <button>53</button>
+            <button>54</button>
+            <button>55</button>
+            <button>56</button>
+            <button>57</button>
+            <button>58</button>
+            <button>59</button>
+          </div>
         </div>
-    </section>
-    <footer class="footer-main">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <h6>Thế Giới Anime</h6>
-                    <div class="card-visa">
-                        <a href="#"><img class="img-fluid" src="./img/footer/Badges.png" alt="card visa"></a>
-                        <a href="#"><img class="img-fluid" src="./img/footer/blackamazonsvg.png" alt="card visa"></a>
-                        <a href="#"><img class="img-fluid" src="./img/footer/US_UK_Download_on_the.png" alt="card visa"></a>
-                    </div>
-                    <p>Xem phim hoạt hình hay nhất , mới nhất, chất lượng cao nhất Việt Nam</p>
-                </div>
-                <div class="col-md-2">
-                    <h6>Theo dõi chúng tôi</h6>
-                    <div class="social-icon"><a class="icon-button twitter" href="#"><i class="fab fa-twitter"></i><span></span></a><a class="icon-button facebook" href="#"><i class="fab fa-facebook-f"></i><span></span></a><a class="icon-button instagram" href="#"><i class="fab fa-instagram"></i><span></span></a>
-                        <a class="icon-button youtube" href="#"><i class="fab fa-youtube"></i><span></span></a><a class="icon-button pinterest" href="#"><i class="fab fa-pinterest"></i><span></span></a></div>
-                </div>
-                <div class="col-md-3">
-                    <h6>Flickr Gallery</h6>
-                    <div class="gallery-footer">
-                        <div class="gallery-flickr"><img class="img-fluid img-thumbnail hvr-glow flickr-img" src="./img/slider/images.jpg" alt="card visa"></div>
-                        <div class="gallery-flickr"><img class="img-fluid img-thumbnail hvr-glow flickr-img" src="./img/slider/awesome-anime-wallpapers-1920x1080-anime-wallpaper-pc-full-hd.jpg" alt="card visa"></div>
-                        <div class="gallery-flickr"> <img class="img-fluid img-thumbnail hvr-glow flickr-img" src="./img/slider/top-best-upcoming-anime-2018-list.jpg" alt="card visa"></div>
-                        <div class="gallery-flickr"> <img class="img-fluid img-thumbnail hvr-glow flickr-img" src="./img/slider/the-ancient-magus-bride-8591-1.jpg" alt="card visa"></div>
-                        <div class="gallery-flickr"> <img class="img-fluid img-thumbnail hvr-glow flickr-img" src="./img/slider/549538.jpg" alt="card visa"></div>
-                        <div class="gallery-flickr"> <img class="img-fluid img-thumbnail hvr-glow flickr-img" src="./img/slider/1.jpg" alt="card visa"></div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <h6>Movies</h6>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <ul>
-                                <li><a href="./index.html">Anime Mới</a></li>
-                                <li><a href="./movies.html">Movies Mới</a></li>
-                                <li><a href="./trends.html">Phổ Biến Nhất</a></li>
-                                <li><a href="./watch.html">Top Trailer</a></li>
-                                <li><a href="./news.html">Tin Tức Phim</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-6">
-                            <ul>
-                                <li><a href="">Thông Tin</a></li>
-                                <li><a href="">Gallery</a></li>
-                                <li><a href="">Dịch Vụ</a></li>
-                                <li><a href="">Chính sách bảo mật</a></li>
-                                <li><a href="./contacts.html">Liên Hệ</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+      </div>
+    </div>
+  </header>
+  <section class="content-watchanime">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="row">
+            <div class="col-md-4"><img class="card-img img-fluid img-thumbnail hvr-glow" src="./img/listmovies/the-ancient-magus-bride-those-awaiting-a-star-7758.jpg" alt="news img">
+              <div class="star-votes"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i></div>
+              <div class="icon-votes"><i class="far fa-calendar-alt"> <span>2019</span></i><i class="fas fa-tags"> <a href="">Trường Học,</a><a href=""> Kịch tính</a></i></div>
             </div>
-        </div>
-    </footer>
-    <section class="copyright">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-6" id="logofooter">
-                    <a href=""><img src="./img/logo_black.png" alt="logo-footer"></a>
-                </div>
-                <div class="col-md-6 text-right copyright-p">
-                    <p>Copyright © 2019 Tg-Anime.com, Inc.</p>
-                </div>
+            <div class="col-md-8">
+              <div class="text-watch">
+                <h3>Cà Rốt Và Thứ Ba Phần 1</h3>
+                <p>Carole and Tuesday (2019)</p>
+                <h6>Thông tin:</h6>
+                <p>
+                  Ngày phát hành : 11/04/2019<br /> Thời lượng: N/A
+<br />Kịch bản: Aya Watanabe
+<br />Đạo diễn: Motonobu Hori, Shinichiro Watanabe
+<br />Diễn viên: Kana Ichinose, Miyu Irino, Hiroshi Kamiya
+<br />Thể loại: Tâm lý, Lãng mạn, Khoa học viễn tưởng, Anime, Âm nhạc
+<br />Quốc gia: Nhật Bản
+<br />Số tập: 16/24
+                </p>
+                <h6> Tóm Tắt :</h6>
+                <p>Bộ anime Carole and Tuesday là câu chuyện kể về hai cô gái, một cô gái. Bỏ cuộc sống ở đô thị của thành phố Alba, cô làm việc bán thời gian trong khi cố gắng trở thành một nhạc sĩ. Cô ấy luôn cảm thấy như thiếu một cái gì đó. Tên cô ấy là Carole. Có một cô gái. Sinh ra trong một gia đình giàu có ở thị trấn Herschel City, cô mơ ước trở thành một nhạc sĩ, nhưng không có ai xung quanh cô hiểu được. Cô cảm thấy mình là người cô đơn nhất thế giới. Tên cô ấy là thứ ba. Một cuộc gặp gỡ cơ hội mang họ lại với nhau. Họ muốn hát. Họ muốn làm âm nhạc. Cùng nhau, họ cảm thấy như họ có thể có cơ hội. Hai người họ chỉ có thể tạo ra một làn sóng nhỏ. Nhưng làn sóng đó cuối cùng sẽ phát triển thành một thứ gì đó lớn hơn ...                                 </p>
+              </div>
+              <div class="social-icon"><a class="icon-button twitter" href="#"><i class="fab fa-twitter"></i><span></span></a><a class="icon-button facebook" href="#"><i class="fab fa-facebook-f"></i><span></span></a><a class="icon-button instagram" href="#"><i class="fab fa-instagram"></i><span></span></a><a class="icon-button youtube" href="#"><i class="fab fa-youtube"></i><span></span></a><a class="icon-button pinterest" href="#"><i class="fab fa-pinterest"></i><span></span></a></div>
             </div>
+          </div>
+          <div class="comment-facebook">
+            <div class="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#configurator" data-width="100%" data-numposts="5"></div>
+          </div>
         </div>
-    </section><a id="back-to-top" href="#" title="Back to top">&uarr;</a>
+        <div class="col-md-4">
+          <div class="news-day">
+            <h3>Phim Mới Nhất</h3>
+            <div class="card">
+              <div class="card mb-3 hvr-glow">
+                <div class="row no-gutters">
+                  <div class="col-md-4"><a href="./watch.html"><img class="card-img img-fluid img-thumbnail" src="./img/listmovies/fate-stay-night-unlimited-blade-works-2-6861.jpg" alt="news img"></a></div>
+                  <div class="col-md-8">
+                    <div class="card-body"><a class="card-title" href="">AFRICA NO SALARYMAN TẬP 0</a>
+                      <p class="card-text"><i class="fas fa-eye"></i> 357,865 lượt xem</p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"> </i><br/><small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card mb-3 hvr-glow">
+                <div class="row no-gutters">
+                  <div class="col-md-4"><a href="./watch.html"><img class="card-img img-fluid img-thumbnail" src="./img/listmovies/you-and-me-2-4688.jpg" alt="news img"></a></div>
+                  <div class="col-md-8">
+                    <div class="card-body"><a class="card-title" href="">GIVEN MOVIE</a>
+                      <p class="card-text"><i class="fas fa-eye"></i> 608 lượt xem</p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"> </i><br/><small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card mb-3 hvr-glow">
+                <div class="row no-gutters">
+                  <div class="col-md-4"><a href="./watch.html"><img class="card-img img-fluid img-thumbnail" src="./img/listmovies/relife-7011.jpg" alt="news img"></a></div>
+                  <div class="col-md-8">
+                    <div class="card-body"><a class="card-title" href="">KEISHICHO TOKUMU-BU ...</a>
+                      <p class="card-text"><i class="fas fa-eye"></i> 723 lượt xem</p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"> </i><br/><small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card mb-3 hvr-glow">
+                <div class="row no-gutters">
+                  <div class="col-md-4"><a href="./watch.html">   <img class="card-img img-fluid img-thumbnail" src="./img/listmovies/the-crew.jpeg" alt="news img"></a></div>
+                  <div class="col-md-8">
+                    <div class="card-body"><a class="card-title" href="">KANDAGAWA JET GIRLS TẬP 0</a>
+                      <p class="card-text"><i class="fas fa-eye"></i> 421 lượt xem</p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"> </i><br/><small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card mb-3 hvr-glow">
+                <div class="row no-gutters">
+                  <div class="col-md-4"><a href="./watch.html"><img class="card-img img-fluid img-thumbnail" src="./img/listmovies/you-and-me-2-4688.jpg" alt="news img"></a></div>
+                  <div class="col-md-8">
+                    <div class="card-body"><a class="card-title" href="">CHUUBYOU GEKIHATSU BOY TẬP 0</a>
+                      <p class="card-text"><i class="fas fa-eye"></i> 433 lượt xem</p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"> </i><br/><small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card mb-3 hvr-glow">
+                <div class="row no-gutters">
+                  <div class="col-md-4"><a href="./watch.html"><img class="card-img img-fluid img-thumbnail" src="./img/listmovies/relife-7011.jpg" alt="news img"></a></div>
+                  <div class="col-md-8">
+                    <div class="card-body"><a class="card-title" href=""> ORE WA MOSHIKASHITARA...</a>
+                      <p class="card-text"><i class="fas fa-eye"></i> 297,607 lượt xem</p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"> </i><br/><small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card mb-3 hvr-glow">
+                <div class="row no-gutters">
+                  <div class="col-md-4"><a href="./watch.html"><img class="card-img img-fluid img-thumbnail" src="./img/listmovies/the-crew.jpeg" alt="news img"></a></div>
+                  <div class="col-md-8">
+                    <div class="card-body"><a class="card-title" href="">NO GUNS LIFE TẬP 0</a>
+                      <p class="card-text"><i class="fas fa-eye"></i> 1,030 lượt xem</p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"> </i><br/><small class="text-muted">Last updated 3 mins ago         </small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h3>PHIM TƯƠNG TỰ</h3>
+      <div class="center">
+        <div><a href="./watch.html"> <img class="img-fluid" src="./img/slider/the-ancient-magus-bride-8591-1.jpg" alt="#">
+            <h3>SALARYMAN KINTAROU TẬP 3</h3></a></div>
+        <div><a href="./watch.html"> <img class="img-fluid" src="./img/slider/277c2661aabedbed_f0f76383aa7bf705_14045615677773094185710.jpg" alt="#"></a>
+          <h3>YOUJO SENKI MOVIE: MANNER EIZOU</h3>
+        </div>
+        <div><a href="./watch.html"> <img class="img-fluid" src="./img/slider/adef363ede8579ad_9e9359fa9e25c88e_90071156545906339674.jpg" alt="#">
+            <h3>CHIHAYAFURU - SEASON 3 TẬP 0</h3></a></div>
+        <div><a href="./watch.html"> <img class="img-fluid" src="./img/slider/8f26727cf732f2b9_f51c70d3ceb1b3e0_11959215635972575185710.jpg" alt="#"></a>
+          <h3>HATAAGE! KEMONO MICHI TẬP 0</h3>
+        </div>
+        <div><a href="./watch.html"> <img class="img-fluid" src="./img/slider/f9f07ce2bcd54b37_98d2d8a1b169e7b2_18753915635989121185710.jpg" alt="#"></a>
+          <h3>NHÀ TRỌ KỲ QUÁI VỚI NHỮNG SINH VẬT BÍ ẨN TẬP 1</h3>
+        </div>
+        <div><a href="./watch.html"> <img class="img-fluid" src="./img/slider/ad0cd34ebb20c84e_d7eee25416c9156a_17778115635980387185710.jpg" alt="#"></a>
+          <h3>SABER MARIONETTE J TẬP 1</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer-main">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h6>Thế Giới Anime</h6>
+          <div class="card-visa"><a href="#"><img class="img-fluid" src="./img/footer/Badges.png" alt="card visa"></a><a href="#"><img class="img-fluid" src="./img/footer/blackamazonsvg.png" alt="card visa"></a><a href="#"><img class="img-fluid" src="./img/footer/US_UK_Download_on_the.png" alt="card visa"></a></div>
+          <p>Xem phim hoạt hình hay nhất , mới nhất, chất lượng cao nhất Việt Nam</p>
+        </div>
+        <div class="col-md-2">
+          <h6>Theo dõi chúng tôi</h6>
+          <div class="social-icon"><a class="icon-button twitter" href="#"><i class="fab fa-twitter"></i><span></span></a><a class="icon-button facebook" href="#"><i class="fab fa-facebook-f"></i><span></span></a><a class="icon-button instagram" href="#"><i class="fab fa-instagram"></i><span></span></a><a class="icon-button youtube" href="#"><i class="fab fa-youtube"></i><span></span></a><a class="icon-button pinterest" href="#"><i class="fab fa-pinterest"></i><span></span></a></div>
+        </div>
+        <div class="col-md-3">
+          <h6>Flickr Gallery</h6>
+          <div class="gallery-footer">
+            <div class="gallery-flickr"><img class="img-fluid img-thumbnail hvr-glow flickr-img" src="./img/slider/images.jpg" alt="card visa"></div>
+            <div class="gallery-flickr"><img class="img-fluid img-thumbnail hvr-glow flickr-img" src="./img/slider/awesome-anime-wallpapers-1920x1080-anime-wallpaper-pc-full-hd.jpg" alt="card visa"></div>
+            <div class="gallery-flickr">   <img class="img-fluid img-thumbnail hvr-glow flickr-img" src="./img/slider/top-best-upcoming-anime-2018-list.jpg" alt="card visa"></div>
+            <div class="gallery-flickr">   <img class="img-fluid img-thumbnail hvr-glow flickr-img" src="./img/slider/the-ancient-magus-bride-8591-1.jpg" alt="card visa"></div>
+            <div class="gallery-flickr">   <img class="img-fluid img-thumbnail hvr-glow flickr-img" src="./img/slider/549538.jpg" alt="card visa"></div>
+            <div class="gallery-flickr">   <img class="img-fluid img-thumbnail hvr-glow flickr-img" src="./img/slider/1.jpg" alt="card visa"></div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <h6>Movies</h6>
+          <div class="row">
+            <div class="col-md-6">
+              <ul>
+                <li><a href="./index.html">Anime Mới</a></li>
+                <li><a href="./movies.html">Movies Mới</a></li>
+                <li><a href="./trends.html">Phổ Biến Nhất</a></li>
+                <li><a href="./watch.html">Top Trailer</a></li>
+                <li><a href="./news.html">Tin Tức Phim</a></li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <ul>
+                <li><a href="">Thông Tin</a></li>
+                <li><a href="">Gallery</a></li>
+                <li><a href="">Dịch Vụ</a></li>
+                <li><a href="">Chính sách bảo mật</a></li>
+                <li><a href="./contacts.html">Liên Hệ</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <section class="copyright">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6" id="logofooter"><a href=""><img src="./img/logo_black.png" alt="logo-footer"></a></div>
+        <div class="col-md-6 text-right copyright-p">
+          <p>Copyright © 2019 Tg-Anime.com, Inc.</p>
+        </div>
+      </div>
+    </div>
+  </section><a id="back-to-top" href="#" title="Back to top">&uarr;</a>
 </body>
 <!-- Optional JavaScript-->
 <!-- jQuery first, then Popper.js, then Bootstrap JS-->

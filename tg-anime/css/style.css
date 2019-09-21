@@ -630,6 +630,10 @@
         border-bottom: 5px solid var(--blue-color);
     }
     
+    .activebutton {
+        background: var(--blue-color) !important;
+    }
+    
     .borderwhite {
         border: 1px solid rgb(255, 254, 254)!important;
     }

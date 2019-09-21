@@ -105,8 +105,8 @@ $(document).ready(function() {
     });
     //end view more
     $(".list-button button").click(function() {
-        $(".list-button button").removeClass("active");
-        $(this).addClass("active");
+        $(".list-button button").removeClass("activebutton");
+        $(this).addClass("activebutton");
     })
     $(".menu-movies button").click(function() {
         $(".menu-movies button").removeClass("active");
