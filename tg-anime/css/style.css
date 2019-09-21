@@ -1151,6 +1151,7 @@
         }
         .navbar {
             height: 5.3rem;
+            line-height: 2rem;
         }
         ul#itemsmenu,
         ul.navbar-nav.w-100.justify-content-center {
@@ -1206,5 +1207,8 @@
         }
         .view-more {
             margin-bottom: 50px;
+        }
+        .scrolled-nav {
+            line-height: 1.3rem !important;
         }
     }
