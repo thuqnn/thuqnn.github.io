@@ -380,7 +380,7 @@
     
     .card-visa img.img-fluid {
         max-width: 9.06rem;
-        margin-right: 5px;
+        margin-right: 2px;
     }
     
     .img-gallery img.img-fluid {
@@ -1143,9 +1143,6 @@
             background-color: rgba(0, 0, 0, 0.53)!important;
             margin-top: -12px;
         }
-        .content-tops {
-            margin-top: 30px;
-        }
         section.content-trends .row,
         .portfolioFilter {
             padding: 0;
@@ -1173,8 +1170,7 @@
         .footer-main ul {
             text-align: center;
         }
-        .portfolioFilter.clearfix a,
-        .footer-main ul {
+        .portfolioFilter.clearfix a {
             display: flex;
         }
         .portfolioFilter.clearfix a {
@@ -1202,5 +1198,11 @@
         }
         .img-items {
             height: 100%;
+        }
+        .center.slick-initialized.slick-slider {
+            margin-bottom: 50px;
+        }
+        .view-more {
+            margin-bottom: 50px;
         }
     }
