@@ -380,9 +380,13 @@
         display: none;
     }
     
+    .card-visa {
+        display: flex;
+    }
+    
     .card-visa img.img-fluid {
         max-width: 9.06rem;
-        margin-right: 2px;
+        margin-right: 5px;
     }
     
     .img-gallery img.img-fluid {
