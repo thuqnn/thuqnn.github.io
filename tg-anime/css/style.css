@@ -1171,7 +1171,7 @@
         .content-infos,
         .content-watchanime,
         section.news-anime {
-            margin: 0;
+            margin-top: 2rem;
         }
         .card-visa,
         .footer-main ul {
@@ -1205,9 +1205,6 @@
         }
         .img-items {
             height: 100%;
-        }
-        .center.slick-initialized.slick-slider {
-            margin-bottom: 50px;
         }
         .view-more {
             margin-bottom: 50px;
