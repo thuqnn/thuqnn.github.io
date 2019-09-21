@@ -37,8 +37,6 @@
     
     img {
         max-width: 100%;
-        display: block;
-        height: auto;
     }
     
     a {
@@ -124,6 +122,7 @@
         border: 1px solid rgba(0, 0, 0, .125);
     }
     
+    section.content-anime .card,
     .quick-search,
     .advanced-search {
         margin-bottom: 3.125rem;
@@ -379,13 +378,9 @@
         display: none;
     }
     
-    .card-visa {
-        display: flex;
-    }
-    
     .card-visa img.img-fluid {
         max-width: 9.06rem;
-        margin-right: 5px;
+        margin-right: 2px;
     }
     
     .img-gallery img.img-fluid {
@@ -1154,7 +1149,6 @@
         }
         .navbar {
             height: 5.3rem;
-            line-height: 2rem;
         }
         ul#itemsmenu,
         ul.navbar-nav.w-100.justify-content-center {
@@ -1170,7 +1164,7 @@
         .content-infos,
         .content-watchanime,
         section.news-anime {
-            margin-top: 2rem;
+            margin: 0;
         }
         .card-visa,
         .footer-main ul {
@@ -1205,10 +1199,10 @@
         .img-items {
             height: 100%;
         }
-        .view-more {
-            margin: 50px 0;
+        .center.slick-initialized.slick-slider {
+            margin-bottom: 50px;
         }
-        .scrolled-nav {
-            line-height: 1.3rem !important;
+        .view-more {
+            margin-bottom: 50px;
         }
     }
