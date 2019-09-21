@@ -37,6 +37,8 @@
     
     img {
         max-width: 100%;
+        display: block;
+        height: auto;
     }
     
     a {
@@ -76,7 +78,7 @@
         min-width: 100%;
         background-image: url(../img/banner/Banner.png);
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: cover;
     }
     
     header.trends {
