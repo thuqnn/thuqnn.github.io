@@ -192,6 +192,11 @@
         margin: 0.937rem 0;
     }
     
+    .card.h-100.content-card {
+        border: none;
+        border-left: 1px solid rgba(0, 0, 0, .125);
+    }
+    
     .images-new,
     .images-newbig {
         position: relative;
@@ -431,7 +436,13 @@
         text-decoration: none;
     }
     
-    i.fas.fa-tags a,
+    i.fas.fa-tags a {
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        color: #343a40!important;
+        font-weight: 500;
+    }
+    
     i.far.fa-calendar-alt span,
     section.news-anime h1,
     section.news-anime h4 {
@@ -635,7 +646,7 @@
     }
     
     .borderwhite {
-        border: 1px solid rgb(255, 254, 254)!important;
+        border-color: rgb(255, 254, 254)!important;
     }
     
     .darkmovies-card,
