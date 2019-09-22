@@ -1137,6 +1137,10 @@
         header.infos {
             min-height: 7.875rem;
             margin-top: 5.3rem;
+            margin-bottom: 50px;
+        }
+        header.trends {
+            margin-bottom: 0;
         }
         div#collapsingNavbar3,
         div#collapsingNavbar4 {
@@ -1164,14 +1168,20 @@
         .content-infos,
         .content-watchanime,
         section.news-anime {
-            margin-top: 50px;
+            margin: 0;
+        }
+        .portfolioFilter.clearfix a,
+        .card-visa,
+        .footer-main ul {
+            display: flex;
         }
         .card-visa,
         .footer-main ul {
             text-align: center;
         }
-        .portfolioFilter.clearfix a {
-            display: flex;
+        .card-visa img.img-fluid {
+            max-width: 100%;
+            padding-right: 7px;
         }
         .portfolioFilter.clearfix a {
             margin: 10px 0;
@@ -1205,9 +1215,13 @@
         .view-more {
             margin-bottom: 50px;
         }
-        .navbar,
-        .scrolled-nav {
-            line-height: 2rem;
+        .navbar {
+            line-height: 1rem !important;
         }
-        ;
+        .scrolled-nav {
+            line-height: 1.5rem !important;
+        }
+        footer.footer-main a {
+            font-size: 13px;
+        }
     }
