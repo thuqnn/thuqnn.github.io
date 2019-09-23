@@ -1244,4 +1244,7 @@
         footer.footer-main a {
             font-size: 13px;
         }
+        p.titlenew {
+            bottom: -4%;
+        }
     }
