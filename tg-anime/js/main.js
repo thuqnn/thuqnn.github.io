@@ -76,7 +76,7 @@ $(document).ready(function() {
         $(".text-dark").toggleClass("text-white");
         $("i.fas.fa-tags").toggleClass("text-white");
         $(".icon-votes span").toggleClass("icon-votes-white");
-        $(".icon-votes a").toggleClass("icon-votes-whitea");
+        $("i.fas.fa-tags a").toggleClass("icon-votes-whitea");
         $("select#exampleFormControlSelect1").toggleClass("inputblack");
         $('section.copyright #logofooter').append('<img src="./img/logo_white.png"/>');
         $('section.copyright #logofooter a img').remove();

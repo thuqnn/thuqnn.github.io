@@ -439,7 +439,7 @@
     i.fas.fa-tags a {
         font-family: 'Roboto', sans-serif;
         font-size: 14px;
-        color: #343a40!important;
+        color: #343a40;
         font-weight: 500;
     }
     
@@ -631,6 +631,12 @@
     .iconblue,
     .onoff {
         color: var(--white-color)!important;
+    }
+    
+    .content-watchanime .star-votes,
+    .icon-votes,
+    .comment-facebook {
+        margin-top: 10px;
     }
     
     .onoff {
@@ -1109,6 +1115,9 @@
         }
         .news-day {
             font-size: 10px;
+        }
+        .news-day .card {
+            background-color: transparent;
         }
         section.content-news {
             font-size: 12px;
