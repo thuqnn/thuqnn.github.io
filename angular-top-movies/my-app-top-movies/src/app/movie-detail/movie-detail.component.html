@@ -4,11 +4,14 @@
     <div>
         <p>{{movie.description}}</p>
     </div>
-    <div> <img [src]="movie.img" alt=""></div>
     <div>
-        <label>name:
-            <input [(ngModel)]="movie.name" placeholder="name"/> <br>
-            <input [(ngModel)]="movie.description" placeholder="description"/>
+        <img [src]="movie.img" alt="{{movie.name}}"></div>
+    <div>
+        <label>
+            Edit Name: <input [(ngModel)]=" movie.name " placeholder="name "/> <br>
+            Edit Description: <input [(ngModel)]="movie.description " placeholder="description "/>
         </label>
     </div>
 </div>
+<button (click)="goBack() ">Go Back</button>
+<button (click)="save() ">save</button>

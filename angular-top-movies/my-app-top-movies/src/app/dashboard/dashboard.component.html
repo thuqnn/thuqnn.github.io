@@ -1,0 +1,10 @@
+<app-movie-search></app-movie-search>
+<h3>Top Movies</h3>
+<div class="grid grid-pad">
+    <a *ngFor="let movies of movies" class="col-1-4" routerLink="/detail/{{movies.id}}">
+        <div class="module movies">
+            <div> <img [src]="movies.img" alt={{movies.name}}></div>
+            <h4>{{movies.name}}</h4>
+        </div>
+    </a>
+</div>

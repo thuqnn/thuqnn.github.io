@@ -1,0 +1,34 @@
+input#search-box {
+    width: 80%;
+    padding: 15px;
+    margin: 20px auto;
+    display: block;
+}
+
+label {
+    margin-left: 9%;
+    display: block;
+    margin-bottom: 15px;
+}
+
+ul.search-result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+}
+
+ul.search-result li {
+    padding-bottom: 15px;
+}
+
+ul.search-result li a {
+    text-decoration: none;
+    transition: all 0.4s ease-out;
+    padding: 10px;
+}
+
+ul.search-result li:hover a {
+    background-color: gray;
+    color: aqua;
+}
