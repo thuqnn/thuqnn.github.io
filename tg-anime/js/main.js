@@ -85,6 +85,7 @@ $(document).ready(function() {
         $(".news-day .card").toggleClass("onoff");
         $(".row.no-gutters").toggleClass("inputblack");
         $(".content-tops .card").toggleClass("borderwhite");
+        $(".portfolioFilter a").toggleClass("text-white");
         $(this).toggleClass("iconblue");
     });
     //end light top
