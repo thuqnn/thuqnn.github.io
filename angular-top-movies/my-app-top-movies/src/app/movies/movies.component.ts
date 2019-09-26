@@ -30,14 +30,7 @@ export class MoviesComponent implements OnInit {
         this.movies.push(movie);
       });
   }
-  addDesription(description: string): void {
-    description = description.trim();
-    if (!description) { return; }
-    this.movieService.addMovie({ description } as Movie)
-      .subscribe(movie => {
-        this.movies.push(movie);
-      });
-  }
+
  
   delete(movie: Movie): void {
     this.movies = this.movies.filter(h => h !== movie);

@@ -51,3 +51,25 @@ ul.movies {
     margin: 10px 0;
     display: inline-block;
 }
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.img-left {
+    float: left;
+    margin-bottom: 15px;
+}
+
+.text-right {
+    display: block;
+    padding-left: 147px;
+    padding-right: 10px;
+}
+
+li a {
+    text-decoration: none;
+    color: inherit;
+}

@@ -6,22 +6,16 @@
             </label>
         <button (click)="add(movieName.value); movieName.value=''">
                     add Name Movies
-                  </button><br>
-        <label for="description"> Movie Description: 
-                        <input type="text" #movieDescription />
-                    </label>
-        <button (click)="addDesription(movieDescription.value); movieDescription.value=''">
-                            add Description Movies
-                          </button>
+                  </button>
     </div>
 </div>
 <ul class="movies">
-    <li *ngFor="let movies of movies">
+    <li *ngFor="let movies of movies" [class.selected]="movies === selectedMovies">
         <a routerLink="/detail/{{movies.id}}">
-            <div class="img-left"> <img [src]="movies.img" alt=""></div>
+            <div class="img-left"> <img [src]="movies.img" alt="{{movies.name}}"></div>
             <div class="text-right">
                 <span class="status">{{movies.id}}. </span>
-                <h4 [class.selected]="movies === selectedMovies">{{movies.name}}</h4>
+                <h4>{{movies.name}}</h4>
                 <p>{{movies.description}}</p>
             </div>
         </a>

@@ -1,8 +1,7 @@
 import { Injectable } from '@angular/core';
-import { Movie} from './movie';
-import { MOVIES } from './mock-movies';
 import { Observable, of } from 'rxjs';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { Movie} from './movie';
 @Injectable({
   providedIn: 'root'
 })
@@ -19,10 +18,11 @@ export class MovieService {
   return this.http.get<Movie[]>(this.moviesUrl)
 }
   getMovie(id: number): Observable<Movie>{
-    return of(MOVIES.find(movie => movie.id === id));
+    const url = `${this.moviesUrl}/${id}`;
+    return this.http.get<Movie>(url);
   }
   updateMovie (movie: Movie): Observable<any> {
-    return this.http.put(this.moviesUrl, movie, this.httpOptions)
+    return this.http.put(this.moviesUrl, movie, this.httpOptions);
   }
   httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })
