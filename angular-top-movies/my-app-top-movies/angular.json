@@ -118,8 +118,12 @@
               "devServerTarget": "my-app-tour-of-heroes:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@zeit/ng-deploy:deploy"
         }
       }
-    }},
+    }
+  },
   "defaultProject": "my-app-tour-of-heroes"
 }
