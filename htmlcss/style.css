@@ -5,10 +5,9 @@
 
 body {
   box-sizing: border-box;
-  font-size: 18px;
 }
-#content {
-  width: 1000px;
+.content {
+  max-width: 1000px;
   display: flex;
   flex-flow: row wrap;
   margin: auto;
@@ -29,9 +28,6 @@ body {
   margin: auto;
 }
 @media (max-width: 767px) {
-  #content {
-    width: auto;
-  }
   .content-item {
     flex-basis: 100%;
   }
